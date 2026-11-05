@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Pulsar</string>
+    <string name="status_listening">শুনছি…</string>
+    <string name="status_processing">যাচাই করা হচ্ছে…</string>
+    <string name="status_ready">পালসার প্রস্তুত</string>
+    <string name="earcon_description">Wake Chime</string>
+    <string name="fraud_alert_title">⚠️ প্রতারণার সতর্কতা (Fraud Alert)</string>
+    <string name="fraud_alert_desc">ব্যক্তিগত নাম্বার থেকে ভুয়া টাকা পাওয়ার মেসেজ এসেছে! কাউকে টাকা পাঠাবেন না।</string>
+</resources>

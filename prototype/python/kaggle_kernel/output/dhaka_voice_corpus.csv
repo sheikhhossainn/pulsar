@@ -1,0 +1,916 @@
+text,intent,persona,slots
+বেটাকরে একটা কল দে তো,MAKE_CALL,rickshaw_family,{'contact': 'বেটাক'}
+বেটাকরে ফোন লাগা,MAKE_CALL,rickshaw_family,{'contact': 'বেটাক'}
+বেটাকরে একটা রিং মার তো,MAKE_CALL,rickshaw_family,{'contact': 'বেটাক'}
+বেটাকরে ঘণ্টি দে,MAKE_CALL,rickshaw_family,{'contact': 'বেটাক'}
+বেটাককে একটা কল দে তো,MAKE_CALL,rickshaw_family,{'contact': 'বেটাক'}
+বেটাককে ফোন লাগা,MAKE_CALL,rickshaw_family,{'contact': 'বেটাক'}
+বেটাককে একটা রিং মার তো,MAKE_CALL,rickshaw_family,{'contact': 'বেটাক'}
+বেটাককে ঘণ্টি দে,MAKE_CALL,rickshaw_family,{'contact': 'বেটাক'}
+বেটাক একটা কল দে তো,MAKE_CALL,rickshaw_family,{'contact': 'বেটাক'}
+বেটাক ফোন লাগা,MAKE_CALL,rickshaw_family,{'contact': 'বেটাক'}
+বেটাক একটা রিং মার তো,MAKE_CALL,rickshaw_family,{'contact': 'বেটাক'}
+বেটাক ঘণ্টি দে,MAKE_CALL,rickshaw_family,{'contact': 'বেটাক'}
+পোলারে একটা কল দে তো,MAKE_CALL,rickshaw_family,{'contact': 'পোলা'}
+পোলারে ফোন লাগা,MAKE_CALL,rickshaw_family,{'contact': 'পোলা'}
+পোলারে একটা রিং মার তো,MAKE_CALL,rickshaw_family,{'contact': 'পোলা'}
+পোলারে ঘণ্টি দে,MAKE_CALL,rickshaw_family,{'contact': 'পোলা'}
+পোলাকে একটা কল দে তো,MAKE_CALL,rickshaw_family,{'contact': 'পোলা'}
+পোলাকে ফোন লাগা,MAKE_CALL,rickshaw_family,{'contact': 'পোলা'}
+পোলাকে একটা রিং মার তো,MAKE_CALL,rickshaw_family,{'contact': 'পোলা'}
+পোলাকে ঘণ্টি দে,MAKE_CALL,rickshaw_family,{'contact': 'পোলা'}
+পোলা একটা কল দে তো,MAKE_CALL,rickshaw_family,{'contact': 'পোলা'}
+পোলা ফোন লাগা,MAKE_CALL,rickshaw_family,{'contact': 'পোলা'}
+পোলা একটা রিং মার তো,MAKE_CALL,rickshaw_family,{'contact': 'পোলা'}
+পোলা ঘণ্টি দে,MAKE_CALL,rickshaw_family,{'contact': 'পোলা'}
+ছেলেরে একটা কল দে তো,MAKE_CALL,rickshaw_family,{'contact': 'ছেলে'}
+ছেলেরে ফোন লাগা,MAKE_CALL,rickshaw_family,{'contact': 'ছেলে'}
+ছেলেরে একটা রিং মার তো,MAKE_CALL,rickshaw_family,{'contact': 'ছেলে'}
+ছেলেরে ঘণ্টি দে,MAKE_CALL,rickshaw_family,{'contact': 'ছেলে'}
+ছেলেকে একটা কল দে তো,MAKE_CALL,rickshaw_family,{'contact': 'ছেলে'}
+ছেলেকে ফোন লাগা,MAKE_CALL,rickshaw_family,{'contact': 'ছেলে'}
+ছেলেকে একটা রিং মার তো,MAKE_CALL,rickshaw_family,{'contact': 'ছেলে'}
+ছেলেকে ঘণ্টি দে,MAKE_CALL,rickshaw_family,{'contact': 'ছেলে'}
+ছেলে একটা কল দে তো,MAKE_CALL,rickshaw_family,{'contact': 'ছেলে'}
+ছেলে ফোন লাগা,MAKE_CALL,rickshaw_family,{'contact': 'ছেলে'}
+ছেলে একটা রিং মার তো,MAKE_CALL,rickshaw_family,{'contact': 'ছেলে'}
+ছেলে ঘণ্টি দে,MAKE_CALL,rickshaw_family,{'contact': 'ছেলে'}
+মাইয়ারে একটা কল দে তো,MAKE_CALL,rickshaw_family,{'contact': 'মাইয়া'}
+মাইয়ারে ফোন লাগা,MAKE_CALL,rickshaw_family,{'contact': 'মাইয়া'}
+মাইয়ারে একটা রিং মার তো,MAKE_CALL,rickshaw_family,{'contact': 'মাইয়া'}
+মাইয়ারে ঘণ্টি দে,MAKE_CALL,rickshaw_family,{'contact': 'মাইয়া'}
+মাইয়াকে একটা কল দে তো,MAKE_CALL,rickshaw_family,{'contact': 'মাইয়া'}
+মাইয়াকে ফোন লাগা,MAKE_CALL,rickshaw_family,{'contact': 'মাইয়া'}
+মাইয়াকে একটা রিং মার তো,MAKE_CALL,rickshaw_family,{'contact': 'মাইয়া'}
+মাইয়াকে ঘণ্টি দে,MAKE_CALL,rickshaw_family,{'contact': 'মাইয়া'}
+মাইয়া একটা কল দে তো,MAKE_CALL,rickshaw_family,{'contact': 'মাইয়া'}
+মাইয়া ফোন লাগা,MAKE_CALL,rickshaw_family,{'contact': 'মাইয়া'}
+মাইয়া একটা রিং মার তো,MAKE_CALL,rickshaw_family,{'contact': 'মাইয়া'}
+মাইয়া ঘণ্টি দে,MAKE_CALL,rickshaw_family,{'contact': 'মাইয়া'}
+মেয়েরে একটা কল দে তো,MAKE_CALL,rickshaw_family,{'contact': 'মেয়ে'}
+মেয়েরে ফোন লাগা,MAKE_CALL,rickshaw_family,{'contact': 'মেয়ে'}
+মেয়েরে একটা রিং মার তো,MAKE_CALL,rickshaw_family,{'contact': 'মেয়ে'}
+মেয়েরে ঘণ্টি দে,MAKE_CALL,rickshaw_family,{'contact': 'মেয়ে'}
+মেয়েকে একটা কল দে তো,MAKE_CALL,rickshaw_family,{'contact': 'মেয়ে'}
+মেয়েকে ফোন লাগা,MAKE_CALL,rickshaw_family,{'contact': 'মেয়ে'}
+মেয়েকে একটা রিং মার তো,MAKE_CALL,rickshaw_family,{'contact': 'মেয়ে'}
+মেয়েকে ঘণ্টি দে,MAKE_CALL,rickshaw_family,{'contact': 'মেয়ে'}
+মেয়ে একটা কল দে তো,MAKE_CALL,rickshaw_family,{'contact': 'মেয়ে'}
+মেয়ে ফোন লাগা,MAKE_CALL,rickshaw_family,{'contact': 'মেয়ে'}
+মেয়ে একটা রিং মার তো,MAKE_CALL,rickshaw_family,{'contact': 'মেয়ে'}
+মেয়ে ঘণ্টি দে,MAKE_CALL,rickshaw_family,{'contact': 'মেয়ে'}
+বউরে একটা কল দে তো,MAKE_CALL,rickshaw_family,{'contact': 'বউ'}
+বউরে ফোন লাগা,MAKE_CALL,rickshaw_family,{'contact': 'বউ'}
+বউরে একটা রিং মার তো,MAKE_CALL,rickshaw_family,{'contact': 'বউ'}
+বউরে ঘণ্টি দে,MAKE_CALL,rickshaw_family,{'contact': 'বউ'}
+বউকে একটা কল দে তো,MAKE_CALL,rickshaw_family,{'contact': 'বউ'}
+বউকে ফোন লাগা,MAKE_CALL,rickshaw_family,{'contact': 'বউ'}
+বউকে একটা রিং মার তো,MAKE_CALL,rickshaw_family,{'contact': 'বউ'}
+বউকে ঘণ্টি দে,MAKE_CALL,rickshaw_family,{'contact': 'বউ'}
+বউ একটা কল দে তো,MAKE_CALL,rickshaw_family,{'contact': 'বউ'}
+বউ ফোন লাগা,MAKE_CALL,rickshaw_family,{'contact': 'বউ'}
+বউ একটা রিং মার তো,MAKE_CALL,rickshaw_family,{'contact': 'বউ'}
+বউ ঘণ্টি দে,MAKE_CALL,rickshaw_family,{'contact': 'বউ'}
+আম্মুরে একটা কল দে তো,MAKE_CALL,rickshaw_family,{'contact': 'আম্মু'}
+আম্মুরে ফোন লাগা,MAKE_CALL,rickshaw_family,{'contact': 'আম্মু'}
+আম্মুরে একটা রিং মার তো,MAKE_CALL,rickshaw_family,{'contact': 'আম্মু'}
+আম্মুরে ঘণ্টি দে,MAKE_CALL,rickshaw_family,{'contact': 'আম্মু'}
+আম্মুকে একটা কল দে তো,MAKE_CALL,rickshaw_family,{'contact': 'আম্মু'}
+আম্মুকে ফোন লাগা,MAKE_CALL,rickshaw_family,{'contact': 'আম্মু'}
+আম্মুকে একটা রিং মার তো,MAKE_CALL,rickshaw_family,{'contact': 'আম্মু'}
+আম্মুকে ঘণ্টি দে,MAKE_CALL,rickshaw_family,{'contact': 'আম্মু'}
+আম্মু একটা কল দে তো,MAKE_CALL,rickshaw_family,{'contact': 'আম্মু'}
+আম্মু ফোন লাগা,MAKE_CALL,rickshaw_family,{'contact': 'আম্মু'}
+আম্মু একটা রিং মার তো,MAKE_CALL,rickshaw_family,{'contact': 'আম্মু'}
+আম্মু ঘণ্টি দে,MAKE_CALL,rickshaw_family,{'contact': 'আম্মু'}
+আব্বুরে একটা কল দে তো,MAKE_CALL,rickshaw_family,{'contact': 'আব্বু'}
+আব্বুরে ফোন লাগা,MAKE_CALL,rickshaw_family,{'contact': 'আব্বু'}
+আব্বুরে একটা রিং মার তো,MAKE_CALL,rickshaw_family,{'contact': 'আব্বু'}
+আব্বুরে ঘণ্টি দে,MAKE_CALL,rickshaw_family,{'contact': 'আব্বু'}
+আব্বুকে একটা কল দে তো,MAKE_CALL,rickshaw_family,{'contact': 'আব্বু'}
+আব্বুকে ফোন লাগা,MAKE_CALL,rickshaw_family,{'contact': 'আব্বু'}
+আব্বুকে একটা রিং মার তো,MAKE_CALL,rickshaw_family,{'contact': 'আব্বু'}
+আব্বুকে ঘণ্টি দে,MAKE_CALL,rickshaw_family,{'contact': 'আব্বু'}
+আব্বু একটা কল দে তো,MAKE_CALL,rickshaw_family,{'contact': 'আব্বু'}
+আব্বু ফোন লাগা,MAKE_CALL,rickshaw_family,{'contact': 'আব্বু'}
+আব্বু একটা রিং মার তো,MAKE_CALL,rickshaw_family,{'contact': 'আব্বু'}
+আব্বু ঘণ্টি দে,MAKE_CALL,rickshaw_family,{'contact': 'আব্বু'}
+মারে একটা কল দে তো,MAKE_CALL,rickshaw_family,{'contact': 'মা'}
+মারে ফোন লাগা,MAKE_CALL,rickshaw_family,{'contact': 'মা'}
+মারে একটা রিং মার তো,MAKE_CALL,rickshaw_family,{'contact': 'মা'}
+মারে ঘণ্টি দে,MAKE_CALL,rickshaw_family,{'contact': 'মা'}
+মাকে একটা কল দে তো,MAKE_CALL,rickshaw_family,{'contact': 'মা'}
+মাকে ফোন লাগা,MAKE_CALL,rickshaw_family,{'contact': 'মা'}
+মাকে একটা রিং মার তো,MAKE_CALL,rickshaw_family,{'contact': 'মা'}
+মাকে ঘণ্টি দে,MAKE_CALL,rickshaw_family,{'contact': 'মা'}
+মা একটা কল দে তো,MAKE_CALL,rickshaw_family,{'contact': 'মা'}
+মা ফোন লাগা,MAKE_CALL,rickshaw_family,{'contact': 'মা'}
+মা একটা রিং মার তো,MAKE_CALL,rickshaw_family,{'contact': 'মা'}
+মা ঘণ্টি দে,MAKE_CALL,rickshaw_family,{'contact': 'মা'}
+বাবারে একটা কল দে তো,MAKE_CALL,rickshaw_family,{'contact': 'বাবা'}
+বাবারে ফোন লাগা,MAKE_CALL,rickshaw_family,{'contact': 'বাবা'}
+বাবারে একটা রিং মার তো,MAKE_CALL,rickshaw_family,{'contact': 'বাবা'}
+বাবারে ঘণ্টি দে,MAKE_CALL,rickshaw_family,{'contact': 'বাবা'}
+বাবাকে একটা কল দে তো,MAKE_CALL,rickshaw_family,{'contact': 'বাবা'}
+বাবাকে ফোন লাগা,MAKE_CALL,rickshaw_family,{'contact': 'বাবা'}
+বাবাকে একটা রিং মার তো,MAKE_CALL,rickshaw_family,{'contact': 'বাবা'}
+বাবাকে ঘণ্টি দে,MAKE_CALL,rickshaw_family,{'contact': 'বাবা'}
+বাবা একটা কল দে তো,MAKE_CALL,rickshaw_family,{'contact': 'বাবা'}
+বাবা ফোন লাগা,MAKE_CALL,rickshaw_family,{'contact': 'বাবা'}
+বাবা একটা রিং মার তো,MAKE_CALL,rickshaw_family,{'contact': 'বাবা'}
+বাবা ঘণ্টি দে,MAKE_CALL,rickshaw_family,{'contact': 'বাবা'}
+বড় ভাইরে একটা কল দে তো,MAKE_CALL,rickshaw_family,{'contact': 'বড় ভাই'}
+বড় ভাইরে ফোন লাগা,MAKE_CALL,rickshaw_family,{'contact': 'বড় ভাই'}
+বড় ভাইরে একটা রিং মার তো,MAKE_CALL,rickshaw_family,{'contact': 'বড় ভাই'}
+বড় ভাইরে ঘণ্টি দে,MAKE_CALL,rickshaw_family,{'contact': 'বড় ভাই'}
+বড় ভাইকে একটা কল দে তো,MAKE_CALL,rickshaw_family,{'contact': 'বড় ভাই'}
+বড় ভাইকে ফোন লাগা,MAKE_CALL,rickshaw_family,{'contact': 'বড় ভাই'}
+বড় ভাইকে একটা রিং মার তো,MAKE_CALL,rickshaw_family,{'contact': 'বড় ভাই'}
+বড় ভাইকে ঘণ্টি দে,MAKE_CALL,rickshaw_family,{'contact': 'বড় ভাই'}
+বড় ভাই একটা কল দে তো,MAKE_CALL,rickshaw_family,{'contact': 'বড় ভাই'}
+বড় ভাই ফোন লাগা,MAKE_CALL,rickshaw_family,{'contact': 'বড় ভাই'}
+বড় ভাই একটা রিং মার তো,MAKE_CALL,rickshaw_family,{'contact': 'বড় ভাই'}
+বড় ভাই ঘণ্টি দে,MAKE_CALL,rickshaw_family,{'contact': 'বড় ভাই'}
+ছোট ভাইরে একটা কল দে তো,MAKE_CALL,rickshaw_family,{'contact': 'ছোট ভাই'}
+ছোট ভাইরে ফোন লাগা,MAKE_CALL,rickshaw_family,{'contact': 'ছোট ভাই'}
+ছোট ভাইরে একটা রিং মার তো,MAKE_CALL,rickshaw_family,{'contact': 'ছোট ভাই'}
+ছোট ভাইরে ঘণ্টি দে,MAKE_CALL,rickshaw_family,{'contact': 'ছোট ভাই'}
+ছোট ভাইকে একটা কল দে তো,MAKE_CALL,rickshaw_family,{'contact': 'ছোট ভাই'}
+ছোট ভাইকে ফোন লাগা,MAKE_CALL,rickshaw_family,{'contact': 'ছোট ভাই'}
+ছোট ভাইকে একটা রিং মার তো,MAKE_CALL,rickshaw_family,{'contact': 'ছোট ভাই'}
+ছোট ভাইকে ঘণ্টি দে,MAKE_CALL,rickshaw_family,{'contact': 'ছোট ভাই'}
+ছোট ভাই একটা কল দে তো,MAKE_CALL,rickshaw_family,{'contact': 'ছোট ভাই'}
+ছোট ভাই ফোন লাগা,MAKE_CALL,rickshaw_family,{'contact': 'ছোট ভাই'}
+ছোট ভাই একটা রিং মার তো,MAKE_CALL,rickshaw_family,{'contact': 'ছোট ভাই'}
+ছোট ভাই ঘণ্টি দে,MAKE_CALL,rickshaw_family,{'contact': 'ছোট ভাই'}
+whatsapp e amar bou ke call de to,MAKE_CALL,young_office_worker,"{'contact': 'bou', 'channel': 'whatsapp'}"
+whatsapp e amar bou ke call dao to,MAKE_CALL,young_office_worker,"{'contact': 'bou', 'channel': 'whatsapp'}"
+whatsapp e amar bou ke ekta call lagao,MAKE_CALL,young_office_worker,"{'contact': 'bou', 'channel': 'whatsapp'}"
+whatsapp e amar bou ke knock dao,MAKE_CALL,young_office_worker,"{'contact': 'bou', 'channel': 'whatsapp'}"
+phone e amar bou ke call de to,MAKE_CALL,young_office_worker,{'contact': 'bou'}
+phone e amar bou ke call dao to,MAKE_CALL,young_office_worker,{'contact': 'bou'}
+phone e amar bou ke ekta call lagao,MAKE_CALL,young_office_worker,{'contact': 'bou'}
+phone e amar bou ke knock dao,MAKE_CALL,young_office_worker,{'contact': 'bou'}
+amar bou ke call de to,MAKE_CALL,young_office_worker,{'contact': 'bou'}
+amar bou ke call dao to,MAKE_CALL,young_office_worker,{'contact': 'bou'}
+amar bou ke ekta call lagao,MAKE_CALL,young_office_worker,{'contact': 'bou'}
+amar bou ke knock dao,MAKE_CALL,young_office_worker,{'contact': 'bou'}
+whatsapp e amar ammu ke call de to,MAKE_CALL,young_office_worker,"{'contact': 'ammu', 'channel': 'whatsapp'}"
+whatsapp e amar ammu ke call dao to,MAKE_CALL,young_office_worker,"{'contact': 'ammu', 'channel': 'whatsapp'}"
+whatsapp e amar ammu ke ekta call lagao,MAKE_CALL,young_office_worker,"{'contact': 'ammu', 'channel': 'whatsapp'}"
+whatsapp e amar ammu ke knock dao,MAKE_CALL,young_office_worker,"{'contact': 'ammu', 'channel': 'whatsapp'}"
+phone e amar ammu ke call de to,MAKE_CALL,young_office_worker,{'contact': 'ammu'}
+phone e amar ammu ke call dao to,MAKE_CALL,young_office_worker,{'contact': 'ammu'}
+phone e amar ammu ke ekta call lagao,MAKE_CALL,young_office_worker,{'contact': 'ammu'}
+phone e amar ammu ke knock dao,MAKE_CALL,young_office_worker,{'contact': 'ammu'}
+amar ammu ke call de to,MAKE_CALL,young_office_worker,{'contact': 'ammu'}
+amar ammu ke call dao to,MAKE_CALL,young_office_worker,{'contact': 'ammu'}
+amar ammu ke ekta call lagao,MAKE_CALL,young_office_worker,{'contact': 'ammu'}
+amar ammu ke knock dao,MAKE_CALL,young_office_worker,{'contact': 'ammu'}
+whatsapp e amar abbu ke call de to,MAKE_CALL,young_office_worker,"{'contact': 'abbu', 'channel': 'whatsapp'}"
+whatsapp e amar abbu ke call dao to,MAKE_CALL,young_office_worker,"{'contact': 'abbu', 'channel': 'whatsapp'}"
+whatsapp e amar abbu ke ekta call lagao,MAKE_CALL,young_office_worker,"{'contact': 'abbu', 'channel': 'whatsapp'}"
+whatsapp e amar abbu ke knock dao,MAKE_CALL,young_office_worker,"{'contact': 'abbu', 'channel': 'whatsapp'}"
+phone e amar abbu ke call de to,MAKE_CALL,young_office_worker,{'contact': 'abbu'}
+phone e amar abbu ke call dao to,MAKE_CALL,young_office_worker,{'contact': 'abbu'}
+phone e amar abbu ke ekta call lagao,MAKE_CALL,young_office_worker,{'contact': 'abbu'}
+phone e amar abbu ke knock dao,MAKE_CALL,young_office_worker,{'contact': 'abbu'}
+amar abbu ke call de to,MAKE_CALL,young_office_worker,{'contact': 'abbu'}
+amar abbu ke call dao to,MAKE_CALL,young_office_worker,{'contact': 'abbu'}
+amar abbu ke ekta call lagao,MAKE_CALL,young_office_worker,{'contact': 'abbu'}
+amar abbu ke knock dao,MAKE_CALL,young_office_worker,{'contact': 'abbu'}
+whatsapp e amar ma ke call de to,MAKE_CALL,young_office_worker,"{'contact': 'ma', 'channel': 'whatsapp'}"
+whatsapp e amar ma ke call dao to,MAKE_CALL,young_office_worker,"{'contact': 'ma', 'channel': 'whatsapp'}"
+whatsapp e amar ma ke ekta call lagao,MAKE_CALL,young_office_worker,"{'contact': 'ma', 'channel': 'whatsapp'}"
+whatsapp e amar ma ke knock dao,MAKE_CALL,young_office_worker,"{'contact': 'ma', 'channel': 'whatsapp'}"
+phone e amar ma ke call de to,MAKE_CALL,young_office_worker,{'contact': 'ma'}
+phone e amar ma ke call dao to,MAKE_CALL,young_office_worker,{'contact': 'ma'}
+phone e amar ma ke ekta call lagao,MAKE_CALL,young_office_worker,{'contact': 'ma'}
+phone e amar ma ke knock dao,MAKE_CALL,young_office_worker,{'contact': 'ma'}
+amar ma ke call de to,MAKE_CALL,young_office_worker,{'contact': 'ma'}
+amar ma ke call dao to,MAKE_CALL,young_office_worker,{'contact': 'ma'}
+amar ma ke ekta call lagao,MAKE_CALL,young_office_worker,{'contact': 'ma'}
+amar ma ke knock dao,MAKE_CALL,young_office_worker,{'contact': 'ma'}
+whatsapp e amar baba ke call de to,MAKE_CALL,young_office_worker,"{'contact': 'baba', 'channel': 'whatsapp'}"
+whatsapp e amar baba ke call dao to,MAKE_CALL,young_office_worker,"{'contact': 'baba', 'channel': 'whatsapp'}"
+whatsapp e amar baba ke ekta call lagao,MAKE_CALL,young_office_worker,"{'contact': 'baba', 'channel': 'whatsapp'}"
+whatsapp e amar baba ke knock dao,MAKE_CALL,young_office_worker,"{'contact': 'baba', 'channel': 'whatsapp'}"
+phone e amar baba ke call de to,MAKE_CALL,young_office_worker,{'contact': 'baba'}
+phone e amar baba ke call dao to,MAKE_CALL,young_office_worker,{'contact': 'baba'}
+phone e amar baba ke ekta call lagao,MAKE_CALL,young_office_worker,{'contact': 'baba'}
+phone e amar baba ke knock dao,MAKE_CALL,young_office_worker,{'contact': 'baba'}
+amar baba ke call de to,MAKE_CALL,young_office_worker,{'contact': 'baba'}
+amar baba ke call dao to,MAKE_CALL,young_office_worker,{'contact': 'baba'}
+amar baba ke ekta call lagao,MAKE_CALL,young_office_worker,{'contact': 'baba'}
+amar baba ke knock dao,MAKE_CALL,young_office_worker,{'contact': 'baba'}
+whatsapp e amar boro bhai ke call de to,MAKE_CALL,young_office_worker,"{'contact': 'boro bhai', 'channel': 'whatsapp'}"
+whatsapp e amar boro bhai ke call dao to,MAKE_CALL,young_office_worker,"{'contact': 'boro bhai', 'channel': 'whatsapp'}"
+whatsapp e amar boro bhai ke ekta call lagao,MAKE_CALL,young_office_worker,"{'contact': 'boro bhai', 'channel': 'whatsapp'}"
+whatsapp e amar boro bhai ke knock dao,MAKE_CALL,young_office_worker,"{'contact': 'boro bhai', 'channel': 'whatsapp'}"
+phone e amar boro bhai ke call de to,MAKE_CALL,young_office_worker,{'contact': 'boro bhai'}
+phone e amar boro bhai ke call dao to,MAKE_CALL,young_office_worker,{'contact': 'boro bhai'}
+phone e amar boro bhai ke ekta call lagao,MAKE_CALL,young_office_worker,{'contact': 'boro bhai'}
+phone e amar boro bhai ke knock dao,MAKE_CALL,young_office_worker,{'contact': 'boro bhai'}
+amar boro bhai ke call de to,MAKE_CALL,young_office_worker,{'contact': 'boro bhai'}
+amar boro bhai ke call dao to,MAKE_CALL,young_office_worker,{'contact': 'boro bhai'}
+amar boro bhai ke ekta call lagao,MAKE_CALL,young_office_worker,{'contact': 'boro bhai'}
+amar boro bhai ke knock dao,MAKE_CALL,young_office_worker,{'contact': 'boro bhai'}
+whatsapp e amar choto bhai ke call de to,MAKE_CALL,young_office_worker,"{'contact': 'choto bhai', 'channel': 'whatsapp'}"
+whatsapp e amar choto bhai ke call dao to,MAKE_CALL,young_office_worker,"{'contact': 'choto bhai', 'channel': 'whatsapp'}"
+whatsapp e amar choto bhai ke ekta call lagao,MAKE_CALL,young_office_worker,"{'contact': 'choto bhai', 'channel': 'whatsapp'}"
+whatsapp e amar choto bhai ke knock dao,MAKE_CALL,young_office_worker,"{'contact': 'choto bhai', 'channel': 'whatsapp'}"
+phone e amar choto bhai ke call de to,MAKE_CALL,young_office_worker,{'contact': 'choto bhai'}
+phone e amar choto bhai ke call dao to,MAKE_CALL,young_office_worker,{'contact': 'choto bhai'}
+phone e amar choto bhai ke ekta call lagao,MAKE_CALL,young_office_worker,{'contact': 'choto bhai'}
+phone e amar choto bhai ke knock dao,MAKE_CALL,young_office_worker,{'contact': 'choto bhai'}
+amar choto bhai ke call de to,MAKE_CALL,young_office_worker,{'contact': 'choto bhai'}
+amar choto bhai ke call dao to,MAKE_CALL,young_office_worker,{'contact': 'choto bhai'}
+amar choto bhai ke ekta call lagao,MAKE_CALL,young_office_worker,{'contact': 'choto bhai'}
+amar choto bhai ke knock dao,MAKE_CALL,young_office_worker,{'contact': 'choto bhai'}
+whatsapp e amar boro apu ke call de to,MAKE_CALL,young_office_worker,"{'contact': 'boro apu', 'channel': 'whatsapp'}"
+whatsapp e amar boro apu ke call dao to,MAKE_CALL,young_office_worker,"{'contact': 'boro apu', 'channel': 'whatsapp'}"
+whatsapp e amar boro apu ke ekta call lagao,MAKE_CALL,young_office_worker,"{'contact': 'boro apu', 'channel': 'whatsapp'}"
+whatsapp e amar boro apu ke knock dao,MAKE_CALL,young_office_worker,"{'contact': 'boro apu', 'channel': 'whatsapp'}"
+phone e amar boro apu ke call de to,MAKE_CALL,young_office_worker,{'contact': 'boro apu'}
+phone e amar boro apu ke call dao to,MAKE_CALL,young_office_worker,{'contact': 'boro apu'}
+phone e amar boro apu ke ekta call lagao,MAKE_CALL,young_office_worker,{'contact': 'boro apu'}
+phone e amar boro apu ke knock dao,MAKE_CALL,young_office_worker,{'contact': 'boro apu'}
+amar boro apu ke call de to,MAKE_CALL,young_office_worker,{'contact': 'boro apu'}
+amar boro apu ke call dao to,MAKE_CALL,young_office_worker,{'contact': 'boro apu'}
+amar boro apu ke ekta call lagao,MAKE_CALL,young_office_worker,{'contact': 'boro apu'}
+amar boro apu ke knock dao,MAKE_CALL,young_office_worker,{'contact': 'boro apu'}
+whatsapp e amar bhagina ke call de to,MAKE_CALL,young_office_worker,"{'contact': 'bhagina', 'channel': 'whatsapp'}"
+whatsapp e amar bhagina ke call dao to,MAKE_CALL,young_office_worker,"{'contact': 'bhagina', 'channel': 'whatsapp'}"
+whatsapp e amar bhagina ke ekta call lagao,MAKE_CALL,young_office_worker,"{'contact': 'bhagina', 'channel': 'whatsapp'}"
+whatsapp e amar bhagina ke knock dao,MAKE_CALL,young_office_worker,"{'contact': 'bhagina', 'channel': 'whatsapp'}"
+phone e amar bhagina ke call de to,MAKE_CALL,young_office_worker,{'contact': 'bhagina'}
+phone e amar bhagina ke call dao to,MAKE_CALL,young_office_worker,{'contact': 'bhagina'}
+phone e amar bhagina ke ekta call lagao,MAKE_CALL,young_office_worker,{'contact': 'bhagina'}
+phone e amar bhagina ke knock dao,MAKE_CALL,young_office_worker,{'contact': 'bhagina'}
+amar bhagina ke call de to,MAKE_CALL,young_office_worker,{'contact': 'bhagina'}
+amar bhagina ke call dao to,MAKE_CALL,young_office_worker,{'contact': 'bhagina'}
+amar bhagina ke ekta call lagao,MAKE_CALL,young_office_worker,{'contact': 'bhagina'}
+amar bhagina ke knock dao,MAKE_CALL,young_office_worker,{'contact': 'bhagina'}
+whatsapp e amar chacha ke call de to,MAKE_CALL,young_office_worker,"{'contact': 'chacha', 'channel': 'whatsapp'}"
+whatsapp e amar chacha ke call dao to,MAKE_CALL,young_office_worker,"{'contact': 'chacha', 'channel': 'whatsapp'}"
+whatsapp e amar chacha ke ekta call lagao,MAKE_CALL,young_office_worker,"{'contact': 'chacha', 'channel': 'whatsapp'}"
+whatsapp e amar chacha ke knock dao,MAKE_CALL,young_office_worker,"{'contact': 'chacha', 'channel': 'whatsapp'}"
+phone e amar chacha ke call de to,MAKE_CALL,young_office_worker,{'contact': 'chacha'}
+phone e amar chacha ke call dao to,MAKE_CALL,young_office_worker,{'contact': 'chacha'}
+phone e amar chacha ke ekta call lagao,MAKE_CALL,young_office_worker,{'contact': 'chacha'}
+phone e amar chacha ke knock dao,MAKE_CALL,young_office_worker,{'contact': 'chacha'}
+amar chacha ke call de to,MAKE_CALL,young_office_worker,{'contact': 'chacha'}
+amar chacha ke call dao to,MAKE_CALL,young_office_worker,{'contact': 'chacha'}
+amar chacha ke ekta call lagao,MAKE_CALL,young_office_worker,{'contact': 'chacha'}
+amar chacha ke knock dao,MAKE_CALL,young_office_worker,{'contact': 'chacha'}
+whatsapp e amar betak call de to,MAKE_CALL,young_office_worker,"{'contact': 'betak', 'channel': 'whatsapp'}"
+"amar betak call diyeche, call back de",MAKE_CALL,young_office_worker,{'contact': 'betak'}
+করিমরে একটা রিং মার তো,MAKE_CALL,rickshaw_family,{'contact': 'করিম'}
+"amar chele ekta chobi diche whatsapp e, ber kor to",VIEW_MEDIA,young_office_worker,"{'contact': 'chele', 'media_type': 'chobi', 'channel': 'whatsapp'}"
+"amar betak ekta chobi diche, ber kor to",VIEW_MEDIA,young_office_worker,"{'contact': 'betak', 'media_type': 'chobi'}"
+"boss ekta file pathiyeche WhatsApp e, ektu open koro",VIEW_MEDIA,young_office_worker,"{'contact': 'boss', 'media_type': 'file', 'channel': 'whatsapp'}"
+"client ekta document dilo WhatsApp e, ber kor to ektu",VIEW_MEDIA,young_office_worker,"{'contact': 'client', 'media_type': 'document', 'channel': 'whatsapp'}"
+"পোলা একটা ছবি দিছে, বাইর কর তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'পোলা', 'media_type': 'ছবি'}"
+"পোলা একটা ছবি পাঠাইছে, খোল তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'পোলা', 'media_type': 'ছবি'}"
+"পোলা একটা ছবি দিছে, ওপেন কর",VIEW_MEDIA,rickshaw_family,"{'contact': 'পোলা', 'media_type': 'ছবি'}"
+"পোলা একটা ছবি পাঠাইছে, দেখাও তো আমারে",VIEW_MEDIA,rickshaw_family,"{'contact': 'পোলা', 'media_type': 'ছবি'}"
+"পোলা একটা ছবি দিছে, দেখতে চাই",VIEW_MEDIA,rickshaw_family,"{'contact': 'পোলা', 'media_type': 'ছবি'}"
+"পোলা একটা ফটো দিছে, বাইর কর তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'পোলা', 'media_type': 'ফটো'}"
+"পোলা একটা ফটো পাঠাইছে, খোল তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'পোলা', 'media_type': 'ফটো'}"
+"পোলা একটা ফটো দিছে, ওপেন কর",VIEW_MEDIA,rickshaw_family,"{'contact': 'পোলা', 'media_type': 'ফটো'}"
+"পোলা একটা ফটো পাঠাইছে, দেখাও তো আমারে",VIEW_MEDIA,rickshaw_family,"{'contact': 'পোলা', 'media_type': 'ফটো'}"
+"পোলা একটা ফটো দিছে, দেখতে চাই",VIEW_MEDIA,rickshaw_family,"{'contact': 'পোলা', 'media_type': 'ফটো'}"
+"পোলা একটা ভিডিও দিছে, বাইর কর তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'পোলা', 'media_type': 'ভিডিও'}"
+"পোলা একটা ভিডিও পাঠাইছে, খোল তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'পোলা', 'media_type': 'ভিডিও'}"
+"পোলা একটা ভিডিও দিছে, ওপেন কর",VIEW_MEDIA,rickshaw_family,"{'contact': 'পোলা', 'media_type': 'ভিডিও'}"
+"পোলা একটা ভিডিও পাঠাইছে, দেখাও তো আমারে",VIEW_MEDIA,rickshaw_family,"{'contact': 'পোলা', 'media_type': 'ভিডিও'}"
+"পোলা একটা ভিডিও দিছে, দেখতে চাই",VIEW_MEDIA,rickshaw_family,"{'contact': 'পোলা', 'media_type': 'ভিডিও'}"
+"পোলা একটা প্রেসক্রিপশন দিছে, বাইর কর তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'পোলা', 'media_type': 'প্রেসক্রিপশন'}"
+"পোলা একটা প্রেসক্রিপশন পাঠাইছে, খোল তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'পোলা', 'media_type': 'প্রেসক্রিপশন'}"
+"পোলা একটা প্রেসক্রিপশন দিছে, ওপেন কর",VIEW_MEDIA,rickshaw_family,"{'contact': 'পোলা', 'media_type': 'প্রেসক্রিপশন'}"
+"পোলা একটা প্রেসক্রিপশন পাঠাইছে, দেখাও তো আমারে",VIEW_MEDIA,rickshaw_family,"{'contact': 'পোলা', 'media_type': 'প্রেসক্রিপশন'}"
+"পোলা একটা প্রেসক্রিপশন দিছে, দেখতে চাই",VIEW_MEDIA,rickshaw_family,"{'contact': 'পোলা', 'media_type': 'প্রেসক্রিপশন'}"
+"বউ একটা ছবি দিছে, বাইর কর তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'বউ', 'media_type': 'ছবি'}"
+"বউ একটা ছবি পাঠাইছে, খোল তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'বউ', 'media_type': 'ছবি'}"
+"বউ একটা ছবি দিছে, ওপেন কর",VIEW_MEDIA,rickshaw_family,"{'contact': 'বউ', 'media_type': 'ছবি'}"
+"বউ একটা ছবি পাঠাইছে, দেখাও তো আমারে",VIEW_MEDIA,rickshaw_family,"{'contact': 'বউ', 'media_type': 'ছবি'}"
+"বউ একটা ছবি দিছে, দেখতে চাই",VIEW_MEDIA,rickshaw_family,"{'contact': 'বউ', 'media_type': 'ছবি'}"
+"বউ একটা ফটো দিছে, বাইর কর তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'বউ', 'media_type': 'ফটো'}"
+"বউ একটা ফটো পাঠাইছে, খোল তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'বউ', 'media_type': 'ফটো'}"
+"বউ একটা ফটো দিছে, ওপেন কর",VIEW_MEDIA,rickshaw_family,"{'contact': 'বউ', 'media_type': 'ফটো'}"
+"বউ একটা ফটো পাঠাইছে, দেখাও তো আমারে",VIEW_MEDIA,rickshaw_family,"{'contact': 'বউ', 'media_type': 'ফটো'}"
+"বউ একটা ফটো দিছে, দেখতে চাই",VIEW_MEDIA,rickshaw_family,"{'contact': 'বউ', 'media_type': 'ফটো'}"
+"বউ একটা ভিডিও দিছে, বাইর কর তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'বউ', 'media_type': 'ভিডিও'}"
+"বউ একটা ভিডিও পাঠাইছে, খোল তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'বউ', 'media_type': 'ভিডিও'}"
+"বউ একটা ভিডিও দিছে, ওপেন কর",VIEW_MEDIA,rickshaw_family,"{'contact': 'বউ', 'media_type': 'ভিডিও'}"
+"বউ একটা ভিডিও পাঠাইছে, দেখাও তো আমারে",VIEW_MEDIA,rickshaw_family,"{'contact': 'বউ', 'media_type': 'ভিডিও'}"
+"বউ একটা ভিডিও দিছে, দেখতে চাই",VIEW_MEDIA,rickshaw_family,"{'contact': 'বউ', 'media_type': 'ভিডিও'}"
+"বউ একটা প্রেসক্রিপশন দিছে, বাইর কর তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'বউ', 'media_type': 'প্রেসক্রিপশন'}"
+"বউ একটা প্রেসক্রিপশন পাঠাইছে, খোল তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'বউ', 'media_type': 'প্রেসক্রিপশন'}"
+"বউ একটা প্রেসক্রিপশন দিছে, ওপেন কর",VIEW_MEDIA,rickshaw_family,"{'contact': 'বউ', 'media_type': 'প্রেসক্রিপশন'}"
+"বউ একটা প্রেসক্রিপশন পাঠাইছে, দেখাও তো আমারে",VIEW_MEDIA,rickshaw_family,"{'contact': 'বউ', 'media_type': 'প্রেসক্রিপশন'}"
+"বউ একটা প্রেসক্রিপশন দিছে, দেখতে চাই",VIEW_MEDIA,rickshaw_family,"{'contact': 'বউ', 'media_type': 'প্রেসক্রিপশন'}"
+"মাইয়া একটা ছবি দিছে, বাইর কর তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'মাইয়া', 'media_type': 'ছবি'}"
+"মাইয়া একটা ছবি পাঠাইছে, খোল তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'মাইয়া', 'media_type': 'ছবি'}"
+"মাইয়া একটা ছবি দিছে, ওপেন কর",VIEW_MEDIA,rickshaw_family,"{'contact': 'মাইয়া', 'media_type': 'ছবি'}"
+"মাইয়া একটা ছবি পাঠাইছে, দেখাও তো আমারে",VIEW_MEDIA,rickshaw_family,"{'contact': 'মাইয়া', 'media_type': 'ছবি'}"
+"মাইয়া একটা ছবি দিছে, দেখতে চাই",VIEW_MEDIA,rickshaw_family,"{'contact': 'মাইয়া', 'media_type': 'ছবি'}"
+"মাইয়া একটা ফটো দিছে, বাইর কর তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'মাইয়া', 'media_type': 'ফটো'}"
+"মাইয়া একটা ফটো পাঠাইছে, খোল তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'মাইয়া', 'media_type': 'ফটো'}"
+"মাইয়া একটা ফটো দিছে, ওপেন কর",VIEW_MEDIA,rickshaw_family,"{'contact': 'মাইয়া', 'media_type': 'ফটো'}"
+"মাইয়া একটা ফটো পাঠাইছে, দেখাও তো আমারে",VIEW_MEDIA,rickshaw_family,"{'contact': 'মাইয়া', 'media_type': 'ফটো'}"
+"মাইয়া একটা ফটো দিছে, দেখতে চাই",VIEW_MEDIA,rickshaw_family,"{'contact': 'মাইয়া', 'media_type': 'ফটো'}"
+"মাইয়া একটা ভিডিও দিছে, বাইর কর তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'মাইয়া', 'media_type': 'ভিডিও'}"
+"মাইয়া একটা ভিডিও পাঠাইছে, খোল তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'মাইয়া', 'media_type': 'ভিডিও'}"
+"মাইয়া একটা ভিডিও দিছে, ওপেন কর",VIEW_MEDIA,rickshaw_family,"{'contact': 'মাইয়া', 'media_type': 'ভিডিও'}"
+"মাইয়া একটা ভিডিও পাঠাইছে, দেখাও তো আমারে",VIEW_MEDIA,rickshaw_family,"{'contact': 'মাইয়া', 'media_type': 'ভিডিও'}"
+"মাইয়া একটা ভিডিও দিছে, দেখতে চাই",VIEW_MEDIA,rickshaw_family,"{'contact': 'মাইয়া', 'media_type': 'ভিডিও'}"
+"মাইয়া একটা প্রেসক্রিপশন দিছে, বাইর কর তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'মাইয়া', 'media_type': 'প্রেসক্রিপশন'}"
+"মাইয়া একটা প্রেসক্রিপশন পাঠাইছে, খোল তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'মাইয়া', 'media_type': 'প্রেসক্রিপশন'}"
+"মাইয়া একটা প্রেসক্রিপশন দিছে, ওপেন কর",VIEW_MEDIA,rickshaw_family,"{'contact': 'মাইয়া', 'media_type': 'প্রেসক্রিপশন'}"
+"মাইয়া একটা প্রেসক্রিপশন পাঠাইছে, দেখাও তো আমারে",VIEW_MEDIA,rickshaw_family,"{'contact': 'মাইয়া', 'media_type': 'প্রেসক্রিপশন'}"
+"মাইয়া একটা প্রেসক্রিপশন দিছে, দেখতে চাই",VIEW_MEDIA,rickshaw_family,"{'contact': 'মাইয়া', 'media_type': 'প্রেসক্রিপশন'}"
+"বেটাক একটা ছবি দিছে, বাইর কর তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'বেটাক', 'media_type': 'ছবি'}"
+"বেটাক একটা ছবি পাঠাইছে, খোল তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'বেটাক', 'media_type': 'ছবি'}"
+"বেটাক একটা ছবি দিছে, ওপেন কর",VIEW_MEDIA,rickshaw_family,"{'contact': 'বেটাক', 'media_type': 'ছবি'}"
+"বেটাক একটা ছবি পাঠাইছে, দেখাও তো আমারে",VIEW_MEDIA,rickshaw_family,"{'contact': 'বেটাক', 'media_type': 'ছবি'}"
+"বেটাক একটা ছবি দিছে, দেখতে চাই",VIEW_MEDIA,rickshaw_family,"{'contact': 'বেটাক', 'media_type': 'ছবি'}"
+"বেটাক একটা ফটো দিছে, বাইর কর তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'বেটাক', 'media_type': 'ফটো'}"
+"বেটাক একটা ফটো পাঠাইছে, খোল তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'বেটাক', 'media_type': 'ফটো'}"
+"বেটাক একটা ফটো দিছে, ওপেন কর",VIEW_MEDIA,rickshaw_family,"{'contact': 'বেটাক', 'media_type': 'ফটো'}"
+"বেটাক একটা ফটো পাঠাইছে, দেখাও তো আমারে",VIEW_MEDIA,rickshaw_family,"{'contact': 'বেটাক', 'media_type': 'ফটো'}"
+"বেটাক একটা ফটো দিছে, দেখতে চাই",VIEW_MEDIA,rickshaw_family,"{'contact': 'বেটাক', 'media_type': 'ফটো'}"
+"বেটাক একটা ভিডিও দিছে, বাইর কর তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'বেটাক', 'media_type': 'ভিডিও'}"
+"বেটাক একটা ভিডিও পাঠাইছে, খোল তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'বেটাক', 'media_type': 'ভিডিও'}"
+"বেটাক একটা ভিডিও দিছে, ওপেন কর",VIEW_MEDIA,rickshaw_family,"{'contact': 'বেটাক', 'media_type': 'ভিডিও'}"
+"বেটাক একটা ভিডিও পাঠাইছে, দেখাও তো আমারে",VIEW_MEDIA,rickshaw_family,"{'contact': 'বেটাক', 'media_type': 'ভিডিও'}"
+"বেটাক একটা ভিডিও দিছে, দেখতে চাই",VIEW_MEDIA,rickshaw_family,"{'contact': 'বেটাক', 'media_type': 'ভিডিও'}"
+"বেটাক একটা প্রেসক্রিপশন দিছে, বাইর কর তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'বেটাক', 'media_type': 'প্রেসক্রিপশন'}"
+"বেটাক একটা প্রেসক্রিপশন পাঠাইছে, খোল তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'বেটাক', 'media_type': 'প্রেসক্রিপশন'}"
+"বেটাক একটা প্রেসক্রিপশন দিছে, ওপেন কর",VIEW_MEDIA,rickshaw_family,"{'contact': 'বেটাক', 'media_type': 'প্রেসক্রিপশন'}"
+"বেটাক একটা প্রেসক্রিপশন পাঠাইছে, দেখাও তো আমারে",VIEW_MEDIA,rickshaw_family,"{'contact': 'বেটাক', 'media_type': 'প্রেসক্রিপশন'}"
+"বেটাক একটা প্রেসক্রিপশন দিছে, দেখতে চাই",VIEW_MEDIA,rickshaw_family,"{'contact': 'বেটাক', 'media_type': 'প্রেসক্রিপশন'}"
+"ছেলে একটা ছবি দিছে, বাইর কর তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'ছেলে', 'media_type': 'ছবি'}"
+"ছেলে একটা ছবি পাঠাইছে, খোল তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'ছেলে', 'media_type': 'ছবি'}"
+"ছেলে একটা ছবি দিছে, ওপেন কর",VIEW_MEDIA,rickshaw_family,"{'contact': 'ছেলে', 'media_type': 'ছবি'}"
+"ছেলে একটা ছবি পাঠাইছে, দেখাও তো আমারে",VIEW_MEDIA,rickshaw_family,"{'contact': 'ছেলে', 'media_type': 'ছবি'}"
+"ছেলে একটা ছবি দিছে, দেখতে চাই",VIEW_MEDIA,rickshaw_family,"{'contact': 'ছেলে', 'media_type': 'ছবি'}"
+"ছেলে একটা ফটো দিছে, বাইর কর তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'ছেলে', 'media_type': 'ফটো'}"
+"ছেলে একটা ফটো পাঠাইছে, খোল তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'ছেলে', 'media_type': 'ফটো'}"
+"ছেলে একটা ফটো দিছে, ওপেন কর",VIEW_MEDIA,rickshaw_family,"{'contact': 'ছেলে', 'media_type': 'ফটো'}"
+"ছেলে একটা ফটো পাঠাইছে, দেখাও তো আমারে",VIEW_MEDIA,rickshaw_family,"{'contact': 'ছেলে', 'media_type': 'ফটো'}"
+"ছেলে একটা ফটো দিছে, দেখতে চাই",VIEW_MEDIA,rickshaw_family,"{'contact': 'ছেলে', 'media_type': 'ফটো'}"
+"ছেলে একটা ভিডিও দিছে, বাইর কর তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'ছেলে', 'media_type': 'ভিডিও'}"
+"ছেলে একটা ভিডিও পাঠাইছে, খোল তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'ছেলে', 'media_type': 'ভিডিও'}"
+"ছেলে একটা ভিডিও দিছে, ওপেন কর",VIEW_MEDIA,rickshaw_family,"{'contact': 'ছেলে', 'media_type': 'ভিডিও'}"
+"ছেলে একটা ভিডিও পাঠাইছে, দেখাও তো আমারে",VIEW_MEDIA,rickshaw_family,"{'contact': 'ছেলে', 'media_type': 'ভিডিও'}"
+"ছেলে একটা ভিডিও দিছে, দেখতে চাই",VIEW_MEDIA,rickshaw_family,"{'contact': 'ছেলে', 'media_type': 'ভিডিও'}"
+"ছেলে একটা প্রেসক্রিপশন দিছে, বাইর কর তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'ছেলে', 'media_type': 'প্রেসক্রিপশন'}"
+"ছেলে একটা প্রেসক্রিপশন পাঠাইছে, খোল তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'ছেলে', 'media_type': 'প্রেসক্রিপশন'}"
+"ছেলে একটা প্রেসক্রিপশন দিছে, ওপেন কর",VIEW_MEDIA,rickshaw_family,"{'contact': 'ছেলে', 'media_type': 'প্রেসক্রিপশন'}"
+"ছেলে একটা প্রেসক্রিপশন পাঠাইছে, দেখাও তো আমারে",VIEW_MEDIA,rickshaw_family,"{'contact': 'ছেলে', 'media_type': 'প্রেসক্রিপশন'}"
+"ছেলে একটা প্রেসক্রিপশন দিছে, দেখতে চাই",VIEW_MEDIA,rickshaw_family,"{'contact': 'ছেলে', 'media_type': 'প্রেসক্রিপশন'}"
+"মেয়ে একটা ছবি দিছে, বাইর কর তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'মেয়ে', 'media_type': 'ছবি'}"
+"মেয়ে একটা ছবি পাঠাইছে, খোল তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'মেয়ে', 'media_type': 'ছবি'}"
+"মেয়ে একটা ছবি দিছে, ওপেন কর",VIEW_MEDIA,rickshaw_family,"{'contact': 'মেয়ে', 'media_type': 'ছবি'}"
+"মেয়ে একটা ছবি পাঠাইছে, দেখাও তো আমারে",VIEW_MEDIA,rickshaw_family,"{'contact': 'মেয়ে', 'media_type': 'ছবি'}"
+"মেয়ে একটা ছবি দিছে, দেখতে চাই",VIEW_MEDIA,rickshaw_family,"{'contact': 'মেয়ে', 'media_type': 'ছবি'}"
+"মেয়ে একটা ফটো দিছে, বাইর কর তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'মেয়ে', 'media_type': 'ফটো'}"
+"মেয়ে একটা ফটো পাঠাইছে, খোল তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'মেয়ে', 'media_type': 'ফটো'}"
+"মেয়ে একটা ফটো দিছে, ওপেন কর",VIEW_MEDIA,rickshaw_family,"{'contact': 'মেয়ে', 'media_type': 'ফটো'}"
+"মেয়ে একটা ফটো পাঠাইছে, দেখাও তো আমারে",VIEW_MEDIA,rickshaw_family,"{'contact': 'মেয়ে', 'media_type': 'ফটো'}"
+"মেয়ে একটা ফটো দিছে, দেখতে চাই",VIEW_MEDIA,rickshaw_family,"{'contact': 'মেয়ে', 'media_type': 'ফটো'}"
+"মেয়ে একটা ভিডিও দিছে, বাইর কর তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'মেয়ে', 'media_type': 'ভিডিও'}"
+"মেয়ে একটা ভিডিও পাঠাইছে, খোল তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'মেয়ে', 'media_type': 'ভিডিও'}"
+"মেয়ে একটা ভিডিও দিছে, ওপেন কর",VIEW_MEDIA,rickshaw_family,"{'contact': 'মেয়ে', 'media_type': 'ভিডিও'}"
+"মেয়ে একটা ভিডিও পাঠাইছে, দেখাও তো আমারে",VIEW_MEDIA,rickshaw_family,"{'contact': 'মেয়ে', 'media_type': 'ভিডিও'}"
+"মেয়ে একটা ভিডিও দিছে, দেখতে চাই",VIEW_MEDIA,rickshaw_family,"{'contact': 'মেয়ে', 'media_type': 'ভিডিও'}"
+"মেয়ে একটা প্রেসক্রিপশন দিছে, বাইর কর তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'মেয়ে', 'media_type': 'প্রেসক্রিপশন'}"
+"মেয়ে একটা প্রেসক্রিপশন পাঠাইছে, খোল তো",VIEW_MEDIA,rickshaw_family,"{'contact': 'মেয়ে', 'media_type': 'প্রেসক্রিপশন'}"
+"মেয়ে একটা প্রেসক্রিপশন দিছে, ওপেন কর",VIEW_MEDIA,rickshaw_family,"{'contact': 'মেয়ে', 'media_type': 'প্রেসক্রিপশন'}"
+"মেয়ে একটা প্রেসক্রিপশন পাঠাইছে, দেখাও তো আমারে",VIEW_MEDIA,rickshaw_family,"{'contact': 'মেয়ে', 'media_type': 'প্রেসক্রিপশন'}"
+"মেয়ে একটা প্রেসক্রিপশন দিছে, দেখতে চাই",VIEW_MEDIA,rickshaw_family,"{'contact': 'মেয়ে', 'media_type': 'প্রেসক্রিপশন'}"
+"boss file ekta WhatsApp e pathiyeche, ber koro to",VIEW_MEDIA,young_office_worker,"{'contact': 'boss', 'media_type': 'file'}"
+"boss file WhatsApp e diche, open kor",VIEW_MEDIA,young_office_worker,"{'contact': 'boss', 'media_type': 'file'}"
+"boss file mail e diche, dekhao to",VIEW_MEDIA,young_office_worker,"{'contact': 'boss', 'media_type': 'file'}"
+"boss document ekta WhatsApp e pathiyeche, ber koro to",VIEW_MEDIA,young_office_worker,"{'contact': 'boss', 'media_type': 'document'}"
+"boss document WhatsApp e diche, open kor",VIEW_MEDIA,young_office_worker,"{'contact': 'boss', 'media_type': 'document'}"
+"boss document mail e diche, dekhao to",VIEW_MEDIA,young_office_worker,"{'contact': 'boss', 'media_type': 'document'}"
+"boss PDF ekta WhatsApp e pathiyeche, ber koro to",VIEW_MEDIA,young_office_worker,"{'contact': 'boss', 'media_type': 'PDF'}"
+"boss PDF WhatsApp e diche, open kor",VIEW_MEDIA,young_office_worker,"{'contact': 'boss', 'media_type': 'PDF'}"
+"boss PDF mail e diche, dekhao to",VIEW_MEDIA,young_office_worker,"{'contact': 'boss', 'media_type': 'PDF'}"
+"boss picture ekta WhatsApp e pathiyeche, ber koro to",VIEW_MEDIA,young_office_worker,"{'contact': 'boss', 'media_type': 'picture'}"
+"boss picture WhatsApp e diche, open kor",VIEW_MEDIA,young_office_worker,"{'contact': 'boss', 'media_type': 'picture'}"
+"boss picture mail e diche, dekhao to",VIEW_MEDIA,young_office_worker,"{'contact': 'boss', 'media_type': 'picture'}"
+"boss chobi ekta WhatsApp e pathiyeche, ber koro to",VIEW_MEDIA,young_office_worker,"{'contact': 'boss', 'media_type': 'chobi'}"
+"boss chobi WhatsApp e diche, open kor",VIEW_MEDIA,young_office_worker,"{'contact': 'boss', 'media_type': 'chobi'}"
+"boss chobi mail e diche, dekhao to",VIEW_MEDIA,young_office_worker,"{'contact': 'boss', 'media_type': 'chobi'}"
+"HR file ekta WhatsApp e pathiyeche, ber koro to",VIEW_MEDIA,young_office_worker,"{'contact': 'HR', 'media_type': 'file'}"
+"HR file WhatsApp e diche, open kor",VIEW_MEDIA,young_office_worker,"{'contact': 'HR', 'media_type': 'file'}"
+"HR file mail e diche, dekhao to",VIEW_MEDIA,young_office_worker,"{'contact': 'HR', 'media_type': 'file'}"
+"HR document ekta WhatsApp e pathiyeche, ber koro to",VIEW_MEDIA,young_office_worker,"{'contact': 'HR', 'media_type': 'document'}"
+"HR document WhatsApp e diche, open kor",VIEW_MEDIA,young_office_worker,"{'contact': 'HR', 'media_type': 'document'}"
+"HR document mail e diche, dekhao to",VIEW_MEDIA,young_office_worker,"{'contact': 'HR', 'media_type': 'document'}"
+"HR PDF ekta WhatsApp e pathiyeche, ber koro to",VIEW_MEDIA,young_office_worker,"{'contact': 'HR', 'media_type': 'PDF'}"
+"HR PDF WhatsApp e diche, open kor",VIEW_MEDIA,young_office_worker,"{'contact': 'HR', 'media_type': 'PDF'}"
+"HR PDF mail e diche, dekhao to",VIEW_MEDIA,young_office_worker,"{'contact': 'HR', 'media_type': 'PDF'}"
+"HR picture ekta WhatsApp e pathiyeche, ber koro to",VIEW_MEDIA,young_office_worker,"{'contact': 'HR', 'media_type': 'picture'}"
+"HR picture WhatsApp e diche, open kor",VIEW_MEDIA,young_office_worker,"{'contact': 'HR', 'media_type': 'picture'}"
+"HR picture mail e diche, dekhao to",VIEW_MEDIA,young_office_worker,"{'contact': 'HR', 'media_type': 'picture'}"
+"HR chobi ekta WhatsApp e pathiyeche, ber koro to",VIEW_MEDIA,young_office_worker,"{'contact': 'HR', 'media_type': 'chobi'}"
+"HR chobi WhatsApp e diche, open kor",VIEW_MEDIA,young_office_worker,"{'contact': 'HR', 'media_type': 'chobi'}"
+"HR chobi mail e diche, dekhao to",VIEW_MEDIA,young_office_worker,"{'contact': 'HR', 'media_type': 'chobi'}"
+"client file ekta WhatsApp e pathiyeche, ber koro to",VIEW_MEDIA,young_office_worker,"{'contact': 'client', 'media_type': 'file'}"
+"client file WhatsApp e diche, open kor",VIEW_MEDIA,young_office_worker,"{'contact': 'client', 'media_type': 'file'}"
+"client file mail e diche, dekhao to",VIEW_MEDIA,young_office_worker,"{'contact': 'client', 'media_type': 'file'}"
+"client document ekta WhatsApp e pathiyeche, ber koro to",VIEW_MEDIA,young_office_worker,"{'contact': 'client', 'media_type': 'document'}"
+"client document WhatsApp e diche, open kor",VIEW_MEDIA,young_office_worker,"{'contact': 'client', 'media_type': 'document'}"
+"client document mail e diche, dekhao to",VIEW_MEDIA,young_office_worker,"{'contact': 'client', 'media_type': 'document'}"
+"client PDF ekta WhatsApp e pathiyeche, ber koro to",VIEW_MEDIA,young_office_worker,"{'contact': 'client', 'media_type': 'PDF'}"
+"client PDF WhatsApp e diche, open kor",VIEW_MEDIA,young_office_worker,"{'contact': 'client', 'media_type': 'PDF'}"
+"client PDF mail e diche, dekhao to",VIEW_MEDIA,young_office_worker,"{'contact': 'client', 'media_type': 'PDF'}"
+"client picture ekta WhatsApp e pathiyeche, ber koro to",VIEW_MEDIA,young_office_worker,"{'contact': 'client', 'media_type': 'picture'}"
+"client picture WhatsApp e diche, open kor",VIEW_MEDIA,young_office_worker,"{'contact': 'client', 'media_type': 'picture'}"
+"client picture mail e diche, dekhao to",VIEW_MEDIA,young_office_worker,"{'contact': 'client', 'media_type': 'picture'}"
+"client chobi ekta WhatsApp e pathiyeche, ber koro to",VIEW_MEDIA,young_office_worker,"{'contact': 'client', 'media_type': 'chobi'}"
+"client chobi WhatsApp e diche, open kor",VIEW_MEDIA,young_office_worker,"{'contact': 'client', 'media_type': 'chobi'}"
+"client chobi mail e diche, dekhao to",VIEW_MEDIA,young_office_worker,"{'contact': 'client', 'media_type': 'chobi'}"
+"colleague file ekta WhatsApp e pathiyeche, ber koro to",VIEW_MEDIA,young_office_worker,"{'contact': 'colleague', 'media_type': 'file'}"
+"colleague file WhatsApp e diche, open kor",VIEW_MEDIA,young_office_worker,"{'contact': 'colleague', 'media_type': 'file'}"
+"colleague file mail e diche, dekhao to",VIEW_MEDIA,young_office_worker,"{'contact': 'colleague', 'media_type': 'file'}"
+"colleague document ekta WhatsApp e pathiyeche, ber koro to",VIEW_MEDIA,young_office_worker,"{'contact': 'colleague', 'media_type': 'document'}"
+"colleague document WhatsApp e diche, open kor",VIEW_MEDIA,young_office_worker,"{'contact': 'colleague', 'media_type': 'document'}"
+"colleague document mail e diche, dekhao to",VIEW_MEDIA,young_office_worker,"{'contact': 'colleague', 'media_type': 'document'}"
+"colleague PDF ekta WhatsApp e pathiyeche, ber koro to",VIEW_MEDIA,young_office_worker,"{'contact': 'colleague', 'media_type': 'PDF'}"
+"colleague PDF WhatsApp e diche, open kor",VIEW_MEDIA,young_office_worker,"{'contact': 'colleague', 'media_type': 'PDF'}"
+"colleague PDF mail e diche, dekhao to",VIEW_MEDIA,young_office_worker,"{'contact': 'colleague', 'media_type': 'PDF'}"
+"colleague picture ekta WhatsApp e pathiyeche, ber koro to",VIEW_MEDIA,young_office_worker,"{'contact': 'colleague', 'media_type': 'picture'}"
+"colleague picture WhatsApp e diche, open kor",VIEW_MEDIA,young_office_worker,"{'contact': 'colleague', 'media_type': 'picture'}"
+"colleague picture mail e diche, dekhao to",VIEW_MEDIA,young_office_worker,"{'contact': 'colleague', 'media_type': 'picture'}"
+"colleague chobi ekta WhatsApp e pathiyeche, ber koro to",VIEW_MEDIA,young_office_worker,"{'contact': 'colleague', 'media_type': 'chobi'}"
+"colleague chobi WhatsApp e diche, open kor",VIEW_MEDIA,young_office_worker,"{'contact': 'colleague', 'media_type': 'chobi'}"
+"colleague chobi mail e diche, dekhao to",VIEW_MEDIA,young_office_worker,"{'contact': 'colleague', 'media_type': 'chobi'}"
+এই ছবিটা পিডিএফ বানা তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'এই ছবিটা'}
+এই ছবিটা পিডিএফ কর তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'এই ছবিটা'}
+এই ছবিটা পিডিএফ খাড়া কর তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'এই ছবিটা'}
+এই ছবিটা পিডিএফ মার তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'এই ছবিটা'}
+এই ছবিটা পিডিএফ বানিয়ে দে তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'এই ছবিটা'}
+এই ছবিটা পিডিএফ ফাইল করো তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'এই ছবিটা'}
+এই ছবিডা পিডিএফ বানা তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'এই ছবিডা'}
+এই ছবিডা পিডিএফ কর তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'এই ছবিডা'}
+এই ছবিডা পিডিএফ খাড়া কর তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'এই ছবিডা'}
+এই ছবিডা পিডিএফ মার তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'এই ছবিডা'}
+এই ছবিডা পিডিএফ বানিয়ে দে তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'এই ছবিডা'}
+এই ছবিডা পিডিএফ ফাইল করো তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'এই ছবিডা'}
+লাস্টের ছবিটা পিডিএফ বানা তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'লাস্টের ছবিটা'}
+লাস্টের ছবিটা পিডিএফ কর তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'লাস্টের ছবিটা'}
+লাস্টের ছবিটা পিডিএফ খাড়া কর তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'লাস্টের ছবিটা'}
+লাস্টের ছবিটা পিডিএফ মার তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'লাস্টের ছবিটা'}
+লাস্টের ছবিটা পিডিএফ বানিয়ে দে তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'লাস্টের ছবিটা'}
+লাস্টের ছবিটা পিডিএফ ফাইল করো তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'লাস্টের ছবিটা'}
+লাস্টের ছবিডা পিডিএফ বানা তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'লাস্টের ছবিডা'}
+লাস্টের ছবিডা পিডিএফ কর তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'লাস্টের ছবিডা'}
+লাস্টের ছবিডা পিডিএফ খাড়া কর তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'লাস্টের ছবিডা'}
+লাস্টের ছবিডা পিডিএফ মার তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'লাস্টের ছবিডা'}
+লাস্টের ছবিডা পিডিএফ বানিয়ে দে তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'লাস্টের ছবিডা'}
+লাস্টের ছবিডা পিডিএফ ফাইল করো তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'লাস্টের ছবিডা'}
+এই ফাইলটা পিডিএফ বানা তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'এই ফাইলটা'}
+এই ফাইলটা পিডিএফ কর তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'এই ফাইলটা'}
+এই ফাইলটা পিডিএফ খাড়া কর তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'এই ফাইলটা'}
+এই ফাইলটা পিডিএফ মার তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'এই ফাইলটা'}
+এই ফাইলটা পিডিএফ বানিয়ে দে তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'এই ফাইলটা'}
+এই ফাইলটা পিডিএফ ফাইল করো তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'এই ফাইলটা'}
+এই ফাইলডা পিডিএফ বানা তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'এই ফাইলডা'}
+এই ফাইলডা পিডিএফ কর তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'এই ফাইলডা'}
+এই ফাইলডা পিডিএফ খাড়া কর তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'এই ফাইলডা'}
+এই ফাইলডা পিডিএফ মার তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'এই ফাইলডা'}
+এই ফাইলডা পিডিএফ বানিয়ে দে তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'এই ফাইলডা'}
+এই ফাইলডা পিডিএফ ফাইল করো তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'এই ফাইলডা'}
+কাগজটা পিডিএফ বানা তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'কাগজটা'}
+কাগজটা পিডিএফ কর তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'কাগজটা'}
+কাগজটা পিডিএফ খাড়া কর তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'কাগজটা'}
+কাগজটা পিডিএফ মার তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'কাগজটা'}
+কাগজটা পিডিএফ বানিয়ে দে তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'কাগজটা'}
+কাগজটা পিডিএফ ফাইল করো তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'কাগজটা'}
+কাগজডা পিডিএফ বানা তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'কাগজডা'}
+কাগজডা পিডিএফ কর তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'কাগজডা'}
+কাগজডা পিডিএফ খাড়া কর তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'কাগজডা'}
+কাগজডা পিডিএফ মার তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'কাগজডা'}
+কাগজডা পিডিএফ বানিয়ে দে তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'কাগজডা'}
+কাগজডা পিডিএফ ফাইল করো তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'কাগজডা'}
+ডকুমেন্টটা পিডিএফ বানা তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'ডকুমেন্টটা'}
+ডকুমেন্টটা পিডিএফ কর তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'ডকুমেন্টটা'}
+ডকুমেন্টটা পিডিএফ খাড়া কর তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'ডকুমেন্টটা'}
+ডকুমেন্টটা পিডিএফ মার তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'ডকুমেন্টটা'}
+ডকুমেন্টটা পিডিএফ বানিয়ে দে তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'ডকুমেন্টটা'}
+ডকুমেন্টটা পিডিএফ ফাইল করো তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'ডকুমেন্টটা'}
+ছবিগুলো পিডিএফ বানা তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'ছবিগুলো'}
+ছবিগুলো পিডিএফ কর তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'ছবিগুলো'}
+ছবিগুলো পিডিএফ খাড়া কর তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'ছবিগুলো'}
+ছবিগুলো পিডিএফ মার তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'ছবিগুলো'}
+ছবিগুলো পিডিএফ বানিয়ে দে তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'ছবিগুলো'}
+ছবিগুলো পিডিএফ ফাইল করো তো,IMG_TO_PDF,rickshaw_family,{'target_file': 'ছবিগুলো'}
+ei chobi ta PDF banaye dao,IMG_TO_PDF,young_office_worker,{'target_file': 'ei chobi ta'}
+ei chobi ta PDF e convert koro,IMG_TO_PDF,young_office_worker,{'target_file': 'ei chobi ta'}
+ei chobi ta PDF format e convert maro,IMG_TO_PDF,young_office_worker,{'target_file': 'ei chobi ta'}
+ei chobi ta PDF bana to dost,IMG_TO_PDF,young_office_worker,{'target_file': 'ei chobi ta'}
+ei chobi ta PDF kore de bro,IMG_TO_PDF,young_office_worker,{'target_file': 'ei chobi ta'}
+ei chobi ta PDF e convert maar,IMG_TO_PDF,young_office_worker,{'target_file': 'ei chobi ta'}
+last er invoice ta PDF banaye dao,IMG_TO_PDF,young_office_worker,{'target_file': 'last er invoice ta'}
+last er invoice ta PDF e convert koro,IMG_TO_PDF,young_office_worker,{'target_file': 'last er invoice ta'}
+last er invoice ta PDF format e convert maro,IMG_TO_PDF,young_office_worker,{'target_file': 'last er invoice ta'}
+last er invoice ta PDF bana to dost,IMG_TO_PDF,young_office_worker,{'target_file': 'last er invoice ta'}
+last er invoice ta PDF kore de bro,IMG_TO_PDF,young_office_worker,{'target_file': 'last er invoice ta'}
+last er invoice ta PDF e convert maar,IMG_TO_PDF,young_office_worker,{'target_file': 'last er invoice ta'}
+ei document ta PDF banaye dao,IMG_TO_PDF,young_office_worker,{'target_file': 'ei document ta'}
+ei document ta PDF e convert koro,IMG_TO_PDF,young_office_worker,{'target_file': 'ei document ta'}
+ei document ta PDF format e convert maro,IMG_TO_PDF,young_office_worker,{'target_file': 'ei document ta'}
+ei document ta PDF bana to dost,IMG_TO_PDF,young_office_worker,{'target_file': 'ei document ta'}
+ei document ta PDF kore de bro,IMG_TO_PDF,young_office_worker,{'target_file': 'ei document ta'}
+ei document ta PDF e convert maar,IMG_TO_PDF,young_office_worker,{'target_file': 'ei document ta'}
+scanner er file ta PDF banaye dao,IMG_TO_PDF,young_office_worker,{'target_file': 'scanner er file ta'}
+scanner er file ta PDF e convert koro,IMG_TO_PDF,young_office_worker,{'target_file': 'scanner er file ta'}
+scanner er file ta PDF format e convert maro,IMG_TO_PDF,young_office_worker,{'target_file': 'scanner er file ta'}
+scanner er file ta PDF bana to dost,IMG_TO_PDF,young_office_worker,{'target_file': 'scanner er file ta'}
+scanner er file ta PDF kore de bro,IMG_TO_PDF,young_office_worker,{'target_file': 'scanner er file ta'}
+scanner er file ta PDF e convert maar,IMG_TO_PDF,young_office_worker,{'target_file': 'scanner er file ta'}
+notes gular chobi PDF banaye dao,IMG_TO_PDF,young_office_worker,{'target_file': 'notes gular chobi'}
+notes gular chobi PDF e convert koro,IMG_TO_PDF,young_office_worker,{'target_file': 'notes gular chobi'}
+notes gular chobi PDF format e convert maro,IMG_TO_PDF,young_office_worker,{'target_file': 'notes gular chobi'}
+notes gular chobi PDF bana to dost,IMG_TO_PDF,young_office_worker,{'target_file': 'notes gular chobi'}
+notes gular chobi PDF kore de bro,IMG_TO_PDF,young_office_worker,{'target_file': 'notes gular chobi'}
+notes gular chobi PDF e convert maar,IMG_TO_PDF,young_office_worker,{'target_file': 'notes gular chobi'}
+receipt ta PDF banaye dao,IMG_TO_PDF,young_office_worker,{'target_file': 'receipt ta'}
+receipt ta PDF e convert koro,IMG_TO_PDF,young_office_worker,{'target_file': 'receipt ta'}
+receipt ta PDF format e convert maro,IMG_TO_PDF,young_office_worker,{'target_file': 'receipt ta'}
+receipt ta PDF bana to dost,IMG_TO_PDF,young_office_worker,{'target_file': 'receipt ta'}
+receipt ta PDF kore de bro,IMG_TO_PDF,young_office_worker,{'target_file': 'receipt ta'}
+receipt ta PDF e convert maar,IMG_TO_PDF,young_office_worker,{'target_file': 'receipt ta'}
+করিম ভাইরে এই ছবিটা হোয়াটসঅ্যাপে পাঠা,SEND_WHATSAPP,young_office_worker,"{'contact': 'করিম ভাই', 'target_file': 'এই ছবিটা'}"
+করিম ভাইরে এই ছবিটা হোয়াটসঅ্যাপে পাঠিয়ে দাও,SEND_WHATSAPP,young_office_worker,"{'contact': 'করিম ভাই', 'target_file': 'এই ছবিটা'}"
+করিম ভাইরে এই ছবিটা হোয়াটসঅ্যাপে মার,SEND_WHATSAPP,young_office_worker,"{'contact': 'করিম ভাই', 'target_file': 'এই ছবিটা'}"
+করিম ভাইরে এই ছবিটা হোয়াটসঅ্যাপে ছুড়ে দে,SEND_WHATSAPP,young_office_worker,"{'contact': 'করিম ভাই', 'target_file': 'এই ছবিটা'}"
+করিম ভাইরে এই ছবিটা WhatsApp e forward koro,SEND_WHATSAPP,young_office_worker,"{'contact': 'করিম ভাই', 'target_file': 'এই ছবিটা'}"
+করিম ভাইরে এই ছবিটা WhatsApp e pathiye de to,SEND_WHATSAPP,young_office_worker,"{'contact': 'করিম ভাই', 'target_file': 'এই ছবিটা'}"
+করিম ভাইরে এই ছবিডা হোয়াটসঅ্যাপে পাঠা,SEND_WHATSAPP,young_office_worker,"{'contact': 'করিম ভাই', 'target_file': 'এই ছবিডা'}"
+করিম ভাইরে এই ছবিডা হোয়াটসঅ্যাপে পাঠিয়ে দাও,SEND_WHATSAPP,young_office_worker,"{'contact': 'করিম ভাই', 'target_file': 'এই ছবিডা'}"
+করিম ভাইরে এই ছবিডা হোয়াটসঅ্যাপে মার,SEND_WHATSAPP,young_office_worker,"{'contact': 'করিম ভাই', 'target_file': 'এই ছবিডা'}"
+করিম ভাইরে এই ছবিডা হোয়াটসঅ্যাপে ছুড়ে দে,SEND_WHATSAPP,young_office_worker,"{'contact': 'করিম ভাই', 'target_file': 'এই ছবিডা'}"
+করিম ভাইরে এই ছবিডা WhatsApp e forward koro,SEND_WHATSAPP,young_office_worker,"{'contact': 'করিম ভাই', 'target_file': 'এই ছবিডা'}"
+করিম ভাইরে এই ছবিডা WhatsApp e pathiye de to,SEND_WHATSAPP,young_office_worker,"{'contact': 'করিম ভাই', 'target_file': 'এই ছবিডা'}"
+করিম ভাইরে এই ফাইলটা হোয়াটসঅ্যাপে পাঠা,SEND_WHATSAPP,young_office_worker,"{'contact': 'করিম ভাই', 'target_file': 'এই ফাইলটা'}"
+করিম ভাইরে এই ফাইলটা হোয়াটসঅ্যাপে পাঠিয়ে দাও,SEND_WHATSAPP,young_office_worker,"{'contact': 'করিম ভাই', 'target_file': 'এই ফাইলটা'}"
+করিম ভাইরে এই ফাইলটা হোয়াটসঅ্যাপে মার,SEND_WHATSAPP,young_office_worker,"{'contact': 'করিম ভাই', 'target_file': 'এই ফাইলটা'}"
+করিম ভাইরে এই ফাইলটা হোয়াটসঅ্যাপে ছুড়ে দে,SEND_WHATSAPP,young_office_worker,"{'contact': 'করিম ভাই', 'target_file': 'এই ফাইলটা'}"
+করিম ভাইরে এই ফাইলটা WhatsApp e forward koro,SEND_WHATSAPP,young_office_worker,"{'contact': 'করিম ভাই', 'target_file': 'এই ফাইলটা'}"
+করিম ভাইরে এই ফাইলটা WhatsApp e pathiye de to,SEND_WHATSAPP,young_office_worker,"{'contact': 'করিম ভাই', 'target_file': 'এই ফাইলটা'}"
+করিম ভাইরে পিডিএফটা হোয়াটসঅ্যাপে পাঠা,SEND_WHATSAPP,young_office_worker,"{'contact': 'করিম ভাই', 'target_file': 'পিডিএফটা'}"
+করিম ভাইরে পিডিএফটা হোয়াটসঅ্যাপে পাঠিয়ে দাও,SEND_WHATSAPP,young_office_worker,"{'contact': 'করিম ভাই', 'target_file': 'পিডিএফটা'}"
+করিম ভাইরে পিডিএফটা হোয়াটসঅ্যাপে মার,SEND_WHATSAPP,young_office_worker,"{'contact': 'করিম ভাই', 'target_file': 'পিডিএফটা'}"
+করিম ভাইরে পিডিএফটা হোয়াটসঅ্যাপে ছুড়ে দে,SEND_WHATSAPP,young_office_worker,"{'contact': 'করিম ভাই', 'target_file': 'পিডিএফটা'}"
+করিম ভাইরে পিডিএফটা WhatsApp e forward koro,SEND_WHATSAPP,young_office_worker,"{'contact': 'করিম ভাই', 'target_file': 'পিডিএফটা'}"
+করিম ভাইরে পিডিএফটা WhatsApp e pathiye de to,SEND_WHATSAPP,young_office_worker,"{'contact': 'করিম ভাই', 'target_file': 'পিডিএফটা'}"
+করিম ভাইরে invoice ta হোয়াটসঅ্যাপে পাঠা,SEND_WHATSAPP,young_office_worker,"{'contact': 'করিম ভাই', 'target_file': 'invoice ta'}"
+করিম ভাইরে invoice ta হোয়াটসঅ্যাপে পাঠিয়ে দাও,SEND_WHATSAPP,young_office_worker,"{'contact': 'করিম ভাই', 'target_file': 'invoice ta'}"
+করিম ভাইরে invoice ta হোয়াটসঅ্যাপে মার,SEND_WHATSAPP,young_office_worker,"{'contact': 'করিম ভাই', 'target_file': 'invoice ta'}"
+করিম ভাইরে invoice ta হোয়াটসঅ্যাপে ছুড়ে দে,SEND_WHATSAPP,young_office_worker,"{'contact': 'করিম ভাই', 'target_file': 'invoice ta'}"
+করিম ভাইরে invoice ta WhatsApp e forward koro,SEND_WHATSAPP,young_office_worker,"{'contact': 'করিম ভাই', 'target_file': 'invoice ta'}"
+করিম ভাইরে invoice ta WhatsApp e pathiye de to,SEND_WHATSAPP,young_office_worker,"{'contact': 'করিম ভাই', 'target_file': 'invoice ta'}"
+করিম ভাইরে file ta হোয়াটসঅ্যাপে পাঠা,SEND_WHATSAPP,young_office_worker,"{'contact': 'করিম ভাই', 'target_file': 'file ta'}"
+করিম ভাইরে file ta হোয়াটসঅ্যাপে পাঠিয়ে দাও,SEND_WHATSAPP,young_office_worker,"{'contact': 'করিম ভাই', 'target_file': 'file ta'}"
+করিম ভাইরে file ta হোয়াটসঅ্যাপে মার,SEND_WHATSAPP,young_office_worker,"{'contact': 'করিম ভাই', 'target_file': 'file ta'}"
+করিম ভাইরে file ta হোয়াটসঅ্যাপে ছুড়ে দে,SEND_WHATSAPP,young_office_worker,"{'contact': 'করিম ভাই', 'target_file': 'file ta'}"
+করিম ভাইরে file ta WhatsApp e forward koro,SEND_WHATSAPP,young_office_worker,"{'contact': 'করিম ভাই', 'target_file': 'file ta'}"
+করিম ভাইরে file ta WhatsApp e pathiye de to,SEND_WHATSAPP,young_office_worker,"{'contact': 'করিম ভাই', 'target_file': 'file ta'}"
+তানভীর ভাইরে এই ছবিটা হোয়াটসঅ্যাপে পাঠা,SEND_WHATSAPP,young_office_worker,"{'contact': 'তানভীর ভাই', 'target_file': 'এই ছবিটা'}"
+তানভীর ভাইরে এই ছবিটা হোয়াটসঅ্যাপে পাঠিয়ে দাও,SEND_WHATSAPP,young_office_worker,"{'contact': 'তানভীর ভাই', 'target_file': 'এই ছবিটা'}"
+তানভীর ভাইরে এই ছবিটা হোয়াটসঅ্যাপে মার,SEND_WHATSAPP,young_office_worker,"{'contact': 'তানভীর ভাই', 'target_file': 'এই ছবিটা'}"
+তানভীর ভাইরে এই ছবিটা হোয়াটসঅ্যাপে ছুড়ে দে,SEND_WHATSAPP,young_office_worker,"{'contact': 'তানভীর ভাই', 'target_file': 'এই ছবিটা'}"
+তানভীর ভাইরে এই ছবিটা WhatsApp e forward koro,SEND_WHATSAPP,young_office_worker,"{'contact': 'তানভীর ভাই', 'target_file': 'এই ছবিটা'}"
+তানভীর ভাইরে এই ছবিটা WhatsApp e pathiye de to,SEND_WHATSAPP,young_office_worker,"{'contact': 'তানভীর ভাই', 'target_file': 'এই ছবিটা'}"
+তানভীর ভাইরে এই ছবিডা হোয়াটসঅ্যাপে পাঠা,SEND_WHATSAPP,young_office_worker,"{'contact': 'তানভীর ভাই', 'target_file': 'এই ছবিডা'}"
+তানভীর ভাইরে এই ছবিডা হোয়াটসঅ্যাপে পাঠিয়ে দাও,SEND_WHATSAPP,young_office_worker,"{'contact': 'তানভীর ভাই', 'target_file': 'এই ছবিডা'}"
+তানভীর ভাইরে এই ছবিডা হোয়াটসঅ্যাপে মার,SEND_WHATSAPP,young_office_worker,"{'contact': 'তানভীর ভাই', 'target_file': 'এই ছবিডা'}"
+তানভীর ভাইরে এই ছবিডা হোয়াটসঅ্যাপে ছুড়ে দে,SEND_WHATSAPP,young_office_worker,"{'contact': 'তানভীর ভাই', 'target_file': 'এই ছবিডা'}"
+তানভীর ভাইরে এই ছবিডা WhatsApp e forward koro,SEND_WHATSAPP,young_office_worker,"{'contact': 'তানভীর ভাই', 'target_file': 'এই ছবিডা'}"
+তানভীর ভাইরে এই ছবিডা WhatsApp e pathiye de to,SEND_WHATSAPP,young_office_worker,"{'contact': 'তানভীর ভাই', 'target_file': 'এই ছবিডা'}"
+তানভীর ভাইরে এই ফাইলটা হোয়াটসঅ্যাপে পাঠা,SEND_WHATSAPP,young_office_worker,"{'contact': 'তানভীর ভাই', 'target_file': 'এই ফাইলটা'}"
+তানভীর ভাইরে এই ফাইলটা হোয়াটসঅ্যাপে পাঠিয়ে দাও,SEND_WHATSAPP,young_office_worker,"{'contact': 'তানভীর ভাই', 'target_file': 'এই ফাইলটা'}"
+তানভীর ভাইরে এই ফাইলটা হোয়াটসঅ্যাপে মার,SEND_WHATSAPP,young_office_worker,"{'contact': 'তানভীর ভাই', 'target_file': 'এই ফাইলটা'}"
+তানভীর ভাইরে এই ফাইলটা হোয়াটসঅ্যাপে ছুড়ে দে,SEND_WHATSAPP,young_office_worker,"{'contact': 'তানভীর ভাই', 'target_file': 'এই ফাইলটা'}"
+তানভীর ভাইরে এই ফাইলটা WhatsApp e forward koro,SEND_WHATSAPP,young_office_worker,"{'contact': 'তানভীর ভাই', 'target_file': 'এই ফাইলটা'}"
+তানভীর ভাইরে এই ফাইলটা WhatsApp e pathiye de to,SEND_WHATSAPP,young_office_worker,"{'contact': 'তানভীর ভাই', 'target_file': 'এই ফাইলটা'}"
+তানভীর ভাইরে পিডিএফটা হোয়াটসঅ্যাপে পাঠা,SEND_WHATSAPP,young_office_worker,"{'contact': 'তানভীর ভাই', 'target_file': 'পিডিএফটা'}"
+তানভীর ভাইরে পিডিএফটা হোয়াটসঅ্যাপে পাঠিয়ে দাও,SEND_WHATSAPP,young_office_worker,"{'contact': 'তানভীর ভাই', 'target_file': 'পিডিএফটা'}"
+তানভীর ভাইরে পিডিএফটা হোয়াটসঅ্যাপে মার,SEND_WHATSAPP,young_office_worker,"{'contact': 'তানভীর ভাই', 'target_file': 'পিডিএফটা'}"
+তানভীর ভাইরে পিডিএফটা হোয়াটসঅ্যাপে ছুড়ে দে,SEND_WHATSAPP,young_office_worker,"{'contact': 'তানভীর ভাই', 'target_file': 'পিডিএফটা'}"
+তানভীর ভাইরে পিডিএফটা WhatsApp e forward koro,SEND_WHATSAPP,young_office_worker,"{'contact': 'তানভীর ভাই', 'target_file': 'পিডিএফটা'}"
+তানভীর ভাইরে পিডিএফটা WhatsApp e pathiye de to,SEND_WHATSAPP,young_office_worker,"{'contact': 'তানভীর ভাই', 'target_file': 'পিডিএফটা'}"
+তানভীর ভাইরে invoice ta হোয়াটসঅ্যাপে পাঠা,SEND_WHATSAPP,young_office_worker,"{'contact': 'তানভীর ভাই', 'target_file': 'invoice ta'}"
+তানভীর ভাইরে invoice ta হোয়াটসঅ্যাপে পাঠিয়ে দাও,SEND_WHATSAPP,young_office_worker,"{'contact': 'তানভীর ভাই', 'target_file': 'invoice ta'}"
+তানভীর ভাইরে invoice ta হোয়াটসঅ্যাপে মার,SEND_WHATSAPP,young_office_worker,"{'contact': 'তানভীর ভাই', 'target_file': 'invoice ta'}"
+তানভীর ভাইরে invoice ta হোয়াটসঅ্যাপে ছুড়ে দে,SEND_WHATSAPP,young_office_worker,"{'contact': 'তানভীর ভাই', 'target_file': 'invoice ta'}"
+তানভীর ভাইরে invoice ta WhatsApp e forward koro,SEND_WHATSAPP,young_office_worker,"{'contact': 'তানভীর ভাই', 'target_file': 'invoice ta'}"
+তানভীর ভাইরে invoice ta WhatsApp e pathiye de to,SEND_WHATSAPP,young_office_worker,"{'contact': 'তানভীর ভাই', 'target_file': 'invoice ta'}"
+তানভীর ভাইরে file ta হোয়াটসঅ্যাপে পাঠা,SEND_WHATSAPP,young_office_worker,"{'contact': 'তানভীর ভাই', 'target_file': 'file ta'}"
+তানভীর ভাইরে file ta হোয়াটসঅ্যাপে পাঠিয়ে দাও,SEND_WHATSAPP,young_office_worker,"{'contact': 'তানভীর ভাই', 'target_file': 'file ta'}"
+তানভীর ভাইরে file ta হোয়াটসঅ্যাপে মার,SEND_WHATSAPP,young_office_worker,"{'contact': 'তানভীর ভাই', 'target_file': 'file ta'}"
+তানভীর ভাইরে file ta হোয়াটসঅ্যাপে ছুড়ে দে,SEND_WHATSAPP,young_office_worker,"{'contact': 'তানভীর ভাই', 'target_file': 'file ta'}"
+তানভীর ভাইরে file ta WhatsApp e forward koro,SEND_WHATSAPP,young_office_worker,"{'contact': 'তানভীর ভাই', 'target_file': 'file ta'}"
+তানভীর ভাইরে file ta WhatsApp e pathiye de to,SEND_WHATSAPP,young_office_worker,"{'contact': 'তানভীর ভাই', 'target_file': 'file ta'}"
+আম্মুরে এই ছবিটা হোয়াটসঅ্যাপে পাঠা,SEND_WHATSAPP,young_office_worker,"{'contact': 'আম্মু', 'target_file': 'এই ছবিটা'}"
+আম্মুরে এই ছবিটা হোয়াটসঅ্যাপে পাঠিয়ে দাও,SEND_WHATSAPP,young_office_worker,"{'contact': 'আম্মু', 'target_file': 'এই ছবিটা'}"
+আম্মুরে এই ছবিটা হোয়াটসঅ্যাপে মার,SEND_WHATSAPP,young_office_worker,"{'contact': 'আম্মু', 'target_file': 'এই ছবিটা'}"
+আম্মুরে এই ছবিটা হোয়াটসঅ্যাপে ছুড়ে দে,SEND_WHATSAPP,young_office_worker,"{'contact': 'আম্মু', 'target_file': 'এই ছবিটা'}"
+আম্মুরে এই ছবিটা WhatsApp e forward koro,SEND_WHATSAPP,young_office_worker,"{'contact': 'আম্মু', 'target_file': 'এই ছবিটা'}"
+আম্মুরে এই ছবিটা WhatsApp e pathiye de to,SEND_WHATSAPP,young_office_worker,"{'contact': 'আম্মু', 'target_file': 'এই ছবিটা'}"
+আম্মুরে এই ছবিডা হোয়াটসঅ্যাপে পাঠা,SEND_WHATSAPP,young_office_worker,"{'contact': 'আম্মু', 'target_file': 'এই ছবিডা'}"
+আম্মুরে এই ছবিডা হোয়াটসঅ্যাপে পাঠিয়ে দাও,SEND_WHATSAPP,young_office_worker,"{'contact': 'আম্মু', 'target_file': 'এই ছবিডা'}"
+আম্মুরে এই ছবিডা হোয়াটসঅ্যাপে মার,SEND_WHATSAPP,young_office_worker,"{'contact': 'আম্মু', 'target_file': 'এই ছবিডা'}"
+আম্মুরে এই ছবিডা হোয়াটসঅ্যাপে ছুড়ে দে,SEND_WHATSAPP,young_office_worker,"{'contact': 'আম্মু', 'target_file': 'এই ছবিডা'}"
+আম্মুরে এই ছবিডা WhatsApp e forward koro,SEND_WHATSAPP,young_office_worker,"{'contact': 'আম্মু', 'target_file': 'এই ছবিডা'}"
+আম্মুরে এই ছবিডা WhatsApp e pathiye de to,SEND_WHATSAPP,young_office_worker,"{'contact': 'আম্মু', 'target_file': 'এই ছবিডা'}"
+আম্মুরে এই ফাইলটা হোয়াটসঅ্যাপে পাঠা,SEND_WHATSAPP,young_office_worker,"{'contact': 'আম্মু', 'target_file': 'এই ফাইলটা'}"
+আম্মুরে এই ফাইলটা হোয়াটসঅ্যাপে পাঠিয়ে দাও,SEND_WHATSAPP,young_office_worker,"{'contact': 'আম্মু', 'target_file': 'এই ফাইলটা'}"
+আম্মুরে এই ফাইলটা হোয়াটসঅ্যাপে মার,SEND_WHATSAPP,young_office_worker,"{'contact': 'আম্মু', 'target_file': 'এই ফাইলটা'}"
+আম্মুরে এই ফাইলটা হোয়াটসঅ্যাপে ছুড়ে দে,SEND_WHATSAPP,young_office_worker,"{'contact': 'আম্মু', 'target_file': 'এই ফাইলটা'}"
+আম্মুরে এই ফাইলটা WhatsApp e forward koro,SEND_WHATSAPP,young_office_worker,"{'contact': 'আম্মু', 'target_file': 'এই ফাইলটা'}"
+আম্মুরে এই ফাইলটা WhatsApp e pathiye de to,SEND_WHATSAPP,young_office_worker,"{'contact': 'আম্মু', 'target_file': 'এই ফাইলটা'}"
+আম্মুরে পিডিএফটা হোয়াটসঅ্যাপে পাঠা,SEND_WHATSAPP,young_office_worker,"{'contact': 'আম্মু', 'target_file': 'পিডিএফটা'}"
+আম্মুরে পিডিএফটা হোয়াটসঅ্যাপে পাঠিয়ে দাও,SEND_WHATSAPP,young_office_worker,"{'contact': 'আম্মু', 'target_file': 'পিডিএফটা'}"
+আম্মুরে পিডিএফটা হোয়াটসঅ্যাপে মার,SEND_WHATSAPP,young_office_worker,"{'contact': 'আম্মু', 'target_file': 'পিডিএফটা'}"
+আম্মুরে পিডিএফটা হোয়াটসঅ্যাপে ছুড়ে দে,SEND_WHATSAPP,young_office_worker,"{'contact': 'আম্মু', 'target_file': 'পিডিএফটা'}"
+আম্মুরে পিডিএফটা WhatsApp e forward koro,SEND_WHATSAPP,young_office_worker,"{'contact': 'আম্মু', 'target_file': 'পিডিএফটা'}"
+আম্মুরে পিডিএফটা WhatsApp e pathiye de to,SEND_WHATSAPP,young_office_worker,"{'contact': 'আম্মু', 'target_file': 'পিডিএফটা'}"
+আম্মুরে invoice ta হোয়াটসঅ্যাপে পাঠা,SEND_WHATSAPP,young_office_worker,"{'contact': 'আম্মু', 'target_file': 'invoice ta'}"
+আম্মুরে invoice ta হোয়াটসঅ্যাপে পাঠিয়ে দাও,SEND_WHATSAPP,young_office_worker,"{'contact': 'আম্মু', 'target_file': 'invoice ta'}"
+আম্মুরে invoice ta হোয়াটসঅ্যাপে মার,SEND_WHATSAPP,young_office_worker,"{'contact': 'আম্মু', 'target_file': 'invoice ta'}"
+আম্মুরে invoice ta হোয়াটসঅ্যাপে ছুড়ে দে,SEND_WHATSAPP,young_office_worker,"{'contact': 'আম্মু', 'target_file': 'invoice ta'}"
+আম্মুরে invoice ta WhatsApp e forward koro,SEND_WHATSAPP,young_office_worker,"{'contact': 'আম্মু', 'target_file': 'invoice ta'}"
+আম্মুরে invoice ta WhatsApp e pathiye de to,SEND_WHATSAPP,young_office_worker,"{'contact': 'আম্মু', 'target_file': 'invoice ta'}"
+আম্মুরে file ta হোয়াটসঅ্যাপে পাঠা,SEND_WHATSAPP,young_office_worker,"{'contact': 'আম্মু', 'target_file': 'file ta'}"
+আম্মুরে file ta হোয়াটসঅ্যাপে পাঠিয়ে দাও,SEND_WHATSAPP,young_office_worker,"{'contact': 'আম্মু', 'target_file': 'file ta'}"
+আম্মুরে file ta হোয়াটসঅ্যাপে মার,SEND_WHATSAPP,young_office_worker,"{'contact': 'আম্মু', 'target_file': 'file ta'}"
+আম্মুরে file ta হোয়াটসঅ্যাপে ছুড়ে দে,SEND_WHATSAPP,young_office_worker,"{'contact': 'আম্মু', 'target_file': 'file ta'}"
+আম্মুরে file ta WhatsApp e forward koro,SEND_WHATSAPP,young_office_worker,"{'contact': 'আম্মু', 'target_file': 'file ta'}"
+আম্মুরে file ta WhatsApp e pathiye de to,SEND_WHATSAPP,young_office_worker,"{'contact': 'আম্মু', 'target_file': 'file ta'}"
+বউরে এই ছবিটা হোয়াটসঅ্যাপে পাঠা,SEND_WHATSAPP,young_office_worker,"{'contact': 'বউ', 'target_file': 'এই ছবিটা'}"
+বউরে এই ছবিটা হোয়াটসঅ্যাপে পাঠিয়ে দাও,SEND_WHATSAPP,young_office_worker,"{'contact': 'বউ', 'target_file': 'এই ছবিটা'}"
+বউরে এই ছবিটা হোয়াটসঅ্যাপে মার,SEND_WHATSAPP,young_office_worker,"{'contact': 'বউ', 'target_file': 'এই ছবিটা'}"
+বউরে এই ছবিটা হোয়াটসঅ্যাপে ছুড়ে দে,SEND_WHATSAPP,young_office_worker,"{'contact': 'বউ', 'target_file': 'এই ছবিটা'}"
+বউরে এই ছবিটা WhatsApp e forward koro,SEND_WHATSAPP,young_office_worker,"{'contact': 'বউ', 'target_file': 'এই ছবিটা'}"
+বউরে এই ছবিটা WhatsApp e pathiye de to,SEND_WHATSAPP,young_office_worker,"{'contact': 'বউ', 'target_file': 'এই ছবিটা'}"
+বউরে এই ছবিডা হোয়াটসঅ্যাপে পাঠা,SEND_WHATSAPP,young_office_worker,"{'contact': 'বউ', 'target_file': 'এই ছবিডা'}"
+বউরে এই ছবিডা হোয়াটসঅ্যাপে পাঠিয়ে দাও,SEND_WHATSAPP,young_office_worker,"{'contact': 'বউ', 'target_file': 'এই ছবিডা'}"
+বউরে এই ছবিডা হোয়াটসঅ্যাপে মার,SEND_WHATSAPP,young_office_worker,"{'contact': 'বউ', 'target_file': 'এই ছবিডা'}"
+বউরে এই ছবিডা হোয়াটসঅ্যাপে ছুড়ে দে,SEND_WHATSAPP,young_office_worker,"{'contact': 'বউ', 'target_file': 'এই ছবিডা'}"
+বউরে এই ছবিডা WhatsApp e forward koro,SEND_WHATSAPP,young_office_worker,"{'contact': 'বউ', 'target_file': 'এই ছবিডা'}"
+বউরে এই ছবিডা WhatsApp e pathiye de to,SEND_WHATSAPP,young_office_worker,"{'contact': 'বউ', 'target_file': 'এই ছবিডা'}"
+বউরে এই ফাইলটা হোয়াটসঅ্যাপে পাঠা,SEND_WHATSAPP,young_office_worker,"{'contact': 'বউ', 'target_file': 'এই ফাইলটা'}"
+বউরে এই ফাইলটা হোয়াটসঅ্যাপে পাঠিয়ে দাও,SEND_WHATSAPP,young_office_worker,"{'contact': 'বউ', 'target_file': 'এই ফাইলটা'}"
+বউরে এই ফাইলটা হোয়াটসঅ্যাপে মার,SEND_WHATSAPP,young_office_worker,"{'contact': 'বউ', 'target_file': 'এই ফাইলটা'}"
+বউরে এই ফাইলটা হোয়াটসঅ্যাপে ছুড়ে দে,SEND_WHATSAPP,young_office_worker,"{'contact': 'বউ', 'target_file': 'এই ফাইলটা'}"
+বউরে এই ফাইলটা WhatsApp e forward koro,SEND_WHATSAPP,young_office_worker,"{'contact': 'বউ', 'target_file': 'এই ফাইলটা'}"
+বউরে এই ফাইলটা WhatsApp e pathiye de to,SEND_WHATSAPP,young_office_worker,"{'contact': 'বউ', 'target_file': 'এই ফাইলটা'}"
+বউরে পিডিএফটা হোয়াটসঅ্যাপে পাঠা,SEND_WHATSAPP,young_office_worker,"{'contact': 'বউ', 'target_file': 'পিডিএফটা'}"
+বউরে পিডিএফটা হোয়াটসঅ্যাপে পাঠিয়ে দাও,SEND_WHATSAPP,young_office_worker,"{'contact': 'বউ', 'target_file': 'পিডিএফটা'}"
+বউরে পিডিএফটা হোয়াটসঅ্যাপে মার,SEND_WHATSAPP,young_office_worker,"{'contact': 'বউ', 'target_file': 'পিডিএফটা'}"
+বউরে পিডিএফটা হোয়াটসঅ্যাপে ছুড়ে দে,SEND_WHATSAPP,young_office_worker,"{'contact': 'বউ', 'target_file': 'পিডিএফটা'}"
+বউরে পিডিএফটা WhatsApp e forward koro,SEND_WHATSAPP,young_office_worker,"{'contact': 'বউ', 'target_file': 'পিডিএফটা'}"
+বউরে পিডিএফটা WhatsApp e pathiye de to,SEND_WHATSAPP,young_office_worker,"{'contact': 'বউ', 'target_file': 'পিডিএফটা'}"
+বউরে invoice ta হোয়াটসঅ্যাপে পাঠা,SEND_WHATSAPP,young_office_worker,"{'contact': 'বউ', 'target_file': 'invoice ta'}"
+বউরে invoice ta হোয়াটসঅ্যাপে পাঠিয়ে দাও,SEND_WHATSAPP,young_office_worker,"{'contact': 'বউ', 'target_file': 'invoice ta'}"
+বউরে invoice ta হোয়াটসঅ্যাপে মার,SEND_WHATSAPP,young_office_worker,"{'contact': 'বউ', 'target_file': 'invoice ta'}"
+বউরে invoice ta হোয়াটসঅ্যাপে ছুড়ে দে,SEND_WHATSAPP,young_office_worker,"{'contact': 'বউ', 'target_file': 'invoice ta'}"
+বউরে invoice ta WhatsApp e forward koro,SEND_WHATSAPP,young_office_worker,"{'contact': 'বউ', 'target_file': 'invoice ta'}"
+বউরে invoice ta WhatsApp e pathiye de to,SEND_WHATSAPP,young_office_worker,"{'contact': 'বউ', 'target_file': 'invoice ta'}"
+বউরে file ta হোয়াটসঅ্যাপে পাঠা,SEND_WHATSAPP,young_office_worker,"{'contact': 'বউ', 'target_file': 'file ta'}"
+বউরে file ta হোয়াটসঅ্যাপে পাঠিয়ে দাও,SEND_WHATSAPP,young_office_worker,"{'contact': 'বউ', 'target_file': 'file ta'}"
+বউরে file ta হোয়াটসঅ্যাপে মার,SEND_WHATSAPP,young_office_worker,"{'contact': 'বউ', 'target_file': 'file ta'}"
+বউরে file ta হোয়াটসঅ্যাপে ছুড়ে দে,SEND_WHATSAPP,young_office_worker,"{'contact': 'বউ', 'target_file': 'file ta'}"
+বউরে file ta WhatsApp e forward koro,SEND_WHATSAPP,young_office_worker,"{'contact': 'বউ', 'target_file': 'file ta'}"
+বউরে file ta WhatsApp e pathiye de to,SEND_WHATSAPP,young_office_worker,"{'contact': 'বউ', 'target_file': 'file ta'}"
+বসরে এই ছবিটা হোয়াটসঅ্যাপে পাঠা,SEND_WHATSAPP,young_office_worker,"{'contact': 'বস', 'target_file': 'এই ছবিটা'}"
+বসরে এই ছবিটা হোয়াটসঅ্যাপে পাঠিয়ে দাও,SEND_WHATSAPP,young_office_worker,"{'contact': 'বস', 'target_file': 'এই ছবিটা'}"
+বসরে এই ছবিটা হোয়াটসঅ্যাপে মার,SEND_WHATSAPP,young_office_worker,"{'contact': 'বস', 'target_file': 'এই ছবিটা'}"
+বসরে এই ছবিটা হোয়াটসঅ্যাপে ছুড়ে দে,SEND_WHATSAPP,young_office_worker,"{'contact': 'বস', 'target_file': 'এই ছবিটা'}"
+বসরে এই ছবিটা WhatsApp e forward koro,SEND_WHATSAPP,young_office_worker,"{'contact': 'বস', 'target_file': 'এই ছবিটা'}"
+বসরে এই ছবিটা WhatsApp e pathiye de to,SEND_WHATSAPP,young_office_worker,"{'contact': 'বস', 'target_file': 'এই ছবিটা'}"
+বসরে এই ছবিডা হোয়াটসঅ্যাপে পাঠা,SEND_WHATSAPP,young_office_worker,"{'contact': 'বস', 'target_file': 'এই ছবিডা'}"
+বসরে এই ছবিডা হোয়াটসঅ্যাপে পাঠিয়ে দাও,SEND_WHATSAPP,young_office_worker,"{'contact': 'বস', 'target_file': 'এই ছবিডা'}"
+বসরে এই ছবিডা হোয়াটসঅ্যাপে মার,SEND_WHATSAPP,young_office_worker,"{'contact': 'বস', 'target_file': 'এই ছবিডা'}"
+বসরে এই ছবিডা হোয়াটসঅ্যাপে ছুড়ে দে,SEND_WHATSAPP,young_office_worker,"{'contact': 'বস', 'target_file': 'এই ছবিডা'}"
+বসরে এই ছবিডা WhatsApp e forward koro,SEND_WHATSAPP,young_office_worker,"{'contact': 'বস', 'target_file': 'এই ছবিডা'}"
+বসরে এই ছবিডা WhatsApp e pathiye de to,SEND_WHATSAPP,young_office_worker,"{'contact': 'বস', 'target_file': 'এই ছবিডা'}"
+বসরে এই ফাইলটা হোয়াটসঅ্যাপে পাঠা,SEND_WHATSAPP,young_office_worker,"{'contact': 'বস', 'target_file': 'এই ফাইলটা'}"
+বসরে এই ফাইলটা হোয়াটসঅ্যাপে পাঠিয়ে দাও,SEND_WHATSAPP,young_office_worker,"{'contact': 'বস', 'target_file': 'এই ফাইলটা'}"
+বসরে এই ফাইলটা হোয়াটসঅ্যাপে মার,SEND_WHATSAPP,young_office_worker,"{'contact': 'বস', 'target_file': 'এই ফাইলটা'}"
+বসরে এই ফাইলটা হোয়াটসঅ্যাপে ছুড়ে দে,SEND_WHATSAPP,young_office_worker,"{'contact': 'বস', 'target_file': 'এই ফাইলটা'}"
+বসরে এই ফাইলটা WhatsApp e forward koro,SEND_WHATSAPP,young_office_worker,"{'contact': 'বস', 'target_file': 'এই ফাইলটা'}"
+বসরে এই ফাইলটা WhatsApp e pathiye de to,SEND_WHATSAPP,young_office_worker,"{'contact': 'বস', 'target_file': 'এই ফাইলটা'}"
+বসরে পিডিএফটা হোয়াটসঅ্যাপে পাঠা,SEND_WHATSAPP,young_office_worker,"{'contact': 'বস', 'target_file': 'পিডিএফটা'}"
+বসরে পিডিএফটা হোয়াটসঅ্যাপে পাঠিয়ে দাও,SEND_WHATSAPP,young_office_worker,"{'contact': 'বস', 'target_file': 'পিডিএফটা'}"
+বসরে পিডিএফটা হোয়াটসঅ্যাপে মার,SEND_WHATSAPP,young_office_worker,"{'contact': 'বস', 'target_file': 'পিডিএফটা'}"
+বসরে পিডিএফটা হোয়াটসঅ্যাপে ছুড়ে দে,SEND_WHATSAPP,young_office_worker,"{'contact': 'বস', 'target_file': 'পিডিএফটা'}"
+বসরে পিডিএফটা WhatsApp e forward koro,SEND_WHATSAPP,young_office_worker,"{'contact': 'বস', 'target_file': 'পিডিএফটা'}"
+বসরে পিডিএফটা WhatsApp e pathiye de to,SEND_WHATSAPP,young_office_worker,"{'contact': 'বস', 'target_file': 'পিডিএফটা'}"
+বসরে invoice ta হোয়াটসঅ্যাপে পাঠা,SEND_WHATSAPP,young_office_worker,"{'contact': 'বস', 'target_file': 'invoice ta'}"
+বসরে invoice ta হোয়াটসঅ্যাপে পাঠিয়ে দাও,SEND_WHATSAPP,young_office_worker,"{'contact': 'বস', 'target_file': 'invoice ta'}"
+বসরে invoice ta হোয়াটসঅ্যাপে মার,SEND_WHATSAPP,young_office_worker,"{'contact': 'বস', 'target_file': 'invoice ta'}"
+বসরে invoice ta হোয়াটসঅ্যাপে ছুড়ে দে,SEND_WHATSAPP,young_office_worker,"{'contact': 'বস', 'target_file': 'invoice ta'}"
+বসরে invoice ta WhatsApp e forward koro,SEND_WHATSAPP,young_office_worker,"{'contact': 'বস', 'target_file': 'invoice ta'}"
+বসরে invoice ta WhatsApp e pathiye de to,SEND_WHATSAPP,young_office_worker,"{'contact': 'বস', 'target_file': 'invoice ta'}"
+বসরে file ta হোয়াটসঅ্যাপে পাঠা,SEND_WHATSAPP,young_office_worker,"{'contact': 'বস', 'target_file': 'file ta'}"
+বসরে file ta হোয়াটসঅ্যাপে পাঠিয়ে দাও,SEND_WHATSAPP,young_office_worker,"{'contact': 'বস', 'target_file': 'file ta'}"
+বসরে file ta হোয়াটসঅ্যাপে মার,SEND_WHATSAPP,young_office_worker,"{'contact': 'বস', 'target_file': 'file ta'}"
+বসরে file ta হোয়াটসঅ্যাপে ছুড়ে দে,SEND_WHATSAPP,young_office_worker,"{'contact': 'বস', 'target_file': 'file ta'}"
+বসরে file ta WhatsApp e forward koro,SEND_WHATSAPP,young_office_worker,"{'contact': 'বস', 'target_file': 'file ta'}"
+বসরে file ta WhatsApp e pathiye de to,SEND_WHATSAPP,young_office_worker,"{'contact': 'বস', 'target_file': 'file ta'}"
+শাকিলরে এই ছবিটা হোয়াটসঅ্যাপে পাঠা,SEND_WHATSAPP,young_office_worker,"{'contact': 'শাকিল', 'target_file': 'এই ছবিটা'}"
+শাকিলরে এই ছবিটা হোয়াটসঅ্যাপে পাঠিয়ে দাও,SEND_WHATSAPP,young_office_worker,"{'contact': 'শাকিল', 'target_file': 'এই ছবিটা'}"
+শাকিলরে এই ছবিটা হোয়াটসঅ্যাপে মার,SEND_WHATSAPP,young_office_worker,"{'contact': 'শাকিল', 'target_file': 'এই ছবিটা'}"
+শাকিলরে এই ছবিটা হোয়াটসঅ্যাপে ছুড়ে দে,SEND_WHATSAPP,young_office_worker,"{'contact': 'শাকিল', 'target_file': 'এই ছবিটা'}"
+শাকিলরে এই ছবিটা WhatsApp e forward koro,SEND_WHATSAPP,young_office_worker,"{'contact': 'শাকিল', 'target_file': 'এই ছবিটা'}"
+শাকিলরে এই ছবিটা WhatsApp e pathiye de to,SEND_WHATSAPP,young_office_worker,"{'contact': 'শাকিল', 'target_file': 'এই ছবিটা'}"
+শাকিলরে এই ছবিডা হোয়াটসঅ্যাপে পাঠা,SEND_WHATSAPP,young_office_worker,"{'contact': 'শাকিল', 'target_file': 'এই ছবিডা'}"
+শাকিলরে এই ছবিডা হোয়াটসঅ্যাপে পাঠিয়ে দাও,SEND_WHATSAPP,young_office_worker,"{'contact': 'শাকিল', 'target_file': 'এই ছবিডা'}"
+শাকিলরে এই ছবিডা হোয়াটসঅ্যাপে মার,SEND_WHATSAPP,young_office_worker,"{'contact': 'শাকিল', 'target_file': 'এই ছবিডা'}"
+শাকিলরে এই ছবিডা হোয়াটসঅ্যাপে ছুড়ে দে,SEND_WHATSAPP,young_office_worker,"{'contact': 'শাকিল', 'target_file': 'এই ছবিডা'}"
+শাকিলরে এই ছবিডা WhatsApp e forward koro,SEND_WHATSAPP,young_office_worker,"{'contact': 'শাকিল', 'target_file': 'এই ছবিডা'}"
+শাকিলরে এই ছবিডা WhatsApp e pathiye de to,SEND_WHATSAPP,young_office_worker,"{'contact': 'শাকিল', 'target_file': 'এই ছবিডা'}"
+শাকিলরে এই ফাইলটা হোয়াটসঅ্যাপে পাঠা,SEND_WHATSAPP,young_office_worker,"{'contact': 'শাকিল', 'target_file': 'এই ফাইলটা'}"
+শাকিলরে এই ফাইলটা হোয়াটসঅ্যাপে পাঠিয়ে দাও,SEND_WHATSAPP,young_office_worker,"{'contact': 'শাকিল', 'target_file': 'এই ফাইলটা'}"
+শাকিলরে এই ফাইলটা হোয়াটসঅ্যাপে মার,SEND_WHATSAPP,young_office_worker,"{'contact': 'শাকিল', 'target_file': 'এই ফাইলটা'}"
+শাকিলরে এই ফাইলটা হোয়াটসঅ্যাপে ছুড়ে দে,SEND_WHATSAPP,young_office_worker,"{'contact': 'শাকিল', 'target_file': 'এই ফাইলটা'}"
+শাকিলরে এই ফাইলটা WhatsApp e forward koro,SEND_WHATSAPP,young_office_worker,"{'contact': 'শাকিল', 'target_file': 'এই ফাইলটা'}"
+শাকিলরে এই ফাইলটা WhatsApp e pathiye de to,SEND_WHATSAPP,young_office_worker,"{'contact': 'শাকিল', 'target_file': 'এই ফাইলটা'}"
+শাকিলরে পিডিএফটা হোয়াটসঅ্যাপে পাঠা,SEND_WHATSAPP,young_office_worker,"{'contact': 'শাকিল', 'target_file': 'পিডিএফটা'}"
+শাকিলরে পিডিএফটা হোয়াটসঅ্যাপে পাঠিয়ে দাও,SEND_WHATSAPP,young_office_worker,"{'contact': 'শাকিল', 'target_file': 'পিডিএফটা'}"
+শাকিলরে পিডিএফটা হোয়াটসঅ্যাপে মার,SEND_WHATSAPP,young_office_worker,"{'contact': 'শাকিল', 'target_file': 'পিডিএফটা'}"
+শাকিলরে পিডিএফটা হোয়াটসঅ্যাপে ছুড়ে দে,SEND_WHATSAPP,young_office_worker,"{'contact': 'শাকিল', 'target_file': 'পিডিএফটা'}"
+শাকিলরে পিডিএফটা WhatsApp e forward koro,SEND_WHATSAPP,young_office_worker,"{'contact': 'শাকিল', 'target_file': 'পিডিএফটা'}"
+শাকিলরে পিডিএফটা WhatsApp e pathiye de to,SEND_WHATSAPP,young_office_worker,"{'contact': 'শাকিল', 'target_file': 'পিডিএফটা'}"
+শাকিলরে invoice ta হোয়াটসঅ্যাপে পাঠা,SEND_WHATSAPP,young_office_worker,"{'contact': 'শাকিল', 'target_file': 'invoice ta'}"
+শাকিলরে invoice ta হোয়াটসঅ্যাপে পাঠিয়ে দাও,SEND_WHATSAPP,young_office_worker,"{'contact': 'শাকিল', 'target_file': 'invoice ta'}"
+শাকিলরে invoice ta হোয়াটসঅ্যাপে মার,SEND_WHATSAPP,young_office_worker,"{'contact': 'শাকিল', 'target_file': 'invoice ta'}"
+শাকিলরে invoice ta হোয়াটসঅ্যাপে ছুড়ে দে,SEND_WHATSAPP,young_office_worker,"{'contact': 'শাকিল', 'target_file': 'invoice ta'}"
+শাকিলরে invoice ta WhatsApp e forward koro,SEND_WHATSAPP,young_office_worker,"{'contact': 'শাকিল', 'target_file': 'invoice ta'}"
+শাকিলরে invoice ta WhatsApp e pathiye de to,SEND_WHATSAPP,young_office_worker,"{'contact': 'শাকিল', 'target_file': 'invoice ta'}"
+শাকিলরে file ta হোয়াটসঅ্যাপে পাঠা,SEND_WHATSAPP,young_office_worker,"{'contact': 'শাকিল', 'target_file': 'file ta'}"
+শাকিলরে file ta হোয়াটসঅ্যাপে পাঠিয়ে দাও,SEND_WHATSAPP,young_office_worker,"{'contact': 'শাকিল', 'target_file': 'file ta'}"
+শাকিলরে file ta হোয়াটসঅ্যাপে মার,SEND_WHATSAPP,young_office_worker,"{'contact': 'শাকিল', 'target_file': 'file ta'}"
+শাকিলরে file ta হোয়াটসঅ্যাপে ছুড়ে দে,SEND_WHATSAPP,young_office_worker,"{'contact': 'শাকিল', 'target_file': 'file ta'}"
+শাকিলরে file ta WhatsApp e forward koro,SEND_WHATSAPP,young_office_worker,"{'contact': 'শাকিল', 'target_file': 'file ta'}"
+শাকিলরে file ta WhatsApp e pathiye de to,SEND_WHATSAPP,young_office_worker,"{'contact': 'শাকিল', 'target_file': 'file ta'}"
+করিমরে রিপ্লাই দে যে আমি রাস্তায় আছি,REPLY_MESSAGE,young_office_worker,{'contact': 'করিমরে'}
+করিমরে বল যে একটু পরে ফোন দিচ্ছি,REPLY_MESSAGE,young_office_worker,{'contact': 'করিমরে'}
+করিমরে রিপ্লাই মার যে আসতাছি,REPLY_MESSAGE,young_office_worker,{'contact': 'করিমরে'}
+করিমরে reply de ami meeting e,REPLY_MESSAGE,young_office_worker,{'contact': 'করিমরে'}
+করিমরে মেসেজ দে যে কাজটা শেষ,REPLY_MESSAGE,young_office_worker,{'contact': 'করিমরে'}
+করিমরে message dao je call back korbo,REPLY_MESSAGE,young_office_worker,{'contact': 'করিমরে'}
+করিমরে text pathao ami busy achi,REPLY_MESSAGE,young_office_worker,{'contact': 'করিমরে'}
+করিমরে bol je reach korechi,REPLY_MESSAGE,young_office_worker,{'contact': 'করিমরে'}
+করিমরে reply de joldi,REPLY_MESSAGE,young_office_worker,{'contact': 'করিমরে'}
+করিমরে রিপ্লাই করে দাও যে পৌঁছেছি,REPLY_MESSAGE,young_office_worker,{'contact': 'করিমরে'}
+আম্মুরে রিপ্লাই দে যে আমি রাস্তায় আছি,REPLY_MESSAGE,young_office_worker,{'contact': 'আম্মুরে'}
+আম্মুরে বল যে একটু পরে ফোন দিচ্ছি,REPLY_MESSAGE,young_office_worker,{'contact': 'আম্মুরে'}
+আম্মুরে রিপ্লাই মার যে আসতাছি,REPLY_MESSAGE,young_office_worker,{'contact': 'আম্মুরে'}
+আম্মুরে reply de ami meeting e,REPLY_MESSAGE,young_office_worker,{'contact': 'আম্মুরে'}
+আম্মুরে মেসেজ দে যে কাজটা শেষ,REPLY_MESSAGE,young_office_worker,{'contact': 'আম্মুরে'}
+আম্মুরে message dao je call back korbo,REPLY_MESSAGE,young_office_worker,{'contact': 'আম্মুরে'}
+আম্মুরে text pathao ami busy achi,REPLY_MESSAGE,young_office_worker,{'contact': 'আম্মুরে'}
+আম্মুরে bol je reach korechi,REPLY_MESSAGE,young_office_worker,{'contact': 'আম্মুরে'}
+আম্মুরে reply de joldi,REPLY_MESSAGE,young_office_worker,{'contact': 'আম্মুরে'}
+আম্মুরে রিপ্লাই করে দাও যে পৌঁছেছি,REPLY_MESSAGE,young_office_worker,{'contact': 'আম্মুরে'}
+বসকে রিপ্লাই দে যে আমি রাস্তায় আছি,REPLY_MESSAGE,young_office_worker,{'contact': 'বসকে'}
+বসকে বল যে একটু পরে ফোন দিচ্ছি,REPLY_MESSAGE,young_office_worker,{'contact': 'বসকে'}
+বসকে রিপ্লাই মার যে আসতাছি,REPLY_MESSAGE,young_office_worker,{'contact': 'বসকে'}
+বসকে reply de ami meeting e,REPLY_MESSAGE,young_office_worker,{'contact': 'বসকে'}
+বসকে মেসেজ দে যে কাজটা শেষ,REPLY_MESSAGE,young_office_worker,{'contact': 'বসকে'}
+বসকে message dao je call back korbo,REPLY_MESSAGE,young_office_worker,{'contact': 'বসকে'}
+বসকে text pathao ami busy achi,REPLY_MESSAGE,young_office_worker,{'contact': 'বসকে'}
+বসকে bol je reach korechi,REPLY_MESSAGE,young_office_worker,{'contact': 'বসকে'}
+বসকে reply de joldi,REPLY_MESSAGE,young_office_worker,{'contact': 'বসকে'}
+বসকে রিপ্লাই করে দাও যে পৌঁছেছি,REPLY_MESSAGE,young_office_worker,{'contact': 'বসকে'}
+ওকে রিপ্লাই দে যে আমি রাস্তায় আছি,REPLY_MESSAGE,young_office_worker,{'contact': 'ওকে'}
+ওকে বল যে একটু পরে ফোন দিচ্ছি,REPLY_MESSAGE,young_office_worker,{'contact': 'ওকে'}
+ওকে রিপ্লাই মার যে আসতাছি,REPLY_MESSAGE,young_office_worker,{'contact': 'ওকে'}
+ওকে reply de ami meeting e,REPLY_MESSAGE,young_office_worker,{'contact': 'ওকে'}
+ওকে মেসেজ দে যে কাজটা শেষ,REPLY_MESSAGE,young_office_worker,{'contact': 'ওকে'}
+ওকে message dao je call back korbo,REPLY_MESSAGE,young_office_worker,{'contact': 'ওকে'}
+ওকে text pathao ami busy achi,REPLY_MESSAGE,young_office_worker,{'contact': 'ওকে'}
+ওকে bol je reach korechi,REPLY_MESSAGE,young_office_worker,{'contact': 'ওকে'}
+ওকে reply de joldi,REPLY_MESSAGE,young_office_worker,{'contact': 'ওকে'}
+ওকে রিপ্লাই করে দাও যে পৌঁছেছি,REPLY_MESSAGE,young_office_worker,{'contact': 'ওকে'}
+তানভীররে রিপ্লাই দে যে আমি রাস্তায় আছি,REPLY_MESSAGE,young_office_worker,{'contact': 'তানভীররে'}
+তানভীররে বল যে একটু পরে ফোন দিচ্ছি,REPLY_MESSAGE,young_office_worker,{'contact': 'তানভীররে'}
+তানভীররে রিপ্লাই মার যে আসতাছি,REPLY_MESSAGE,young_office_worker,{'contact': 'তানভীররে'}
+তানভীররে reply de ami meeting e,REPLY_MESSAGE,young_office_worker,{'contact': 'তানভীররে'}
+তানভীররে মেসেজ দে যে কাজটা শেষ,REPLY_MESSAGE,young_office_worker,{'contact': 'তানভীররে'}
+তানভীররে message dao je call back korbo,REPLY_MESSAGE,young_office_worker,{'contact': 'তানভীররে'}
+তানভীররে text pathao ami busy achi,REPLY_MESSAGE,young_office_worker,{'contact': 'তানভীররে'}
+তানভীররে bol je reach korechi,REPLY_MESSAGE,young_office_worker,{'contact': 'তানভীররে'}
+তানভীররে reply de joldi,REPLY_MESSAGE,young_office_worker,{'contact': 'তানভীররে'}
+তানভীররে রিপ্লাই করে দাও যে পৌঁছেছি,REPLY_MESSAGE,young_office_worker,{'contact': 'তানভীররে'}
+বউরে রিপ্লাই দে যে আমি রাস্তায় আছি,REPLY_MESSAGE,young_office_worker,{'contact': 'বউরে'}
+বউরে বল যে একটু পরে ফোন দিচ্ছি,REPLY_MESSAGE,young_office_worker,{'contact': 'বউরে'}
+বউরে রিপ্লাই মার যে আসতাছি,REPLY_MESSAGE,young_office_worker,{'contact': 'বউরে'}
+বউরে reply de ami meeting e,REPLY_MESSAGE,young_office_worker,{'contact': 'বউরে'}
+বউরে মেসেজ দে যে কাজটা শেষ,REPLY_MESSAGE,young_office_worker,{'contact': 'বউরে'}
+বউরে message dao je call back korbo,REPLY_MESSAGE,young_office_worker,{'contact': 'বউরে'}
+বউরে text pathao ami busy achi,REPLY_MESSAGE,young_office_worker,{'contact': 'বউরে'}
+বউরে bol je reach korechi,REPLY_MESSAGE,young_office_worker,{'contact': 'বউরে'}
+বউরে reply de joldi,REPLY_MESSAGE,young_office_worker,{'contact': 'বউরে'}
+বউরে রিপ্লাই করে দাও যে পৌঁছেছি,REPLY_MESSAGE,young_office_worker,{'contact': 'বউরে'}
+দোস্তকে রিপ্লাই দে যে আমি রাস্তায় আছি,REPLY_MESSAGE,young_office_worker,{'contact': 'দোস্তকে'}
+দোস্তকে বল যে একটু পরে ফোন দিচ্ছি,REPLY_MESSAGE,young_office_worker,{'contact': 'দোস্তকে'}
+দোস্তকে রিপ্লাই মার যে আসতাছি,REPLY_MESSAGE,young_office_worker,{'contact': 'দোস্তকে'}
+দোস্তকে reply de ami meeting e,REPLY_MESSAGE,young_office_worker,{'contact': 'দোস্তকে'}
+দোস্তকে মেসেজ দে যে কাজটা শেষ,REPLY_MESSAGE,young_office_worker,{'contact': 'দোস্তকে'}
+দোস্তকে message dao je call back korbo,REPLY_MESSAGE,young_office_worker,{'contact': 'দোস্তকে'}
+দোস্তকে text pathao ami busy achi,REPLY_MESSAGE,young_office_worker,{'contact': 'দোস্তকে'}
+দোস্তকে bol je reach korechi,REPLY_MESSAGE,young_office_worker,{'contact': 'দোস্তকে'}
+দোস্তকে reply de joldi,REPLY_MESSAGE,young_office_worker,{'contact': 'দোস্তকে'}
+দোস্তকে রিপ্লাই করে দাও যে পৌঁছেছি,REPLY_MESSAGE,young_office_worker,{'contact': 'দোস্তকে'}
+স্যারকে রিপ্লাই দে যে আমি রাস্তায় আছি,REPLY_MESSAGE,young_office_worker,{'contact': 'স্যারকে'}
+স্যারকে বল যে একটু পরে ফোন দিচ্ছি,REPLY_MESSAGE,young_office_worker,{'contact': 'স্যারকে'}
+স্যারকে রিপ্লাই মার যে আসতাছি,REPLY_MESSAGE,young_office_worker,{'contact': 'স্যারকে'}
+স্যারকে reply de ami meeting e,REPLY_MESSAGE,young_office_worker,{'contact': 'স্যারকে'}
+স্যারকে মেসেজ দে যে কাজটা শেষ,REPLY_MESSAGE,young_office_worker,{'contact': 'স্যারকে'}
+স্যারকে message dao je call back korbo,REPLY_MESSAGE,young_office_worker,{'contact': 'স্যারকে'}
+স্যারকে text pathao ami busy achi,REPLY_MESSAGE,young_office_worker,{'contact': 'স্যারকে'}
+স্যারকে bol je reach korechi,REPLY_MESSAGE,young_office_worker,{'contact': 'স্যারকে'}
+স্যারকে reply de joldi,REPLY_MESSAGE,young_office_worker,{'contact': 'স্যারকে'}
+স্যারকে রিপ্লাই করে দাও যে পৌঁছেছি,REPLY_MESSAGE,young_office_worker,{'contact': 'স্যারকে'}
+আজকের ঢাকার আবহাওয়া কেমন একটু সার্চ করো তো,WEB_SEARCH,elderly_formal,{'query': 'আজকের ঢাকার আবহাওয়া কেমন'}
+আজকের ঢাকার আবহাওয়া কেমন গুগল করে বলো,WEB_SEARCH,elderly_formal,{'query': 'আজকের ঢাকার আবহাওয়া কেমন'}
+আজকের ঢাকার আবহাওয়া কেমন ইন্টারনেটে দেখ তো,WEB_SEARCH,elderly_formal,{'query': 'আজকের ঢাকার আবহাওয়া কেমন'}
+আজকের ঢাকার আবহাওয়া কেমন একটু জেনে বলুন,WEB_SEARCH,elderly_formal,{'query': 'আজকের ঢাকার আবহাওয়া কেমন'}
+আজকের ঢাকার আবহাওয়া কেমন সার্চ দে তো ভাই,WEB_SEARCH,elderly_formal,{'query': 'আজকের ঢাকার আবহাওয়া কেমন'}
+আজকের ঢাকার আবহাওয়া কেমন গুগল কর,WEB_SEARCH,elderly_formal,{'query': 'আজকের ঢাকার আবহাওয়া কেমন'}
+পদ্মা সেতুর মোট দৈর্ঘ্য কত একটু সার্চ করো তো,WEB_SEARCH,elderly_formal,{'query': 'পদ্মা সেতুর মোট দৈর্ঘ্য কত'}
+পদ্মা সেতুর মোট দৈর্ঘ্য কত গুগল করে বলো,WEB_SEARCH,elderly_formal,{'query': 'পদ্মা সেতুর মোট দৈর্ঘ্য কত'}
+পদ্মা সেতুর মোট দৈর্ঘ্য কত ইন্টারনেটে দেখ তো,WEB_SEARCH,elderly_formal,{'query': 'পদ্মা সেতুর মোট দৈর্ঘ্য কত'}
+পদ্মা সেতুর মোট দৈর্ঘ্য কত একটু জেনে বলুন,WEB_SEARCH,elderly_formal,{'query': 'পদ্মা সেতুর মোট দৈর্ঘ্য কত'}
+পদ্মা সেতুর মোট দৈর্ঘ্য কত সার্চ দে তো ভাই,WEB_SEARCH,elderly_formal,{'query': 'পদ্মা সেতুর মোট দৈর্ঘ্য কত'}
+পদ্মা সেতুর মোট দৈর্ঘ্য কত গুগল কর,WEB_SEARCH,elderly_formal,{'query': 'পদ্মা সেতুর মোট দৈর্ঘ্য কত'}
+ডলারের রেট আজকে কত একটু সার্চ করো তো,WEB_SEARCH,elderly_formal,{'query': 'ডলারের রেট আজকে কত'}
+ডলারের রেট আজকে কত গুগল করে বলো,WEB_SEARCH,elderly_formal,{'query': 'ডলারের রেট আজকে কত'}
+ডলারের রেট আজকে কত ইন্টারনেটে দেখ তো,WEB_SEARCH,elderly_formal,{'query': 'ডলারের রেট আজকে কত'}
+ডলারের রেট আজকে কত একটু জেনে বলুন,WEB_SEARCH,elderly_formal,{'query': 'ডলারের রেট আজকে কত'}
+ডলারের রেট আজকে কত সার্চ দে তো ভাই,WEB_SEARCH,elderly_formal,{'query': 'ডলারের রেট আজকে কত'}
+ডলারের রেট আজকে কত গুগল কর,WEB_SEARCH,elderly_formal,{'query': 'ডলারের রেট আজকে কত'}
+কালকে কি সরকারি ছুটি একটু সার্চ করো তো,WEB_SEARCH,elderly_formal,{'query': 'কালকে কি সরকারি ছুটি'}
+কালকে কি সরকারি ছুটি গুগল করে বলো,WEB_SEARCH,elderly_formal,{'query': 'কালকে কি সরকারি ছুটি'}
+কালকে কি সরকারি ছুটি ইন্টারনেটে দেখ তো,WEB_SEARCH,elderly_formal,{'query': 'কালকে কি সরকারি ছুটি'}
+কালকে কি সরকারি ছুটি একটু জেনে বলুন,WEB_SEARCH,elderly_formal,{'query': 'কালকে কি সরকারি ছুটি'}
+কালকে কি সরকারি ছুটি সার্চ দে তো ভাই,WEB_SEARCH,elderly_formal,{'query': 'কালকে কি সরকারি ছুটি'}
+কালকে কি সরকারি ছুটি গুগল কর,WEB_SEARCH,elderly_formal,{'query': 'কালকে কি সরকারি ছুটি'}
+সোনার দাম কত এখন একটু সার্চ করো তো,WEB_SEARCH,elderly_formal,{'query': 'সোনার দাম কত এখন'}
+সোনার দাম কত এখন গুগল করে বলো,WEB_SEARCH,elderly_formal,{'query': 'সোনার দাম কত এখন'}
+সোনার দাম কত এখন ইন্টারনেটে দেখ তো,WEB_SEARCH,elderly_formal,{'query': 'সোনার দাম কত এখন'}
+সোনার দাম কত এখন একটু জেনে বলুন,WEB_SEARCH,elderly_formal,{'query': 'সোনার দাম কত এখন'}
+সোনার দাম কত এখন সার্চ দে তো ভাই,WEB_SEARCH,elderly_formal,{'query': 'সোনার দাম কত এখন'}
+সোনার দাম কত এখন গুগল কর,WEB_SEARCH,elderly_formal,{'query': 'সোনার দাম কত এখন'}
+সুন্দরবন কোন জেলায় অবস্থিত একটু সার্চ করো তো,WEB_SEARCH,elderly_formal,{'query': 'সুন্দরবন কোন জেলায় অবস্থিত'}
+সুন্দরবন কোন জেলায় অবস্থিত গুগল করে বলো,WEB_SEARCH,elderly_formal,{'query': 'সুন্দরবন কোন জেলায় অবস্থিত'}
+সুন্দরবন কোন জেলায় অবস্থিত ইন্টারনেটে দেখ তো,WEB_SEARCH,elderly_formal,{'query': 'সুন্দরবন কোন জেলায় অবস্থিত'}
+সুন্দরবন কোন জেলায় অবস্থিত একটু জেনে বলুন,WEB_SEARCH,elderly_formal,{'query': 'সুন্দরবন কোন জেলায় অবস্থিত'}
+সুন্দরবন কোন জেলায় অবস্থিত সার্চ দে তো ভাই,WEB_SEARCH,elderly_formal,{'query': 'সুন্দরবন কোন জেলায় অবস্থিত'}
+সুন্দরবন কোন জেলায় অবস্থিত গুগল কর,WEB_SEARCH,elderly_formal,{'query': 'সুন্দরবন কোন জেলায় অবস্থিত'}
+আজকের শীর্ষ খবর কি একটু সার্চ করো তো,WEB_SEARCH,elderly_formal,{'query': 'আজকের শীর্ষ খবর কি'}
+আজকের শীর্ষ খবর কি গুগল করে বলো,WEB_SEARCH,elderly_formal,{'query': 'আজকের শীর্ষ খবর কি'}
+আজকের শীর্ষ খবর কি ইন্টারনেটে দেখ তো,WEB_SEARCH,elderly_formal,{'query': 'আজকের শীর্ষ খবর কি'}
+আজকের শীর্ষ খবর কি একটু জেনে বলুন,WEB_SEARCH,elderly_formal,{'query': 'আজকের শীর্ষ খবর কি'}
+আজকের শীর্ষ খবর কি সার্চ দে তো ভাই,WEB_SEARCH,elderly_formal,{'query': 'আজকের শীর্ষ খবর কি'}
+আজকের শীর্ষ খবর কি গুগল কর,WEB_SEARCH,elderly_formal,{'query': 'আজকের শীর্ষ খবর কি'}
+পেট্রোলের দাম কত এখন একটু সার্চ করো তো,WEB_SEARCH,elderly_formal,{'query': 'পেট্রোলের দাম কত এখন'}
+পেট্রোলের দাম কত এখন গুগল করে বলো,WEB_SEARCH,elderly_formal,{'query': 'পেট্রোলের দাম কত এখন'}
+পেট্রোলের দাম কত এখন ইন্টারনেটে দেখ তো,WEB_SEARCH,elderly_formal,{'query': 'পেট্রোলের দাম কত এখন'}
+পেট্রোলের দাম কত এখন একটু জেনে বলুন,WEB_SEARCH,elderly_formal,{'query': 'পেট্রোলের দাম কত এখন'}
+পেট্রোলের দাম কত এখন সার্চ দে তো ভাই,WEB_SEARCH,elderly_formal,{'query': 'পেট্রোলের দাম কত এখন'}
+পেট্রোলের দাম কত এখন গুগল কর,WEB_SEARCH,elderly_formal,{'query': 'পেট্রোলের দাম কত এখন'}
+বিশ্বকাপ ক্রিকেট খেলা কবে একটু সার্চ করো তো,WEB_SEARCH,elderly_formal,{'query': 'বিশ্বকাপ ক্রিকেট খেলা কবে'}
+বিশ্বকাপ ক্রিকেট খেলা কবে গুগল করে বলো,WEB_SEARCH,elderly_formal,{'query': 'বিশ্বকাপ ক্রিকেট খেলা কবে'}
+বিশ্বকাপ ক্রিকেট খেলা কবে ইন্টারনেটে দেখ তো,WEB_SEARCH,elderly_formal,{'query': 'বিশ্বকাপ ক্রিকেট খেলা কবে'}
+বিশ্বকাপ ক্রিকেট খেলা কবে একটু জেনে বলুন,WEB_SEARCH,elderly_formal,{'query': 'বিশ্বকাপ ক্রিকেট খেলা কবে'}
+বিশ্বকাপ ক্রিকেট খেলা কবে সার্চ দে তো ভাই,WEB_SEARCH,elderly_formal,{'query': 'বিশ্বকাপ ক্রিকেট খেলা কবে'}
+বিশ্বকাপ ক্রিকেট খেলা কবে গুগল কর,WEB_SEARCH,elderly_formal,{'query': 'বিশ্বকাপ ক্রিকেট খেলা কবে'}
+কাছে কোনো ভালো হাসপাতাল আছে একটু সার্চ করো তো,WEB_SEARCH,elderly_formal,{'query': 'কাছে কোনো ভালো হাসপাতাল আছে'}
+কাছে কোনো ভালো হাসপাতাল আছে গুগল করে বলো,WEB_SEARCH,elderly_formal,{'query': 'কাছে কোনো ভালো হাসপাতাল আছে'}
+কাছে কোনো ভালো হাসপাতাল আছে ইন্টারনেটে দেখ তো,WEB_SEARCH,elderly_formal,{'query': 'কাছে কোনো ভালো হাসপাতাল আছে'}
+কাছে কোনো ভালো হাসপাতাল আছে একটু জেনে বলুন,WEB_SEARCH,elderly_formal,{'query': 'কাছে কোনো ভালো হাসপাতাল আছে'}
+কাছে কোনো ভালো হাসপাতাল আছে সার্চ দে তো ভাই,WEB_SEARCH,elderly_formal,{'query': 'কাছে কোনো ভালো হাসপাতাল আছে'}
+কাছে কোনো ভালো হাসপাতাল আছে গুগল কর,WEB_SEARCH,elderly_formal,{'query': 'কাছে কোনো ভালো হাসপাতাল আছে'}
+ডায়াবেটিসের লক্ষণ কি কি একটু সার্চ করো তো,WEB_SEARCH,elderly_formal,{'query': 'ডায়াবেটিসের লক্ষণ কি কি'}
+ডায়াবেটিসের লক্ষণ কি কি গুগল করে বলো,WEB_SEARCH,elderly_formal,{'query': 'ডায়াবেটিসের লক্ষণ কি কি'}
+ডায়াবেটিসের লক্ষণ কি কি ইন্টারনেটে দেখ তো,WEB_SEARCH,elderly_formal,{'query': 'ডায়াবেটিসের লক্ষণ কি কি'}
+ডায়াবেটিসের লক্ষণ কি কি একটু জেনে বলুন,WEB_SEARCH,elderly_formal,{'query': 'ডায়াবেটিসের লক্ষণ কি কি'}
+ডায়াবেটিসের লক্ষণ কি কি সার্চ দে তো ভাই,WEB_SEARCH,elderly_formal,{'query': 'ডায়াবেটিসের লক্ষণ কি কি'}
+ডায়াবেটিসের লক্ষণ কি কি গুগল কর,WEB_SEARCH,elderly_formal,{'query': 'ডায়াবেটিসের লক্ষণ কি কি'}
+টমেটোর কেজি কত আজকে একটু সার্চ করো তো,WEB_SEARCH,elderly_formal,{'query': 'টমেটোর কেজি কত আজকে'}
+টমেটোর কেজি কত আজকে গুগল করে বলো,WEB_SEARCH,elderly_formal,{'query': 'টমেটোর কেজি কত আজকে'}
+টমেটোর কেজি কত আজকে ইন্টারনেটে দেখ তো,WEB_SEARCH,elderly_formal,{'query': 'টমেটোর কেজি কত আজকে'}
+টমেটোর কেজি কত আজকে একটু জেনে বলুন,WEB_SEARCH,elderly_formal,{'query': 'টমেটোর কেজি কত আজকে'}
+টমেটোর কেজি কত আজকে সার্চ দে তো ভাই,WEB_SEARCH,elderly_formal,{'query': 'টমেটোর কেজি কত আজকে'}
+টমেটোর কেজি কত আজকে গুগল কর,WEB_SEARCH,elderly_formal,{'query': 'টমেটোর কেজি কত আজকে'}

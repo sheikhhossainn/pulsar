@@ -1,0 +1,22 @@
+{
+  "model_name": "csebuetnlp/banglabert_small",
+  "label2id": {
+    "IMG_TO_PDF": 0,
+    "MAKE_CALL": 1,
+    "REPLY_MESSAGE": 2,
+    "SEND_WHATSAPP": 3,
+    "VIEW_MEDIA": 4,
+    "WEB_SEARCH": 5
+  },
+  "id2label": {
+    "0": "IMG_TO_PDF",
+    "1": "MAKE_CALL",
+    "2": "REPLY_MESSAGE",
+    "3": "SEND_WHATSAPP",
+    "4": "VIEW_MEDIA",
+    "5": "WEB_SEARCH"
+  },
+  "validation_accuracy": 1.0,
+  "int8_model_size_mb": 13.69,
+  "training_time_s": 249.32
+}

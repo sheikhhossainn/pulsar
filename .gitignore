@@ -1,0 +1,36 @@
+# Local-only: datasets, personal voice recordings, scratch output
+local/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# Model weights and large binaries (fetch separately, never commit)
+*.onnx
+*.tar.bz2
+*.bin
+*.apk
+*.aab
+*.log
+prototype/python/kaggle_kernel/output/sherpa-onnx-*/
+
+# Android / Gradle
+.gradle/
+.kotlin/
+build/
+local.properties
+*.iml
+.idea/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Rust
+target/
+
+# OS / editor
+Thumbs.db
+.DS_Store
+.vscode/

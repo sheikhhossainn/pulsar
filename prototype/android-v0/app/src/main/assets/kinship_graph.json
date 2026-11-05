@@ -1,0 +1,264 @@
+{
+  "user_profile": {
+    "user_name": "Alhaj Rafiqul Islam",
+    "age": 68,
+    "location": "Mirpur, Dhaka"
+  },
+  "relations": {
+    "elder_son": {
+      "bangla_labels": [
+        "বড় ছেলে",
+        "বড় পোলা",
+        "বড় বেটা",
+        "তানভীর"
+      ],
+      "english_labels": [
+        "boro chele",
+        "elder son",
+        "tanvir"
+      ],
+      "contact_id": "c001",
+      "name": "Tanvir Ahmed",
+      "phone": "01711000001"
+    },
+    "younger_son": {
+      "bangla_labels": [
+        "ছোট ছেলে",
+        "ছোট পোলা",
+        "ছোট বেটা",
+        "রিফাত"
+      ],
+      "english_labels": [
+        "choto chele",
+        "younger son",
+        "rifat"
+      ],
+      "contact_id": "c002",
+      "name": "Rifat Hasan",
+      "phone": "01819000002"
+    },
+    "middle_son": {
+      "bangla_labels": [
+        "মেজো ছেলে",
+        "সেজো ছেলে",
+        "কামরুল"
+      ],
+      "english_labels": [
+        "mejo chele",
+        "sejo chele",
+        "kamrul"
+      ],
+      "contact_id": "c010",
+      "name": "Sejo Chele (Kamrul)",
+      "phone": "01814000010"
+    },
+    "elder_daughter": {
+      "bangla_labels": [
+        "বড় মেয়ে",
+        "বড় মাইয়া",
+        "নাবিলা"
+      ],
+      "english_labels": [
+        "boro meye",
+        "elder daughter",
+        "nabila"
+      ],
+      "contact_id": "c003",
+      "name": "Nabila Rahman",
+      "phone": "01912000003"
+    },
+    "younger_daughter": {
+      "bangla_labels": [
+        "ছোট মেয়ে",
+        "ছোট মাইয়া",
+        "তাসনিম"
+      ],
+      "english_labels": [
+        "choto meye",
+        "younger daughter",
+        "tasnim"
+      ],
+      "contact_id": "c004",
+      "name": "Tasnim Jahan",
+      "phone": "01615000004"
+    },
+    "son_in_law": {
+      "bangla_labels": [
+        "বড় জামাই",
+        "জামাই",
+        "ফাহিম"
+      ],
+      "english_labels": [
+        "boro jamai",
+        "jamai",
+        "fahim"
+      ],
+      "contact_id": "c005",
+      "name": "Fahim Kabir",
+      "phone": "01715000005"
+    },
+    "spouse": {
+      "bangla_labels": [
+        "বউ",
+        "স্ত্রী",
+        "গিন্নি",
+        "রোকেয়া"
+      ],
+      "english_labels": [
+        "wife",
+        "bou",
+        "rokeya"
+      ],
+      "contact_id": "c006",
+      "name": "Rokeya Begum",
+      "phone": "01552000006"
+    },
+    "driver": {
+      "bangla_labels": [
+        "ড্রাইভার",
+        "ড্রাইভার সোহেল",
+        "সোহেল"
+      ],
+      "english_labels": [
+        "driver",
+        "driver sohel",
+        "sohel"
+      ],
+      "contact_id": "c026",
+      "name": "Driver Sohel",
+      "phone": "01821000026"
+    },
+    "electrician": {
+      "bangla_labels": [
+        "ইলেকট্রিশিয়ান",
+        "রহিম মিস্ত্রি",
+        "বিদ্যুৎ মিস্ত্রি"
+      ],
+      "english_labels": [
+        "electrician",
+        "rahim electrician",
+        "mistri"
+      ],
+      "contact_id": "c027",
+      "name": "Electrician Rahim",
+      "phone": "01921000027"
+    },
+    "doctor": {
+      "bangla_labels": [
+        "দাঁতের ডাক্তার",
+        "ডাক্তার মাহফুজ",
+        "ডাক্তার"
+      ],
+      "english_labels": [
+        "dentist",
+        "dr mahfuz",
+        "doctor"
+      ],
+      "contact_id": "c036",
+      "name": "Dr. Mahfuz Dental",
+      "phone": "01751000036"
+    },
+    "supervisor": {
+      "bangla_labels": [
+        "বস",
+        "তারেক বস",
+        "তারেক স্যার"
+      ],
+      "english_labels": [
+        "boss",
+        "tareq boss",
+        "sir"
+      ],
+      "contact_id": "c016",
+      "name": "Tareq Boss",
+      "phone": "01713000016"
+    },
+    "father": {
+      "bangla_labels": [
+        "আব্বু",
+        "আব্বা",
+        "বাবা"
+      ],
+      "english_labels": [
+        "abbu",
+        "abba",
+        "baba",
+        "father"
+      ],
+      "contact_id": "c013",
+      "name": "Abbu",
+      "phone": "01812000013"
+    },
+    "mother": {
+      "bangla_labels": [
+        "আম্মু",
+        "আম্মা",
+        "মা"
+      ],
+      "english_labels": [
+        "ammu",
+        "amma",
+        "maa",
+        "mother"
+      ],
+      "contact_id": "c012",
+      "name": "Ammu",
+      "phone": "01712000012"
+    },
+    "sister_in_law": {
+      "bangla_labels": [
+        "ভাবী",
+        "ভাবি",
+        "বৌদি"
+      ],
+      "english_labels": [
+        "bhabi",
+        "bhabhi",
+        "sister_in_law"
+      ],
+      "contact_id": "c054",
+      "name": "Bhabi (Sultana)",
+      "phone": "01991000054"
+    },
+    "brother_in_law_dulabhai": {
+      "bangla_labels": [
+        "দুলাভাই"
+      ],
+      "english_labels": [
+        "dulabhai",
+        "faruk"
+      ],
+      "contact_id": "c053",
+      "name": "Dulabhai Faruk",
+      "phone": "01891000053"
+    },
+    "brother_in_law_sala": {
+      "bangla_labels": [
+        "শালা",
+        "শ্যালক"
+      ],
+      "english_labels": [
+        "shala",
+        "saley",
+        "imran"
+      ],
+      "contact_id": "c055",
+      "name": "Saley (Imran)",
+      "phone": "01691000055"
+    }
+  },
+  "category_groups": {
+    "chele": [
+      "elder_son",
+      "younger_son",
+      "middle_son"
+    ],
+    "meye": [
+      "elder_daughter",
+      "younger_daughter"
+    ],
+    "jamai": [
+      "son_in_law"
+    ]
+  }
+}

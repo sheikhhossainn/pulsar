@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pulsar_background_dark"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="পালসার (Pulsar)"
+            android:textColor="@color/pulsar_text_primary"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Native Bangla Voice Agent &amp; Digital Guardian"
+            android:textColor="@color/pulsar_teal"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="16dp"
+            android:background="@color/pulsar_card_bg" />
+
+        <!-- Status Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/pulsar_card_bg"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvGuardianStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🛡️ ডিজিটাল অভিভাবক সক্রিয়"
+                    android:textColor="@color/pulsar_success_green"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvStatusSub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="bKash/Nagad জালিয়াতি প্রতিরোধ, আত্মীয়ের নাম্বার ও স্মার্ট ফাইল সহকারী প্রস্তুত।"
+                    android:textColor="@color/pulsar_text_secondary"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Test Action Buttons -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="দ্রুত টেস্ট (Quick MVP Tests)"
+            android:textColor="@color/pulsar_text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTestAmmuCall"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="12dp"
+            android:text="১. কল টেস্ট: 'আম্মুকে কল দে'"
+            android:textAllCaps="false"
+            app:cornerRadius="12dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTestSonAmbiguity"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:text="২. অস্পষ্টতা টেস্ট: 'আমার ছেলেকে ফোন দাও'"
+            android:textAllCaps="false"
+            app:cornerRadius="12dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTestBossQuirk"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:text="৩. ভেসটেশন টেস্ট: 'আবসের ইমেইলটা চেক করত'"
+            android:textAllCaps="false"
+            app:cornerRadius="12dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTestFraudSms"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/pulsar_warning_red"
+            android:text="৪. প্রতারণা টেস্ট: ব্যক্তিগত 017.. থেকে ভুয়া bKash SMS"
+            android:textAllCaps="false"
+            app:cornerRadius="12dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTestOverlayHud"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/pulsar_teal"
+            android:text="৫. ফ্লোটিং HUD ও 150ms Chime টেস্ট"
+            android:textAllCaps="false"
+            android:textColor="@color/pulsar_background_dark"
+            app:cornerRadius="12dp" />
+
+        <!-- Output Log Area -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="ফলাফল (Live Output):"
+            android:textColor="@color/pulsar_text_secondary"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvLiveOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/pulsar_card_bg"
+            android:padding="16dp"
+            android:text="কোনো টেস্ট সিলেক্ট করুন..."
+            android:textColor="@color/pulsar_text_primary"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+</ScrollView>

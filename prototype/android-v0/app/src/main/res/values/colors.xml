@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pulsar_purple">#6C5CE7</color>
+    <color name="pulsar_purple_dark">#4834D4</color>
+    <color name="pulsar_teal">#00CEC9</color>
+    <color name="pulsar_background_dark">#12141A</color>
+    <color name="pulsar_card_bg">#1E222D</color>
+    <color name="pulsar_warning_red">#FF4D4D</color>
+    <color name="pulsar_success_green">#00B894</color>
+    <color name="pulsar_text_primary">#FFFFFF</color>
+    <color name="pulsar_text_secondary">#A4B0BE</color>
+</resources>

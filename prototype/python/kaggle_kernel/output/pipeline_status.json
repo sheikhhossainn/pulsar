@@ -1,0 +1,7 @@
+{
+  "status": "success",
+  "total_matched_files": 9552,
+  "tested_samples": 5,
+  "mean_latency_ms": 210.6,
+  "model": "sherpa-onnx-streaming-zipformer-bn-vosk-2026-02-09"
+}

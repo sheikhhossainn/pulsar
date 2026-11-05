@@ -1,0 +1,8 @@
+query,predicted_intent,cpu_latency_ms
+whatsapp e amar betak call de to,MAKE_CALL,17.61
+"amar chele ekta chobi diche whatsapp e, ber kor to",VIEW_MEDIA,18.1
+"boss ekta file pathiyeche WhatsApp e, ektu open koro",VIEW_MEDIA,15.15
+ei invoice ta PDF banaye HR ke mail kor,IMG_TO_PDF,15.27
+করিমরে একটা রিং মার তো জলদি,MAKE_CALL,15.02
+আজকের ঢাকার আবহাওয়া কেমন বল তো,WEB_SEARCH,14.2
+আম্মুরে রিপ্লাই দে যে রাস্তায় আছি,REPLY_MESSAGE,14.89
