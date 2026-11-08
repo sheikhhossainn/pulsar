@@ -1,0 +1,1643 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Pulsar | Android MVP SRS v1.0</title><style>
+:root{color-scheme:light;--ink:#172a30;--muted:#52656c;--line:#d9e3e5;--accent:#096964}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f3f6f5;color:var(--ink);font:16px/1.65 'Segoe UI','Nirmala UI',Arial,sans-serif}
+.layout{display:grid;grid-template-columns:280px minmax(0,1000px);max-width:1340px;margin:auto;gap:32px;padding:32px 24px}
+nav{position:sticky;top:24px;align-self:start;max-height:calc(100vh - 48px);overflow:auto;font-size:13px;padding:12px 16px}nav strong{display:block;letter-spacing:.15em;color:var(--accent);margin-bottom:16px}nav ul{list-style:none;padding:0}nav li{margin:9px 0}nav a{color:var(--muted);text-decoration:none}nav a:hover{color:var(--accent)}
+main{background:white;padding:48px 48px 64px;border:1px solid var(--line);min-width:0}h1{font-size:36px;line-height:1.18;letter-spacing:-.025em;margin:0 0 24px}h2{font-size:25px;line-height:1.3;border-top:2px solid var(--accent);padding-top:22px;margin-top:48px;scroll-margin-top:24px}h3{font-size:19px;line-height:1.4;margin-top:28px}a{color:var(--accent);overflow-wrap:anywhere}p,li{overflow-wrap:anywhere}table{border-collapse:collapse;width:100%;font-size:13px;line-height:1.5;margin:20px 0}th,td{border:1px solid var(--line);padding:10px;vertical-align:top;overflow-wrap:anywhere}th{background:#eaf2f1;text-align:left;font-weight:650}tr:nth-child(even) td{background:#fafcfc}pre{background:#f1f5f5;border:1px solid var(--line);padding:18px;overflow:auto;font:12px/1.7 Consolas,monospace}code{font-size:.9em}hr{border:0;border-top:1px solid var(--line);margin:32px 0}.toolbar{display:flex;gap:12px;align-items:center;margin-bottom:28px;color:var(--muted);font-size:12px}.toolbar button{background:var(--ink);color:white;padding:9px 14px;border:0;border-radius:3px;cursor:pointer}.toolbar a{margin-left:auto}
+@media(max-width:1000px){.layout{display:block;padding:16px}nav{position:relative;top:0;max-height:none}nav .toc{display:none}main{padding:28px 20px}h1{font-size:29px}table{font-size:12px}th,td{padding:7px}}
+@media print{@page{size:A4 landscape;margin:15mm}body{background:white;font-size:10pt;line-height:1.45}.layout{display:block;padding:0;margin:0;max-width:none}nav,.toolbar{display:none}main{border:0;padding:0}h1{font-size:26pt}h2{font-size:18pt;break-after:avoid;margin-top:22pt}h3{font-size:13pt;break-after:avoid}table{font-size:8pt}thead{display:table-header-group}tr{break-inside:avoid}pre{white-space:pre-wrap;font-size:8pt}a{color:inherit;text-decoration:none}}
+</style></head><body><div class="layout"><nav aria-label="Document contents"><strong>PULSAR / SRS 1.0</strong><div class="toc">
+<ul>
+<li><a href="#1-executive-summary">1. Executive summary</a></li>
+<li><a href="#2-goals-users-and-common-feature-selection">2. Goals, users, and common-feature selection</a></li>
+<li><a href="#3-scope-and-release-boundaries">3. Scope and release boundaries</a></li>
+<li><a href="#4-platform-assumptions-and-dependencies">4. Platform, assumptions, and dependencies</a></li>
+<li><a href="#5-functional-requirements">5. Functional requirements</a></li>
+<li><a href="#6-end-to-end-use-cases">6. End-to-end use cases</a></li>
+<li><a href="#7-ux-and-dialogue-design">7. UX and dialogue design</a></li>
+<li><a href="#8-recommended-technology-stack-and-decision-rationale">8. Recommended technology stack and decision rationale</a></li>
+<li><a href="#9-speech-data-accent-adaptation-and-model-release-process">9. Speech data, accent adaptation, and model release process</a></li>
+<li><a href="#10-data-model-scheduling-consistency-and-interfaces">10. Data model, scheduling consistency, and interfaces</a></li>
+<li><a href="#11-security-privacy-permissions-and-distribution">11. Security, privacy, permissions, and distribution</a></li>
+<li><a href="#12-non-functional-requirements-and-performance-budgets">12. Non-functional requirements and performance budgets</a></li>
+<li><a href="#13-verification-acceptance-tests-and-traceability">13. Verification, acceptance tests, and traceability</a></li>
+<li><a href="#14-step-by-step-implementation-plan">14. Step-by-step implementation plan</a></li>
+<li><a href="#15-resources-costs-feasibility-and-risks">15. Resources, costs, feasibility, and risks</a></li>
+<li><a href="#16-pitch-and-demonstration-package">16. Pitch and demonstration package</a></li>
+<li><a href="#17-decisions-open-gates-and-change-control">17. Decisions, open gates, and change control</a></li>
+<li><a href="#18-sources-and-terminology">18. Sources and terminology</a></li>
+</ul>
+</div>
+</nav><main><div class="toolbar"><button type="button" onclick="window.print()">Print / Save as PDF</button><span>Proposed MVP specification · 5 November 2026</span><a href="PULSAR_MVP_SRS.md">Markdown source</a></div><h1 id="pulsar-android-mvp-software-requirements-specification">Pulsar — Android MVP Software Requirements Specification</h1>
+<p><strong>Version:</strong> 1.0 · <strong>Date:</strong> 5 November 2026 · <strong>Status:</strong> Proposed implementation baseline</p>
+<p><strong>Audience:</strong> Founders, Android and ML developers, pilot partners, incubators, and prospective funders.</p>
+<p><strong>Document purpose:</strong> Specify a buildable, demonstrable Android MVP for older adults, people with limited digital confidence, and busy users in Bangladesh. This is a product and engineering specification, not a claim that the software or its performance targets already exist.</p>
+<p><strong>Planning basis:</strong> <code>SUGGESTIONS.md</code> and the revised instruction to serve all three groups through common features. This document supersedes conflicting MVP scope and architecture recommendations in that earlier plan; it does not modify the original file. Existing assets described there have not been independently audited. The current workspace contains the proposal, not the referenced implementation assets.</p>
+<hr />
+<h2 id="1-executive-summary">1. Executive summary</h2>
+<p>Pulsar is an offline-first Bangla voice interface for everyday Android tasks. Users speak naturally to create reminders, find and call saved contacts, open applications, and perform a limited set of phone-navigation actions. The same workflows serve all three audiences; the interface does not divide people into an “elderly mode” and a “busy mode.”</p>
+<p><strong>Pitch:</strong> “Pulsar helps people use everyday Android features in Bangla—remember a task, call someone, open an app, and navigate supported screens—with less typing and less dependence on someone else.”</p>
+<p>The MVP focuses on standard Bangla, Rajshahi-area conversational speech, and Dhaka-area conversational speech. These are recruitment and evaluation cohorts, not a claim that Bangladesh has three uniform accents. One shared recognition model is preferred; users should not have to identify their accent before speaking.</p>
+<p>Pulsar provides voice-only completion of its supported workflows <strong>after setup, device unlocking, and session activation</strong>. Optional cross-app navigation uses explicit user commands and Android accessibility APIs on a tested compatibility list. It cannot promise control of every application, unlock the phone, approve system permissions by itself, or listen continuously while the screen is off.</p>
+<p>The recommended stack is native Kotlin and Jetpack Compose, sherpa-onnx for local speech inference, a deterministic Kotlin command/dialogue engine, Room for local data, and Android platform APIs for alarms and calls. Python, PyTorch, icefall/k2, and Lhotse support speech experiments and adaptation outside the app. Rust is not an MVP prerequisite.</p>
+<p><strong>Success means:</strong> users in each audience can independently complete shared tasks, local actions work without internet, critical actions require appropriate confirmation, and results are measured on real low-cost Android phones and unseen speakers.</p>
+<h2 id="2-goals-users-and-common-feature-selection">2. Goals, users, and common-feature selection</h2>
+<h3 id="21-product-goals">2.1 Product goals</h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Goal</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>G-01</td>
+<td>Reduce interaction difficulty for all three audiences</td>
+<td>Task completion and assistance rate reported separately by audience</td>
+</tr>
+<tr>
+<td>G-02</td>
+<td>Make local everyday tasks available without internet</td>
+<td>Airplane-mode task suite after model installation</td>
+</tr>
+<tr>
+<td>G-03</td>
+<td>Understand the three selected speech cohorts</td>
+<td>Speaker-disjoint evaluation with per-cohort results</td>
+</tr>
+<tr>
+<td>G-04</td>
+<td>Prevent silent consequential mistakes</td>
+<td>Confirmation, ambiguity, cancellation, and failure tests</td>
+</tr>
+<tr>
+<td>G-05</td>
+<td>Demonstrate a credible Bangladesh-focused product</td>
+<td>Reproducible live demo, pilot evidence, and honest limitations</td>
+</tr>
+</tbody>
+</table>
+<h3 id="22-intended-users">2.2 Intended users</h3>
+<table>
+<thead>
+<tr>
+<th>Audience</th>
+<th>Shared problem</th>
+<th>Design response</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Older adults</td>
+<td>Small targets, typing difficulty, remembering sequences</td>
+<td>Large controls, spoken feedback, predictable recovery</td>
+</tr>
+<tr>
+<td>People with limited digital confidence</td>
+<td>Unfamiliar navigation, labels, or English terminology</td>
+<td>Bangla instructions, familiar aliases, guided setup</td>
+</tr>
+<tr>
+<td>Busy users</td>
+<td>Repeated interaction interrupts another task</td>
+<td>Short commands, immediate low-risk actions, session continuity</td>
+</tr>
+</tbody>
+</table>
+<p>These categories can overlap. Age alone shall not be treated as a proxy for disability, literacy, or technical ability. A family member may assist with setup, but is not automatically a monitoring user or account owner.</p>
+<h3 id="23-shared-feature-matrix">2.3 Shared feature matrix</h3>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Older adults</th>
+<th>Limited digital confidence</th>
+<th>Busy users</th>
+<th>MVP decision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Create and manage reminders</td>
+<td>Remember routine tasks</td>
+<td>Avoid complex scheduling UI</td>
+<td>Capture tasks quickly</td>
+<td>Required</td>
+</tr>
+<tr>
+<td>Find and call saved contacts</td>
+<td>Avoid contact-list searching</td>
+<td>Use familiar names/relationships</td>
+<td>Call without manual searching</td>
+<td>Required</td>
+</tr>
+<tr>
+<td>Open installed apps</td>
+<td>Avoid hunting for icons</td>
+<td>Use Bangla aliases</td>
+<td>Fast navigation</td>
+<td>Required</td>
+</tr>
+<tr>
+<td>Home, Back, supported scrolling and numbered controls</td>
+<td>Reduce precise touch requirements</td>
+<td>Guided navigation</td>
+<td>Hands-free interaction</td>
+<td>Conditional MVP module</td>
+</tr>
+<tr>
+<td>Help, repeat, correction, cancel, stop</td>
+<td>Recover from confusion</td>
+<td>Learn supported behavior</td>
+<td>Recover without restarting</td>
+<td>Required across all features</td>
+</tr>
+<tr>
+<td>Scan documents and send PDFs</td>
+<td>Recurring demand uncertain</td>
+<td>Complex image selection remains</td>
+<td>Useful for a subset</td>
+<td>Excluded</td>
+</tr>
+<tr>
+<td>Medicine-specific scheduling intelligence</td>
+<td>Relevant to a subset</td>
+<td>Not a universal task</td>
+<td>Not a universal task</td>
+<td>Excluded; medicine may be ordinary reminder content</td>
+</tr>
+<tr>
+<td>Family monitoring and escalation</td>
+<td>May help some families</td>
+<td>Adds another user's data access</td>
+<td>Not a shared need</td>
+<td>Excluded</td>
+</tr>
+</tbody>
+</table>
+<p>“Common” means the same task and interaction are useful to each audience, not that every individual uses every feature every day. Frequency and value remain hypotheses to validate. A feature that fails this test during the pilot shall not be expanded merely to preserve the original list.</p>
+<h3 id="24-preventing-audience-conflicts">2.4 Preventing audience conflicts</h3>
+<ul>
+<li>Use one consistent interface and command grammar.</li>
+<li>Allow optional speech-rate and text-size preferences, not persona-specific applications.</li>
+<li>Confirm calls and reminder mutations; do not confirm every Home or Back command.</li>
+<li>Ask a short clarification only when information is missing or ambiguous.</li>
+<li>Provide both voice and large touch controls; neither audience loses its preferred input.</li>
+<li>Keep routine replies brief, but allow longer readback when correctness requires it.</li>
+<li>Do not require a subscription, login, remote caregiver, or internet connection for core local use.</li>
+</ul>
+<h2 id="3-scope-and-release-boundaries">3. Scope and release boundaries</h2>
+<h3 id="31-mandatory-core-release">3.1 Mandatory core release</h3>
+<ol>
+<li>Assisted or self-service Bangla onboarding and capability checks.</li>
+<li>Push-to-talk and a user-started hands-free session.</li>
+<li>Local speech recognition across three evaluated speech cohorts.</li>
+<li>Reminder creation, listing, editing, cancellation, acknowledgement, and snoozing.</li>
+<li>Saved-contact lookup, user-confirmed aliases, and confirmed outgoing calls.</li>
+<li>Launching user-selected installed apps by name or alias.</li>
+<li>Spoken/visual help, confirmation, correction, and recovery.</li>
+<li>Local storage, deletion controls, permission diagnostics, and an offline demo.</li>
+</ol>
+<h3 id="32-conditional-mvp-phone-control-module">3.2 Conditional MVP phone-control module</h3>
+<p>Home, Back, Recents, scrolling, and numbered accessible controls may ship only after device, accessibility, consent, and distribution gates pass. This is an optional capability within the MVP, not a prerequisite for reminders and calling. A release shall explicitly label this module <strong>available</strong>, <strong>experimental on listed devices</strong>, or <strong>unavailable</strong>; it shall not imply universal control.</p>
+<p>Initial external screen-action allowlist: the selected test-device launcher and calculator. Pulsar's own screens expose equivalent commands directly without accessibility automation. Contact calls use platform intents rather than tapping another app. Other apps may be launched but are not automatically eligible for internal screen control.</p>
+<h3 id="33-explicit-exclusions">3.3 Explicit exclusions</h3>
+<p>No payments, bKash/Nagad operations, SMS reading, message sending, bulk deletion, financial decisions, prescription interpretation, automatic medical schedules, remote monitoring, cloud chatbot, general web answers, document scanning, unrestricted dictation into other apps, autonomous multi-app planning, screen-off wake word, lock-screen bypass, biometric/PIN entry, or automatic permission approval.</p>
+<p>No iOS, desktop host product, or nationwide accent claim is included. Future possibilities are not deliverables under this SRS.</p>
+<h3 id="34-meaning-of-voice-only-operation">3.4 Meaning of voice-only operation</h3>
+<table>
+<thead>
+<tr>
+<th>Situation</th>
+<th>MVP behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>First install, permissions, accessibility enablement</td>
+<td>User or helper completes Android-controlled screens; voice-only setup is not promised</td>
+</tr>
+<tr>
+<td>Phone unlocked and Pulsar session active</td>
+<td>Supported commands can be completed using speech</td>
+</tr>
+<tr>
+<td>Cross-app interaction</td>
+<td>An explicitly started, permitted microphone session may continue for core commands; operating another app's screens additionally requires enabled phone-control capability</td>
+</tr>
+<tr>
+<td>Launching an app/call while Pulsar is backgrounded</td>
+<td>Requires a platform-permitted activity-start route; a microphone foreground service alone is insufficient. Otherwise ask the user to return to Pulsar before handoff</td>
+</tr>
+<tr>
+<td>Phone locked/screen off</td>
+<td>Session terminates; scheduled reminder notifications may still fire</td>
+</tr>
+<tr>
+<td>Pulsar not running</td>
+<td>Launch/activation may require a tap, widget, or supported system assistant invocation</td>
+</tr>
+<tr>
+<td>Incoming/outgoing call</td>
+<td>Listening stops; user may need to reactivate after the call</td>
+</tr>
+<tr>
+<td>Unsupported or protected screen</td>
+<td>Explain limitation; do not guess coordinates or bypass security</td>
+</tr>
+<tr>
+<td>Accessibility permission denied</td>
+<td>Core in-app workflows remain usable; external navigation is unavailable</td>
+</tr>
+</tbody>
+</table>
+<p>System-assistant integration through <code>VoiceInteractionService</code> is a feasibility experiment, not a required activation route. It does not guarantee DSP hotword availability or universal screen-off activation. [R5] Core app/call handoff acceptance is measured from visible Pulsar. Background voice reminder processing may continue in an eligible user-started session, but launching another activity must independently satisfy Android background-activity-start restrictions; never treat microphone permission as that authorization. [R16]</p>
+<h2 id="4-platform-assumptions-and-dependencies">4. Platform, assumptions, and dependencies</h2>
+<ul>
+<li><strong>Platform baseline:</strong> Android 10/API 29 or later, ARM64 CPU, 3 GB physical RAM, microphone, speaker, and adequate free storage. This is a proposed support floor pending device testing, not a validated guarantee.</li>
+<li><strong>Build:</strong> use the stable Android SDK and libraries compatible with current distribution requirements at build freeze; record exact versions and hashes. Do not freeze stale dependency versions in this proposal.</li>
+<li><strong>Test floor:</strong> at least four physical phones spanning low-cost OEM variants and multiple OS versions, including the minimum supported OS and newest supported release available to the team.</li>
+<li><strong>Language:</strong> Bangla UI/output; Bangla and English digits, common app names, and limited mixed-language commands accepted.</li>
+<li><strong>Timezone:</strong> initialize from the device; use Asia/Dhaka in the Bangladesh pilot. Confirm and document behavior if timezone changes.</li>
+<li><strong>Connectivity:</strong> no internet required for local recognition, reminders, aliases, or navigation after installation. Calls require SIM/network service; opened apps have their own connectivity requirements.</li>
+<li><strong>Distribution:</strong> signed private pilot APK or an approved testing track. Store review and optional accessibility approval are separate external dependencies.</li>
+<li><strong>Model availability:</strong> the documented Bengali Zipformer export exists, but trainable checkpoint and recipe compatibility must be verified before promising fine-tuning. [R6]</li>
+<li><strong>No backend dependency:</strong> the core app has no account server, subscription server, or runtime cloud inference. Research-data storage is a separate consented workflow.</li>
+</ul>
+<h2 id="5-functional-requirements">5. Functional requirements</h2>
+<p><strong>Priority:</strong> M = mandatory core; C = conditional phone-control module. “Shall” indicates a release requirement. Acceptance tests appear in Section 13.</p>
+<h3 id="51-onboarding-and-capabilities">5.1 Onboarding and capabilities</h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Priority</th>
+<th>Requirement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FR-001</td>
+<td>M</td>
+<td>The app shall show and speak a short Bangla explanation of supported actions and limitations.</td>
+</tr>
+<tr>
+<td>FR-002</td>
+<td>M</td>
+<td>The app shall request microphone, notification, alarm, contact, and calling access only when the associated feature is introduced or invoked.</td>
+</tr>
+<tr>
+<td>FR-003</td>
+<td>M</td>
+<td>The app shall provide a capability screen showing recognition readiness, reminder permission state, call availability, and phone-control availability.</td>
+</tr>
+<tr>
+<td>FR-004</td>
+<td>M</td>
+<td>The app shall support onboarding without a login and allow refusal of optional permissions without blocking unrelated features.</td>
+</tr>
+<tr>
+<td>FR-005</td>
+<td>M</td>
+<td>The app shall run a practice command and a test reminder during onboarding and explain failed checks.</td>
+</tr>
+<tr>
+<td>FR-006</td>
+<td>M</td>
+<td>The user shall explicitly select or confirm saved contact aliases and app aliases; inferred relationships shall remain suggestions until confirmed.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="52-voice-interaction-and-dialogue">5.2 Voice interaction and dialogue</h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Priority</th>
+<th>Requirement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FR-010</td>
+<td>M</td>
+<td>The app shall provide a large Talk button, immediate recording feedback, and visible listening/speaking states.</td>
+</tr>
+<tr>
+<td>FR-011</td>
+<td>M</td>
+<td>The app shall offer an explicitly started hands-free session with a persistent stop control and the required foreground-service notification.</td>
+</tr>
+<tr>
+<td>FR-012</td>
+<td>M</td>
+<td>A session shall end on stop command, stop control, lock/screen-off, call interruption, microphone loss, or 60 seconds without user speech; it shall warn before the inactivity timeout.</td>
+</tr>
+<tr>
+<td>FR-013</td>
+<td>M</td>
+<td>The app shall support help, repeat, yes, no, cancel, correction, and stop commands in every applicable dialogue state.</td>
+</tr>
+<tr>
+<td>FR-014</td>
+<td>M</td>
+<td>The app shall route unsupported, incomplete, or ambiguous commands to clarification or a supported-command explanation, not an invented action.</td>
+</tr>
+<tr>
+<td>FR-015</td>
+<td>M</td>
+<td>The app shall bind a confirmation to one pending action and its exact parameters; corrections invalidate the previous confirmation.</td>
+</tr>
+<tr>
+<td>FR-016</td>
+<td>M</td>
+<td>Pending confirmations shall expire after 20 seconds without user response; the app shall announce cancellation and execute nothing.</td>
+</tr>
+<tr>
+<td>FR-017</td>
+<td>M</td>
+<td>No side effect shall execute from partial ASR text; speculative recognition may prepare candidates only.</td>
+</tr>
+<tr>
+<td>FR-018</td>
+<td>M</td>
+<td>The MVP shall pause recognition during spoken output to avoid self-triggering, then signal readiness; an always-available touch stop remains usable during playback.</td>
+</tr>
+<tr>
+<td>FR-019</td>
+<td>M</td>
+<td>The app shall retain the original and normalized utterance in volatile dialogue state only, unless the user explicitly saves reminder audio.</td>
+</tr>
+<tr>
+<td>FR-020</td>
+<td>M</td>
+<td>The app shall provide an equivalent visible control for every core voice action, including correction and cancellation.</td>
+</tr>
+</tbody>
+</table>
+<p>Half-duplex speech is deliberate: voice interruption while Pulsar is speaking is not guaranteed. Prompts should normally take 1–4 seconds; lengthy schedule readback may take longer. Accessibility does not require rushing older speakers.</p>
+<h3 id="53-reminders">5.3 Reminders</h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Priority</th>
+<th>Requirement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FR-030</td>
+<td>M</td>
+<td>The app shall create a reminder from a task and an explicit date/time or a supported relative duration.</td>
+</tr>
+<tr>
+<td>FR-031</td>
+<td>M</td>
+<td>The app shall support one-time, daily, selected-weekday, and explicit multiple-times-per-day schedules, with optional end date or number of days.</td>
+</tr>
+<tr>
+<td>FR-032</td>
+<td>M</td>
+<td>The app shall ask for missing times, AM/PM/day-part ambiguity, past-time ambiguity, and unspecified recurrence details.</td>
+</tr>
+<tr>
+<td>FR-033</td>
+<td>M</td>
+<td>Before creation or edit, the app shall read back task, resolved date/time, and recurrence and obtain explicit confirmation.</td>
+</tr>
+<tr>
+<td>FR-034</td>
+<td>M</td>
+<td>The app shall list today's and upcoming reminders and support identifying one by title, time, or numbered candidate.</td>
+</tr>
+<tr>
+<td>FR-035</td>
+<td>M</td>
+<td>The app shall support edit, cancel one occurrence, and cancel a series with clear distinction and confirmation.</td>
+</tr>
+<tr>
+<td>FR-036</td>
+<td>M</td>
+<td>The app shall persist confirmed reminders and scheduling state; it shall announce “scheduled” only after successful platform scheduling.</td>
+</tr>
+<tr>
+<td>FR-037</td>
+<td>M</td>
+<td>The app shall reconcile reminders after reboot following user unlock, time/timezone change, package replacement, and permission-state change or subsequent app resume.</td>
+</tr>
+<tr>
+<td>FR-038</td>
+<td>M</td>
+<td>A firing reminder shall show task content and Done/Snooze controls, with audio subject to device settings and permissions.</td>
+</tr>
+<tr>
+<td>FR-039</td>
+<td>M</td>
+<td>The app shall support default 10-minute snooze and explicit positive snooze durations within a documented 1–1,440-minute range.</td>
+</tr>
+<tr>
+<td>FR-040</td>
+<td>M</td>
+<td>The app shall record acknowledgement separately from alert delivery and shall not represent acknowledgement as verified task or medication completion.</td>
+</tr>
+<tr>
+<td>FR-041</td>
+<td>M</td>
+<td>When verified offline TTS cannot speak a task, voice creation shall obtain consent to retain a task-label recording, replay it for confirmation, and link it to the reminder. Users shall be able to preview, replace, or remove it; stored audio shall not enter training automatically.</td>
+</tr>
+<tr>
+<td>FR-042</td>
+<td>M</td>
+<td>Permission denial or revocation shall mark precise reminders blocked, explain the problem, and preserve the user's intent; it shall not silently substitute an imprecise schedule.</td>
+</tr>
+</tbody>
+</table>
+<p>Supported examples: “আধা ঘণ্টা পরে পানি খেতে মনে করিও”, “প্রতিদিন সকাল আটটায় হাঁটার কথা মনে করিও”, “শুক্রবার বিকাল চারটায় বিল দিতে মনে করিয়ে দিও”, “আজকের দ্বিতীয় রিমাইন্ডারটা বন্ধ করো”.</p>
+<p>Rules: “দিনে তিনবার” requires explicit times; “খাওয়ার পরে” requires clarification; “কাল” is resolved from utterance context, not universally mapped; “সকাল” alone asks for a time rather than silently selecting 8 AM. Every-N-hours recurrence is excluded from the first MVP to avoid confusing elapsed intervals with calendar schedules.</p>
+<p>Each recurrence creates distinct occurrences. Editing a series affects future occurrences only. On timezone change, calendar schedules follow the device's local clock with a visible notice; elapsed-duration reminders retain their intended duration where the original deadline can be reconstructed. After reboot, overdue reminders are presented once as overdue, not replayed in a burst. No alerts before first unlock after reboot are promised in the MVP.</p>
+<h3 id="54-contacts-and-calls">5.4 Contacts and calls</h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Priority</th>
+<th>Requirement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FR-050</td>
+<td>M</td>
+<td>The app shall resolve names and user-approved aliases from permitted saved contacts or a manually entered local favourite.</td>
+</tr>
+<tr>
+<td>FR-051</td>
+<td>M</td>
+<td>Multiple people, numbers, or similar fuzzy matches shall produce a numbered clarification; fuzzy matching shall never authorize a call by itself.</td>
+</tr>
+<tr>
+<td>FR-052</td>
+<td>M</td>
+<td>Before initiating a call, the app shall identify the selected contact and number label and obtain explicit confirmation.</td>
+</tr>
+<tr>
+<td>FR-053</td>
+<td>M</td>
+<td>With calling permission, the app shall use a documented Android call intent; without it, it shall offer a dialer handoff and disclose the additional touch requirement.</td>
+</tr>
+<tr>
+<td>FR-054</td>
+<td>M</td>
+<td>The app shall stop microphone capture before call handoff and report only that the call was requested, not that it connected.</td>
+</tr>
+<tr>
+<td>FR-055</td>
+<td>M</td>
+<td>The app shall support cancellation before dispatch; after handoff, call control belongs to the phone application.</td>
+</tr>
+<tr>
+<td>FR-056</td>
+<td>M</td>
+<td>The app shall not initiate emergency, premium/service-code, USSD, arbitrary unsaved-number, or financial-service calls in the MVP.</td>
+</tr>
+</tbody>
+</table>
+<p>Dual-SIM selection may require Android's own prompt. Voice-only call initiation is supported only on tested configurations with a usable default calling route. Contact permissions and CALL_PHONE are independent. A contact-picker fallback may be offered after device verification; manual favourites shall remain available without bulk contact access. [R8]</p>
+<h3 id="55-app-launching-and-bounded-phone-control">5.5 App launching and bounded phone control</h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Priority</th>
+<th>Requirement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FR-060</td>
+<td>M</td>
+<td>The app shall open a user-selected installed application by label or confirmed Bangla alias using a supported launch intent.</td>
+</tr>
+<tr>
+<td>FR-061</td>
+<td>M</td>
+<td>Missing, ambiguous, or inaccessible applications shall produce an explanation or selection prompt; the app shall not install applications automatically.</td>
+</tr>
+<tr>
+<td>FR-062</td>
+<td>M</td>
+<td>App launching shall not imply permission to operate the launched application's internal screens.</td>
+</tr>
+<tr>
+<td>FR-063</td>
+<td>C</td>
+<td>With accessibility enabled, the app shall map explicit commands to available Home, Back, and Recents actions and check their outcomes.</td>
+</tr>
+<tr>
+<td>FR-064</td>
+<td>C</td>
+<td>On allowlisted screens, the app shall scroll a supported accessible container in the requested direction and report unavailable actions.</td>
+</tr>
+<tr>
+<td>FR-065</td>
+<td>C</td>
+<td>The app shall label eligible accessible controls with temporary numbers and offer numbered selection by speech.</td>
+</tr>
+<tr>
+<td>FR-066</td>
+<td>C</td>
+<td>Screen targets shall bind to package, window, view identity, and a screen-generation token; any screen change invalidates previous numbers and confirmation.</td>
+</tr>
+<tr>
+<td>FR-067</td>
+<td>C</td>
+<td>The app shall prefer semantic node actions and shall not use OCR-based guessing, arbitrary coordinate tapping, or an LLM-generated action sequence.</td>
+</tr>
+<tr>
+<td>FR-068</td>
+<td>C</td>
+<td>Screen reading and actions shall stop outside the allowlist, on secure/permission screens, or when accessibility access is revoked.</td>
+</tr>
+<tr>
+<td>FR-069</td>
+<td>C</td>
+<td>An action that changes state beyond reversible navigation shall require explicit confirmation or be denied if its effect is not classified.</td>
+</tr>
+<tr>
+<td>FR-070</td>
+<td>C</td>
+<td>The app shall disclose accessibility use, collect explicit consent, provide an immediate disable control, and keep a versioned supported-device/app list.</td>
+</tr>
+</tbody>
+</table>
+<p>Accessibility allows certain global and node actions, but application support varies. A general assistant for all three groups shall not falsely declare itself a disability-specific accessibility tool. Store eligibility is not guaranteed by using deterministic commands. [R3, R4]</p>
+<h3 id="56-data-and-recovery">5.6 Data and recovery</h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Priority</th>
+<th>Requirement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FR-080</td>
+<td>M</td>
+<td>Users shall be able to delete individual reminders, stored recordings, aliases, and all Pulsar-local data.</td>
+</tr>
+<tr>
+<td>FR-081</td>
+<td>M</td>
+<td>Deleting a reminder shall cancel its future platform alarms and delete its linked audio after pending playback ends.</td>
+</tr>
+<tr>
+<td>FR-082</td>
+<td>M</td>
+<td>The app shall expose failed, blocked, pending, and completed states without silently losing confirmed requests.</td>
+</tr>
+<tr>
+<td>FR-083</td>
+<td>M</td>
+<td>Diagnostics shall omit raw speech, full transcripts, contact details, and screen contents by default. Export requires an explicit user action and preview.</td>
+</tr>
+<tr>
+<td>FR-084</td>
+<td>M</td>
+<td>The app shall validate the installed model manifest and show a recoverable error if files are missing, corrupt, or incompatible.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="6-end-to-end-use-cases">6. End-to-end use cases</h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Preconditions</th>
+<th>Main sequence</th>
+<th>Alternate/failure behavior</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UC-01 Reminder</td>
+<td>Microphone ready; alarm capability checked</td>
+<td>Speak task/time → clarify if needed → readback → yes → persist → schedule</td>
+<td>Missing time asks; denied alarm access marks blocked</td>
+<td>One confirmed scheduled reminder</td>
+</tr>
+<tr>
+<td>UC-02 Acknowledge/snooze</td>
+<td>Reminder alert visible; user activates listening if needed</td>
+<td>“হয়ে গেছে” or “দশ মিনিট পরে” → resolve occurrence → apply</td>
+<td>Multiple active alerts require selection</td>
+<td>One occurrence acknowledged or snoozed</td>
+</tr>
+<tr>
+<td>UC-03 Call</td>
+<td>Saved favourite; phone unlocked; network/calling route available</td>
+<td>“আম্মুকে কল করো” → resolve → readback → yes → stop listening → call intent</td>
+<td>Ambiguous contact/SIM asks or hands off; no permission opens dialer</td>
+<td>Call requested, not claimed connected</td>
+</tr>
+<tr>
+<td>UC-04 Open app</td>
+<td>User-approved app alias exists</td>
+<td>“ক্যালকুলেটর খোলো” → resolve → launch</td>
+<td>Missing app explains; ambiguous alias asks</td>
+<td>Target app launch requested</td>
+</tr>
+<tr>
+<td>UC-05 Navigate</td>
+<td>Active session; accessibility enabled; compatible screen</td>
+<td>“নিচে যাও” or “দুই নম্বর চাপো” → validate current node → execute</td>
+<td>Screen changed or unsupported → relabel/refuse</td>
+<td>One bounded screen action</td>
+</tr>
+<tr>
+<td>UC-06 Recover</td>
+<td>Any pending dialogue</td>
+<td>“না, নয়টায়” → invalidate old action → update → readback</td>
+<td>Silence cancels pending action</td>
+<td>No stale action executes</td>
+</tr>
+<tr>
+<td>UC-07 Stop</td>
+<td>Listening session active</td>
+<td>“থামো” → cancel pending work → release microphone</td>
+<td>During playback, touch stop remains available</td>
+<td>No further commands accepted until activation</td>
+</tr>
+</tbody>
+</table>
+<p>Every use case shall be exercised with each audience. A successful developer-operated demo does not substitute for user completion evidence.</p>
+<h2 id="7-ux-and-dialogue-design">7. UX and dialogue design</h2>
+<h3 id="71-required-screens">7.1 Required screens</h3>
+<ol>
+<li>Welcome and scope explanation.</li>
+<li>Guided permissions and practice.</li>
+<li>Home: Talk, upcoming reminders, favourites, Help.</li>
+<li>Listening/transcript/clarification surface with Stop.</li>
+<li>Confirmation card with spoken readback and Yes/No/Edit.</li>
+<li>Reminder alert and list/detail editor.</li>
+<li>Contact/app alias setup and numbered choice.</li>
+<li>Capability/settings/privacy page.</li>
+<li>Optional phone-control overlay limited to supported screens.</li>
+</ol>
+<h3 id="72-interaction-rules">7.2 Interaction rules</h3>
+<p>Minimum 48 dp interactive targets; high-contrast text; scalable Bangla font; meaningful Compose semantics; no information conveyed by colour alone. Validate 200% font scaling, screen-reader traversal, and portrait layouts on small screens. Android system dialogs are outside Pulsar's visual control.</p>
+<p>Use respectful plain Bangla. Example success: “আগামীকাল সকাল আটটায় মনে করাব।” Example ambiguity: “সকাল আটটা, না রাত আটটা?” Example blocked capability: “ঠিক সময়ে মনে করাতে অনুমতি দরকার।” Unsupported request: “এটা এখন করতে পারি না। রিমাইন্ডার, কল, বা অ্যাপ খুলতে বলতে পারেন।”</p>
+<p>Routine prompts use licensed human-recorded standard Bangla clips. Numbers, dates, weekdays, common labels, and app aliases use curated phrase units. Installed offline Android TTS may improve dynamic readback but is optional. Do not use a non-commercial-only TTS model in a commercial build without separate rights. [R10]</p>
+<p><strong>Mandatory no-TTS path:</strong> during voice reminder creation, retain the task-label audio with explicit consent and replay it together with the parsed schedule. If reliable task-only segmentation is unavailable, replay the full command or ask the user to record just the task; do not invent a spoken label. Touch-created reminders require a recorded task label to enable full spoken task readback. Uncommon favourite and app names require an approved recorded label during setup; familiar preset relationship/app clips may substitute. Contact disambiguation uses these labels plus prerecorded number-label/digit clips. Listing reminders plays each label and its schedule; editing the task replaces the label only after confirmation. These flows must pass with no Bengali TTS engine installed.</p>
+<p>Users may refuse or delete a recording. The reminder remains usable through its visible title and spoken ordinal/date/time, and the app explicitly says task-name readback is unavailable. A subsequent voice task edit asks for a replacement recording before confirmation; it never pretends to have spoken an unavailable title. Users can still list, identify by ordinal/time, snooze, acknowledge, or cancel. This privacy choice is a disclosed reduction in spoken content, not silent data regeneration. Full voice readback is available when the user supplies the required labels or a verified offline TTS voice is present.</p>
+<h3 id="73-dialogue-state-machine">7.3 Dialogue state machine</h3>
+<pre><code class="language-text">IDLE → LISTENING → INTERPRETING
+                   ├─ unknown/incomplete → CLARIFYING → LISTENING
+                   ├─ reversible navigation → EXECUTING
+                   └─ consequential action → CONFIRMING
+                                               ├─ yes → EXECUTING
+                                               ├─ correction → CLARIFYING
+                                               └─ no/timeout → CANCELLED
+EXECUTING → RESULT or ERROR → LISTENING (if session remains active)
+stop / lock / interruption → IDLE with microphone released
+</code></pre>
+<p>Stop and cancel do not undo an already-dispatched call or completed action. The UI shall explain that boundary rather than pretending rollback occurred.</p>
+<h2 id="8-recommended-technology-stack-and-decision-rationale">8. Recommended technology stack and decision rationale</h2>
+<p>There is no universally best stack independent of devices, team skills, licensing, and measured quality. These are the recommended best-fit defaults for this Android-only MVP. Change them only through a recorded benchmark or requirement-driven decision.</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Selected technology</th>
+<th>Why it fits</th>
+<th>Tradeoff / validation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Android app</td>
+<td>Kotlin, Jetpack Compose, Material 3</td>
+<td>Direct platform integration and accessible UI</td>
+<td>Android-specific; requires native expertise [R1]</td>
+</tr>
+<tr>
+<td>State/concurrency</td>
+<td>ViewModel, StateFlow, Kotlin coroutines</td>
+<td>Lifecycle-aware state and cancellable work</td>
+<td>Explicit ownership needed around services</td>
+</tr>
+<tr>
+<td>Dependency management</td>
+<td>Gradle Kotlin DSL, version catalog; small manual DI graph initially</td>
+<td>Reproducible builds without early framework overhead</td>
+<td>Adopt Hilt only if dependency complexity warrants it</td>
+</tr>
+<tr>
+<td>Audio capture</td>
+<td>AudioRecord, 16 kHz mono PCM after verified resampling</td>
+<td>Direct local capture and streaming input</td>
+<td>Test audio routing, interruptions, device formats</td>
+</tr>
+<tr>
+<td>ASR runtime</td>
+<td>sherpa-onnx Android bindings with one compatible ONNX runtime build</td>
+<td>Existing local streaming deployment path</td>
+<td>Native packaging/ABI and runtime memory must be measured [R7]</td>
+</tr>
+<tr>
+<td>ASR baseline</td>
+<td>Bengali streaming Zipformer/Vosk export</td>
+<td>Relevant existing Bengali model</td>
+<td>Published general-dataset errors are not product accuracy; trainable source access is a gate [R6]</td>
+</tr>
+<tr>
+<td>Endpointing</td>
+<td>Recognizer endpoint rules; measured silence thresholds</td>
+<td>Avoid another model unless needed</td>
+<td>Balance slow speech against response latency</td>
+</tr>
+<tr>
+<td>Intent/dialogue</td>
+<td>Kotlin deterministic finite-state engine and typed commands</td>
+<td>Auditable behavior, no network, clear failure states</td>
+<td>Constrained vocabulary; no general reasoning</td>
+</tr>
+<tr>
+<td>Optional intent fallback</td>
+<td>Existing INT8 BanglaBERT via compatible ONNX Runtime only if evaluation justifies it</td>
+<td>Reuses a claimed asset for paraphrases</td>
+<td>Audit availability, licence, export, and unknown-command calibration first</td>
+</tr>
+<tr>
+<td>Time parser</td>
+<td>Pure Kotlin normalization/rules plus java.time</td>
+<td>Fits Android ownership and is unit-testable</td>
+<td>Requires careful Bangla phrase coverage</td>
+</tr>
+<tr>
+<td>Persistence</td>
+<td>Room/SQLite; DataStore for small preferences</td>
+<td>Migrations, transactions, observable local state</td>
+<td>Database encryption is not automatic [R2]</td>
+</tr>
+<tr>
+<td>Scheduling</td>
+<td>AlarmManager exact one-shot occurrences, receivers, reconciliation</td>
+<td>OS-managed wakeups independent of resident ASR</td>
+<td>Permissions and OS/OEM conditions remain [R9]</td>
+</tr>
+<tr>
+<td>Maintenance jobs</td>
+<td>WorkManager for non-urgent cleanup only</td>
+<td>Appropriate deferred work</td>
+<td>Not a precise reminder scheduler</td>
+</tr>
+<tr>
+<td>Contacts/calls</td>
+<td>ContactsContract where permitted, local favourites, ACTION_CALL/ACTION_DIAL</td>
+<td>Documented platform paths</td>
+<td>Calling permission, SIM prompts, carrier service [R8]</td>
+</tr>
+<tr>
+<td>App launch</td>
+<td>PackageManager plus constrained launchable-app queries</td>
+<td>Avoid hidden APIs</td>
+<td>Package visibility and vendor behavior need testing</td>
+</tr>
+<tr>
+<td>Phone control</td>
+<td>AccessibilityService, semantic node actions, global actions</td>
+<td>Explicit voice-driven navigation</td>
+<td>Optional permission, policy review, incomplete app support [R3, R4]</td>
+</tr>
+<tr>
+<td>Voice output</td>
+<td>Contracted human recordings + phrase bank + user-recorded labels; optional local Android TTS</td>
+<td>Natural Bangla and clear redistribution rights</td>
+<td>Recording effort; dynamic speech less flexible</td>
+</tr>
+<tr>
+<td>Sensitive local files</td>
+<td>App-private storage; Android Keystore-backed AES-GCM for audio and sensitive field payloads</td>
+<td>Protects data without exporting keys</td>
+<td>Recovery/migration design needed; no guarantee on compromised devices</td>
+</tr>
+<tr>
+<td>Model experiments</td>
+<td>Python, PyTorch, icefall/k2, Lhotse</td>
+<td>Training and data pipelines aligned with Zipformer</td>
+<td>Reproduce compatible CUDA/toolchain environment [R11]</td>
+</tr>
+<tr>
+<td>Experiment records</td>
+<td>Git for code, DVC manifests/data versions, local MLflow</td>
+<td>Traceable data/model comparisons</td>
+<td>Private audio storage and access controls remain separate</td>
+</tr>
+<tr>
+<td>Android testing</td>
+<td>JUnit, coroutine tests, instrumented/Compose tests, Macrobenchmark, Perfetto</td>
+<td>Logic, UI, device latency and resource evidence</td>
+<td>Emulator success does not establish OEM reliability</td>
+</tr>
+<tr>
+<td>Delivery</td>
+<td>Gradle release build, signed APK/AAB, CI checks, model/asset manifests</td>
+<td>Reproducible pilot artifacts</td>
+<td>Signing secrets stay outside source control</td>
+</tr>
+</tbody>
+</table>
+<h3 id="81-deliberately-omitted-technologies">8.1 Deliberately omitted technologies</h3>
+<p>No Flutter/React Native bridge for a platform-heavy first release; no on-device general-purpose LLM; no cloud LLM for commands; no vector database; no always-running ASR service at idle; no separate Rust ownership of Android lifecycle or the primary database. Existing Python algorithms can be ported selectively after behavior tests exist.</p>
+<p>A Rust library remains possible later if profiling identifies a specific bottleneck. Porting a sub-millisecond parser is not a priority while ASR, endpointing, and operating-system behavior dominate the experience.</p>
+<h3 id="82-architecture">8.2 Architecture</h3>
+<pre><code class="language-text">Compose UI / Widget / user-started voice session
+                        │
+                 AudioRecord → sherpa-onnx ASR
+                        │ final transcript only
+                 Normalizer + Command Parser
+                        │
+                 Dialogue + Confirmation Policy
+                        │ typed, validated command
+              ┌─────────┼───────────────┐
+              │         │               │
+       Reminder use cases   Contact/App actions   Optional phone control
+              │         │               │
+          Room DB   Android intents   AccessibilityService
+              │
+     AlarmManager adapter + reconciliation
+              │
+       Notification / alert / voice playback
+
+All results → spoken + visible feedback; minimal local diagnostic events
+Training pipeline → versioned model artifact → release packaging (not runtime cloud)
+</code></pre>
+<p>Suggested modules: <code>app</code>, <code>speech</code>, <code>domain</code>, <code>data</code>, <code>platform</code>, and optional <code>phonecontrol</code>. Keep clear interfaces without creating a module for every class.</p>
+<p>Typed command examples: <code>CreateReminder</code>, <code>EditReminder</code>, <code>CancelOccurrence</code>, <code>CallFavourite</code>, <code>LaunchApp</code>, <code>Navigate</code>, <code>SelectScreenTarget</code>, <code>Help</code>, <code>Stop</code>. Commands carry an ID, creation time, parameter version, and required capability checks.</p>
+<h2 id="9-speech-data-accent-adaptation-and-model-release-process">9. Speech data, accent adaptation, and model release process</h2>
+<h3 id="91-three-speech-cohorts">9.1 Three speech cohorts</h3>
+<table>
+<thead>
+<tr>
+<th>Cohort</th>
+<th>Definition for recruitment</th>
+<th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Standard Bangla</td>
+<td>Speakers using a broadly standard spoken register</td>
+<td>Common baseline and output vocabulary</td>
+</tr>
+<tr>
+<td>Rajshahi-area</td>
+<td>Participants self-reporting upbringing/use of Rajshahi-area speech; record locality</td>
+<td>Preserves original local focus and recruitment opportunity</td>
+</tr>
+<tr>
+<td>Dhaka-area conversational Bangla</td>
+<td>Participants using ordinary Dhaka-area conversational speech; record locality and migration history</td>
+<td>Adds a second practical conversational population</td>
+</tr>
+</tbody>
+</table>
+<p>Do not equate Dhaka-area speech with every Dhaka resident or with all Dhakaiya varieties. Record age band, self-reported speech background, relevant language mixing, device, noise condition, and prompt type. Avoid inferring sensitive demographic attributes from audio.</p>
+<h3 id="92-collection-plan">9.2 Collection plan</h3>
+<p><strong>Pilot corpus target:</strong> 90 speakers, 30 per cohort, approximately 100 utterances per speaker: about 9,000 utterances. At 6–10 seconds per utterance this is approximately 15–25 hours of audio, not hundreds of hours. Recruit roughly 10 participants from each user audience within each cohort for balanced coverage; overlapping identities are recorded rather than treated as independent people.</p>
+<p>Per speaker: 40 supported task prompts, 30 spontaneous task descriptions, 15 clarification/correction turns, and 15 unsupported/negative commands. Distribute numbers, dates, names, hesitation, background TV/fan/traffic, and code-switching across these categories. Do not make older participants read 100 sentences in one exhausting session; use short sessions with breaks and oral scenarios.</p>
+<p>Obtain separate consent for participation, audio retention, model training, and any future release. Compensation must not depend on “correct” pronunciation. Real phone numbers, medication details, and private names are unnecessary for training; use fictional task content and consented aliases.</p>
+<p><strong>Split before training:</strong> 60 training speakers, 15 validation speakers, 15 final-test speakers, balanced 20/5/5 per cohort. Split by household as well as speaker where practical. Keep prompt families and recording sessions from leaking across partitions. Do not tune on the final test set.</p>
+<p>Five final-test speakers per cohort provide only preliminary evidence. Expand to at least 10 final-test speakers per cohort, including new spontaneous scenarios, before making broad cohort-level support claims beyond the controlled pilot. Report speaker-level confidence intervals and the exact sample composition.</p>
+<h3 id="93-step-by-step-model-workflow">9.3 Step-by-step model workflow</h3>
+<ol>
+<li><strong>Audit assets:</strong> obtain the actual model/export, tokenizer, normalization, licences, runtime dependencies, training checkpoint and matching recipe. The ONNX inference export alone is not evidence that convenient fine-tuning is available.</li>
+<li><strong>Establish baseline:</strong> run untouched Zipformer on the locked validation protocol and phones; record WER, command/slot correctness, latency, memory, and failures per cohort.</li>
+<li><strong>Fix preprocessing first:</strong> compare normalization, endpointing, name aliases, and supported hotword biasing. Verify hotword support for the chosen decoder instead of assuming it.</li>
+<li><strong>Reproduce training:</strong> restore the checkpoint, run a small training step, export, and compare desktop/mobile inference before collecting expensive additional data.</li>
+<li><strong>Adapt one shared model:</strong> use balanced batches across cohorts, real command audio, modest speed/noise/reverberation augmentation, and retained broad Bengali data where licensed. Avoid training three unrelated models unless evidence requires it.</li>
+<li><strong>Control overfitting:</strong> track speaker-disjoint validation, task slots, negative commands, and per-cohort regressions. Tune learning rate, freezing, and duration through small experiments rather than asserting a universal recipe.</li>
+<li><strong>Evaluate deployment candidates:</strong> compare full precision and supported INT8 exports; measure accuracy after quantization and on the actual mobile decoder. Select by task quality within latency/memory limits.</li>
+<li><strong>Freeze and test:</strong> select using validation only, then evaluate once on final test speakers. Record model hash, training code revision, data manifest, seed, export settings, hardware, and results.</li>
+<li><strong>Field-test:</strong> separately measure user interaction success in the household pilot. Laboratory WER is not the same as independent task completion.</li>
+<li><strong>Release:</strong> bundle one selected model with a manifest and rollback-compatible app build. Never replace a working model solely because its average WER is lower.</li>
+</ol>
+<h3 id="94-if-trainable-zipformer-assets-are-unavailable">9.4 If trainable Zipformer assets are unavailable</h3>
+<p>Spend at most the first two engineering weeks resolving checkpoint/recipe access. In parallel, benchmark a trainable multilingual Whisper tiny/base candidate using its public training-compatible weights and an Android deployment path. Whisper is a fallback experiment, not a claim of equivalent streaming performance; its licence is documented upstream. [R12]</p>
+<p>If the fallback meets the same release gates, record the changed runtime/model decision. If no trainable candidate meets device limits, either ship the baseline with honest evaluated support and label accent adaptation incomplete, or delay the trained-model milestone. Never describe hotword tuning alone as having trained an accent model. The pitch must state which outcome was achieved.</p>
+<h3 id="95-compute-and-model-acceptance">9.5 Compute and model acceptance</h3>
+<p>Plan initial small-model experiments on one 16–24 GB GPU where compatible, with mixed precision and batch tuning. This is a starting resource estimate, not a guaranteed fit or training time. Measure one pilot run before reserving larger compute. Free notebook sessions are useful for exploration but are not a dependable schedule commitment.</p>
+<p>Promotion requires meeting the end-to-end acceptance gates and either a meaningful critical-slot improvement or at least a proposed 10% relative WER reduction on a previously weak validation cohort, without more than a 2-percentage-point task-success regression in another cohort. Report uncertainty; if already at a quality ceiling, do not require artificial training gains.</p>
+<h2 id="10-data-model-scheduling-consistency-and-interfaces">10. Data model, scheduling consistency, and interfaces</h2>
+<table>
+<thead>
+<tr>
+<th>Entity</th>
+<th>Principal fields</th>
+<th>Lifecycle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reminder</td>
+<td>UUID, title, optional audio reference, local schedule, timezone policy, recurrence, end date, version, enabled</td>
+<td>Created only after confirmation; future edits versioned</td>
+</tr>
+<tr>
+<td>Occurrence</td>
+<td>UUID, reminder/version, due time, platform request code, scheduling state, fired/acknowledged timestamps</td>
+<td>Unique per reminder version and due time</td>
+</tr>
+<tr>
+<td>Favourite</td>
+<td>UUID, contact reference or manual number, number label, approved aliases, optional spoken label</td>
+<td>User-controlled; refresh stale contact references</td>
+</tr>
+<tr>
+<td>AppAlias</td>
+<td>Package ID, launch component where needed, display name, approved aliases, preset/recorded spoken label</td>
+<td>Revalidate at launch and after package changes</td>
+</tr>
+<tr>
+<td>PendingAction</td>
+<td>ID, typed payload, parameter version, expiry, confirmation state</td>
+<td>Memory-only; lost on process death and never auto-replayed</td>
+</tr>
+<tr>
+<td>CapabilityState</td>
+<td>Permission observations, model version/readiness, supported phone-control configuration</td>
+<td>Rechecked before use, not trusted indefinitely</td>
+</tr>
+<tr>
+<td>DiagnosticEvent</td>
+<td>Event type, timestamp, durations, error code, app/model version</td>
+<td>Local rolling 7-day retention; excludes content by default</td>
+</tr>
+<tr>
+<td>ModelManifest</td>
+<td>Model ID/hash, runtime/tokenizer compatibility, licence notices, evaluation reference</td>
+<td>Bundled with each release</td>
+</tr>
+</tbody>
+</table>
+<p>Room transactions persist a confirmed reminder and pending occurrence before calling the scheduler. A successful call records <code>scheduled</code>; failure records <code>blocked</code> or <code>failed</code>. Reconciliation repairs incomplete scheduling after a crash using stable occurrence IDs. Alarm delivery validates the reminder version so cancelled/edited occurrences cannot fire stale content. Repeated broadcasts must not duplicate one occurrence.</p>
+<p>External action results use <code>requested</code>, <code>failed</code>, or <code>unknown</code> where the platform provides no completion acknowledgement. Do not automatically retry calls or node clicks after an ambiguous outcome.</p>
+<p>Default retention: ordinary command audio discarded when the turn ends; explicitly saved reminder audio remains until its reminder is deleted; temporary screen trees remain in memory only during an active supported interaction. Opt-in research recordings use a separate project retention policy of 12 months from collection, with withdrawal/deletion handling documented; deleting raw audio cannot guarantee removal of influence from already trained weights.</p>
+<h2 id="11-security-privacy-permissions-and-distribution">11. Security, privacy, permissions, and distribution</h2>
+<table>
+<thead>
+<tr>
+<th>Capability</th>
+<th>Permission/access approach</th>
+<th>Denial behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Recording</td>
+<td>RECORD_AUDIO, appropriate microphone foreground-service declarations</td>
+<td>Touch workflows remain; no recording</td>
+</tr>
+<tr>
+<td>Alerts</td>
+<td>Runtime notification permission where applicable</td>
+<td>Explain alert limitation; setup test fails clearly</td>
+</tr>
+<tr>
+<td>Exact reminders</td>
+<td>SCHEDULE_EXACT_ALARM special access where required</td>
+<td>Precise scheduling blocked until granted</td>
+</tr>
+<tr>
+<td>Full-screen alert</td>
+<td>Optional USE_FULL_SCREEN_INTENT only where eligible and granted</td>
+<td>Notification fallback; no guaranteed takeover</td>
+</tr>
+<tr>
+<td>Contact lookup</td>
+<td>READ_CONTACTS when user opts into lookup</td>
+<td>Manual local favourites remain</td>
+</tr>
+<tr>
+<td>Direct call</td>
+<td>CALL_PHONE for direct confirmed call</td>
+<td>ACTION_DIAL handoff, clearly marked</td>
+</tr>
+<tr>
+<td>Phone control</td>
+<td>User-enabled AccessibilityService with disclosure</td>
+<td>Optional module disabled</td>
+</tr>
+<tr>
+<td>App discovery</td>
+<td>Narrow launchable-app/package visibility declarations</td>
+<td>User sees supported/discoverable subset</td>
+</tr>
+<tr>
+<td>Startup recovery</td>
+<td>Boot receiver and post-unlock reconciliation</td>
+<td>Explain that pre-unlock alerts are not supported</td>
+</tr>
+</tbody>
+</table>
+<p>Do not request SMS, call logs, unrestricted storage, QUERY_ALL_PACKAGES, or SYSTEM_ALERT_WINDOW for the core MVP. An accessibility overlay for the optional module is not a general-purpose application overlay permission. Avoid a permanent microphone service to keep a model warm. [R3, R13]</p>
+<p>Threats and controls: background conversation can be mistaken for a command, so consequential actions require explicit confirmation; stale screens can cause wrong clicks, so target tokens expire on change; contact ambiguity can cause wrong calls, so aliases and recipients are confirmed; logs can expose private speech, so content logging is off; shared phones can expose task content, so lock-screen task detail defaults to hidden.</p>
+<p>Speech is not identity authentication. Sensitive actions remain outside scope. Calls and interaction with stored private content require the phone to be unlocked. No remote access service or hidden microphone capture is permitted. App-private data shall be excluded from uncontrolled cloud backup; verify backup rules and key loss behavior. A Keystore failure shall not silently reset user data.</p>
+<p>Accessibility policy allows certain deterministic automation but restricts autonomous planning and the accessibility-tool designation. This broad-audience assistant shall not assert <code>isAccessibilityTool=true</code> without a legitimately different, evidenced disability-primary product scope. Prepare the required declaration, disclosure, demo, and data inventory; approval remains an external decision. [R3]</p>
+<p>Before public distribution in Bangladesh, obtain a focused review of applicable privacy, consumer, and health-related claims for the actual data flows. This specification does not assert legal certification or medical-device status. The product schedules user-defined tasks and makes no treatment or emergency-reliability promise.</p>
+<h2 id="12-non-functional-requirements-and-performance-budgets">12. Non-functional requirements and performance budgets</h2>
+<p>All values below are <strong>proposed acceptance targets</strong>, not measurements. Freeze the reference devices, OS/build, model, test corpus, and conditions before reporting results. P95 means 95th-percentile latency.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Requirement</th>
+<th>Target / measurement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NFR-01</td>
+<td>Warm local response</td>
+<td>Median ≤1 s, P95 ≤2 s from end of user speech to useful feedback, including endpointing; measure ≥100 commands per reference phone</td>
+</tr>
+<tr>
+<td>NFR-02</td>
+<td>Cold readiness</td>
+<td>P95 ≤5 s from activation to ready-to-listen on reference devices; ≥30 cold starts</td>
+</tr>
+<tr>
+<td>NFR-03</td>
+<td>Input feedback</td>
+<td>Visual/haptic recording indication ≤150 ms after accepted activation; do not signal readiness before capture works</td>
+</tr>
+<tr>
+<td>NFR-04</td>
+<td>Speech interpretation</td>
+<td>≥95% correct intent plus critical slots in quiet and ≥90% in defined household noise, separately per cohort on supported commands</td>
+</tr>
+<tr>
+<td>NFR-05</td>
+<td>Unknown-command handling</td>
+<td>≥95% rejection/clarification on a held-out negative set; zero consequential side effects without valid confirmation</td>
+</tr>
+<tr>
+<td>NFR-06</td>
+<td>Alarm scheduling</td>
+<td>≥99% of ≥300 scheduled test occurrences per reference phone alert within 60 s in declared supported states; no duplicate alerts</td>
+</tr>
+<tr>
+<td>NFR-07</td>
+<td>Memory</td>
+<td>Target ≤300 MB total process PSS during ordinary listening; ≤400 MB peak; profile native allocations, not only JVM heap</td>
+</tr>
+<tr>
+<td>NFR-08</td>
+<td>Storage</td>
+<td>Target ≤250 MB installed footprint excluding user recordings; record download and installed sizes separately</td>
+</tr>
+<tr>
+<td>NFR-09</td>
+<td>Idle resource use</td>
+<td>No microphone capture or resident ASR service while idle; compare matched 24-hour battery runs with scheduled reminders</td>
+</tr>
+<tr>
+<td>NFR-10</td>
+<td>Active-session energy</td>
+<td>Proposed target: ≤5 percentage points additional battery drain over a matched screen-on baseline per 30-minute session, median of 3 paired runs; no OS severe thermal status or temperature-related shutdown</td>
+</tr>
+<tr>
+<td>NFR-11</td>
+<td>Accessibility</td>
+<td>48 dp targets, 200% text scaling, spoken equivalents, screen-reader labels, no clipped required controls</td>
+</tr>
+<tr>
+<td>NFR-12</td>
+<td>Stability</td>
+<td>≥99% crash-free sessions over ≥500 controlled/pilot sessions; no unresolved data loss or wrong-target severity-1 failures</td>
+</tr>
+<tr>
+<td>NFR-13</td>
+<td>Offline availability</td>
+<td>All core local workflows pass airplane-mode suite after installation; actual cellular calls tested separately with mobile data off</td>
+</tr>
+<tr>
+<td>NFR-14</td>
+<td>User completion</td>
+<td>In each audience, ≥85% of standard task attempts succeed without human help within 120 s and at most one Pulsar clarification; ≥90% within 180 s and at most three Pulsar clarifications</td>
+</tr>
+<tr>
+<td>NFR-15</td>
+<td>Phone-control accuracy</td>
+<td>≥95% success for each declared action on the frozen compatibility matrix; zero stale-node/wrong-target actions in adversarial suite</td>
+</tr>
+<tr>
+<td>NFR-16</td>
+<td>Maintainability</td>
+<td>Repeatable signed build, versioned DB migrations, reproducible model manifest, and documented permission failure handling</td>
+</tr>
+</tbody>
+</table>
+<p>Alarm tests include locked screen, idle, process death, reboot followed by unlock, and supported battery settings. Powered-off periods, pre-unlock reboot periods, revoked permissions, force-stopped apps, and unsupported OEM restrictions are reported separately as unavailable conditions—not hidden as successful deliveries. A 99% pilot target is not an emergency or medical reliability guarantee.</p>
+<p>“No critical errors observed” must always include the sample size. Average results shall not hide a weak audience, accent cohort, or device. Performance targets may be revised only in a documented scope decision before the release claim is made.</p>
+<p><strong>Measurement protocol:</strong> at Gate A freeze the reference devices, battery starting range (40–80%), ambient temperature range, screen brightness, session command rate, and control workload. Pair energy runs on the same phone with matched screen/audio workload and disabled unrelated updates; measure power more precisely where equipment is available. If the energy target cannot be met, revise session duration or supported devices before release rather than silently waive it. Report coarse battery-counter uncertainty.</p>
+<p>For speech tests, report quiet recordings separately from household fan, television, and street-noise conditions. The initial reproducible noise suite uses separately licensed noise at 10 dB and 20 dB SNR, with an additional genuinely recorded household-noise subset; augmentation source clips in the final test must not appear in training. Report each condition separately, and apply the noisy accuracy gate to each cohort's prespecified pooled noisy set with equal condition weighting. Gate A freezes the normalization, critical-slot scoring, and audio protocol. Live pilot recordings provide complementary realism, not a replacement for a reproducible suite.</p>
+<p>Independent completion means no human prompt, correction, or physical assistance after the task is presented. Any such intervention, abandonment, wrong outcome, or timeout is a failure for that attempt. Required confirmations do not count as clarifications; system requests for missing/ambiguous information do. Each pilot participant attempts the same 10 prespecified core tasks, yielding at least 100 attempts per audience; report participant-level variation as well as the aggregate. Conditional phone-control tasks are scored separately and do not inflate core success.</p>
+<h2 id="13-verification-acceptance-tests-and-traceability">13. Verification, acceptance tests, and traceability</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Requirements</th>
+<th>Procedure</th>
+<th>Pass condition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AT-01 Setup/denial</td>
+<td>FR-001–006</td>
+<td>Fresh install; grant/deny each permission independently</td>
+<td>Capabilities accurately shown; unrelated functions still work</td>
+</tr>
+<tr>
+<td>AT-02 Voice lifecycle</td>
+<td>FR-010–020</td>
+<td>Start, speak, timeout, stop, lock, call interrupt, playback</td>
+<td>Correct state transitions; capture stops; no stale confirmation</td>
+</tr>
+<tr>
+<td>AT-03 Schedule language</td>
+<td>FR-030–035</td>
+<td>≥500 text cases, held-out paraphrases, dates around midnight, ambiguous times</td>
+<td>Supported cases match expected schedule; ambiguous cases ask</td>
+</tr>
+<tr>
+<td>AT-04 Alarm endurance</td>
+<td>FR-036–042, NFR-06</td>
+<td>Device-state matrix and ≥300 occurrences per phone</td>
+<td>Delivery gate met; no duplicates; failures attributed</td>
+</tr>
+<tr>
+<td>AT-05 Call resolution</td>
+<td>FR-050–056</td>
+<td>Duplicate names, aliases, two numbers, denied permission, dual SIM, cancel</td>
+<td>Correct target only after confirmation; limitations disclosed</td>
+</tr>
+<tr>
+<td>AT-06 App launching</td>
+<td>FR-060–062</td>
+<td>Installed/missing app, duplicate aliases, changed package</td>
+<td>Correct launch or explained failure; no install/extra automation</td>
+</tr>
+<tr>
+<td>AT-07 Phone navigation</td>
+<td>FR-063–070, NFR-15</td>
+<td>At least 100 attempts per declared action across the frozen launcher/calculator/device matrix; changed/secure screens</td>
+<td>≥95% success per action and matrix entry; zero stale/wrong-target actions in adversarial cases</td>
+</tr>
+<tr>
+<td>AT-08 Speech cohorts</td>
+<td>NFR-04–05</td>
+<td>Frozen speaker-disjoint audio and negative commands</td>
+<td>Cohort gates met; raw and normalized metrics reported</td>
+</tr>
+<tr>
+<td>AT-09 Offline behavior</td>
+<td>NFR-13</td>
+<td>Airplane mode; model installed; local tasks</td>
+<td>No hidden cloud dependence; network actions labelled accurately</td>
+</tr>
+<tr>
+<td>AT-10 Privacy/deletion</td>
+<td>FR-080–084</td>
+<td>Inspect logs/storage, delete reminders/data, revoke access</td>
+<td>No content leakage; pending alarms and linked audio removed</td>
+</tr>
+<tr>
+<td>AT-11 Accessibility</td>
+<td>NFR-11, FR-020</td>
+<td>Small screen, large font, screen reader, slow speech</td>
+<td>All essential actions understandable and reachable</td>
+</tr>
+<tr>
+<td>AT-12 Performance</td>
+<td>NFR-01–03, 07–10</td>
+<td>Cold/warm runs, resource traces, matched battery tests</td>
+<td>Targets met or explicit approved support restriction</td>
+</tr>
+<tr>
+<td>AT-13 Field usability</td>
+<td>G-01, NFR-14</td>
+<td>30 users, 10 per audience, balanced across speech cohorts</td>
+<td>Per-audience independent task gates met</td>
+</tr>
+<tr>
+<td>AT-14 Recovery/update</td>
+<td>NFR-12,16; FR-037,082,084</td>
+<td>Interrupt DB/scheduler boundary; upgrade DB; corrupt model</td>
+<td>No duplicated actions/data loss; recoverable error shown</td>
+</tr>
+<tr>
+<td>AT-15 Alert operations</td>
+<td>FR-038–042</td>
+<td>Multiple due alerts; 1/10/1,440-minute snooze; reject out-of-range input; acknowledgement; revoked access</td>
+<td>Correct occurrence changes; acknowledgement never means verified medication intake; blocked access explained</td>
+</tr>
+<tr>
+<td>AT-16 No-TTS readback</td>
+<td>FR-033–034,041,052; Section 7.2</td>
+<td>Remove Bengali TTS; create/edit/list reminder; set up names; decline/delete audio; call disambiguation</td>
+<td>Recorded labels support full readback; missing-label limitations and recovery are explicit</td>
+</tr>
+<tr>
+<td>AT-17 Core session continuity</td>
+<td>FR-011–012,060–062</td>
+<td>Accessibility disabled; launch another app during a permitted active session; speak a core command; lock phone</td>
+<td>Core command accepted through the eligible service/visible Pulsar surface; screen automation unavailable; lock ends capture</td>
+</tr>
+</tbody>
+</table>
+<p>The text parser set is not reused as the complete speech evaluation set. A training participant is not a final unseen-speaker test participant. Measure live user tasks separately from replayed recordings.</p>
+<p>Pilot design: 30 users over four weeks, with shared tasks in week one and natural usage afterward. Log helper interventions and abandonment, not just successes. Record audience/age/cohort overlap rather than double-counting people. A proposed product gate is ≥60% of participants in each audience voluntarily using at least one core feature weekly by week four; this is a small-pilot decision rule, not market-size evidence.</p>
+<p>Required release evidence: test summary, device/app compatibility matrix, per-cohort speech report, latency/memory traces, permission demo, privacy checklist, known limitations, and severity-ranked issue list.</p>
+<h2 id="14-step-by-step-implementation-plan">14. Step-by-step implementation plan</h2>
+<p><strong>Planning assumption:</strong> one experienced Android developer, one ML/data contributor, and part-time participant coordination/QA. Approximately 16 weeks is a planning estimate with work streams overlapping. A solo student should plan approximately 5–8 months depending on availability, learning, and recruitment. A smaller core demonstration may be possible sooner; it is not the full validated MVP.</p>
+<table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Timing</th>
+<th>Implementation steps</th>
+<th>Deliverable and gate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Scope and user evidence</td>
+<td>Week 1</td>
+<td>Observe 5 users from each audience; document shared tasks; confirm recruitment access; freeze initial exclusions</td>
+<td>Common-task evidence and signed-off requirement baseline</td>
+</tr>
+<tr>
+<td>2. Platform/model feasibility</td>
+<td>Weeks 1–2</td>
+<td>Create Kotlin app; run local ASR on low-cost phones; schedule real alarms; prototype confirmed call; investigate accessibility and trainable assets</td>
+<td>Gate A: core viable; optional phone control classified; training route established or explicit blocker</td>
+</tr>
+<tr>
+<td>3. UX and test fixtures</td>
+<td>Weeks 2–3</td>
+<td>Build screens and dialogue states; write parser cases and negative commands; design consent and speech collection</td>
+<td>Usability walkthrough and frozen initial evaluation protocol</td>
+</tr>
+<tr>
+<td>4. First complete reminder</td>
+<td>Weeks 3–5</td>
+<td>Audio → transcript → parser → confirmation → Room → AlarmManager → alert → Done/Snooze; add recovery states</td>
+<td>Gate B: one reliable end-to-end workflow on devices</td>
+</tr>
+<tr>
+<td>5. Contacts/apps</td>
+<td>Weeks 5–6</td>
+<td>Favourite setup; aliases; candidate disambiguation; call/dial fallback; app launch; cancellation</td>
+<td>Shared core task demo with permissions denied/granted</td>
+</tr>
+<tr>
+<td>6. Speech collection</td>
+<td>Weeks 2–7</td>
+<td>Recruit, consent, record, transcribe, audit, split by speaker/household</td>
+<td>Versioned 90-speaker target corpus with usable consent records</td>
+</tr>
+<tr>
+<td>7. Accent adaptation</td>
+<td>Weeks 6–9</td>
+<td>Baseline; reproduce training/export; adapt; quantize; compare; freeze candidate</td>
+<td>Gate C: cohort quality and phone resource report; trained-model claim only if earned</td>
+</tr>
+<tr>
+<td>8. Hands-free module</td>
+<td>Weeks 7–9</td>
+<td>User-started service lifecycle; stop/timeout; optional numbered nodes and navigation allowlist</td>
+<td>Gate D: explicit command control works within listed limits</td>
+</tr>
+<tr>
+<td>9. Reliability/accessibility</td>
+<td>Weeks 9–11</td>
+<td>Overnight alarms; reboot/update tests; larger font; speech pacing; failure recovery; remove redundant permissions</td>
+<td>No unresolved critical correctness issues; internal alpha</td>
+</tr>
+<tr>
+<td>10. Field pilot</td>
+<td>Weeks 12–15</td>
+<td>30 participants, four weeks; balanced cohorts/audiences; collect consented diagnostics and support effort</td>
+<td>Retention, independence, and device-reliability evidence</td>
+</tr>
+<tr>
+<td>11. Release/pitch package</td>
+<td>Week 16</td>
+<td>Fix release blockers; freeze compatibility; produce signed build, model card, demo, and results</td>
+<td>Gate E: core pilot release; optional module only if its gates pass</td>
+</tr>
+</tbody>
+</table>
+<h3 id="141-concrete-first-ten-working-days">14.1 Concrete first ten working days</h3>
+<ol>
+<li>Create a requirement/test register and assign one owner per release gate.</li>
+<li>Inventory the referenced Python/model assets; distinguish available files from proposal claims.</li>
+<li>Obtain/borrow the four reference phones and record chip, RAM, OS, vendor build, and battery condition.</li>
+<li>Create the Kotlin/Compose project and reproducible build.</li>
+<li>Integrate one ASR model through official Android bindings; record baseline traces.</li>
+<li>Implement a standalone exact-alarm permission/check/schedule/fire test.</li>
+<li>Test call intents and app launches with explicit user commands.</li>
+<li>Prototype microphone lifecycle across app switching and screen locking.</li>
+<li>Run a minimal accessibility node/global-action experiment and review its distribution requirements.</li>
+<li>Freeze trainable-model route, recruitment consent, split protocol, and the first vertical slice backlog.</li>
+</ol>
+<p>Do not spend the first two weeks rewriting all proposed modules before these feasibility checks.</p>
+<h3 id="142-release-checklist">14.2 Release checklist</h3>
+<ul>
+<li>All mandatory functional requirements have passing tests or an explicitly revised requirement baseline.</li>
+<li>All three audience groups and selected speech cohorts are represented in evidence.</li>
+<li>No unresolved wrong-recipient, wrong-time, duplicate-action, private-data leak, or data-loss defect.</li>
+<li>Alarms and model inference have passed the declared physical-device matrix.</li>
+<li>Permission denial/revocation and offline operation are demonstrated.</li>
+<li>Model and voice-asset licences, consent, manifests, and exact dependency versions are recorded.</li>
+<li>Optional accessibility functionality is labelled and distributed only through an appropriate reviewed path.</li>
+<li>Pitch materials distinguish implemented behavior, measured results, and future/conditional capabilities.</li>
+</ul>
+<h2 id="15-resources-costs-feasibility-and-risks">15. Resources, costs, feasibility, and risks</h2>
+<h3 id="151-resource-plan">15.1 Resource plan</h3>
+<p>Android lead owns platform behavior, UX, scheduling, and release. ML/data contributor owns dataset quality, training/export, and reproducible evaluation. A coordinator owns consent/recruitment and pilot observations. Each role may be part-time or combined, but the workload does not disappear when one person holds multiple roles.</p>
+<p>Illustrative Bangladesh pilot cash allowances, <strong>not vendor quotes</strong>, excluding salaries, existing laptop, office costs, taxes, and ongoing public-launch support:</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th style="text-align: right;">Planning allowance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Four test phones/accessories, with borrowing where possible</td>
+<td style="text-align: right;">৳35,000–70,000</td>
+</tr>
+<tr>
+<td>Participant compensation, travel, transcription, coordination</td>
+<td style="text-align: right;">৳35,000–80,000</td>
+</tr>
+<tr>
+<td>GPU experiments and protected research storage</td>
+<td style="text-align: right;">৳10,000–35,000</td>
+</tr>
+<tr>
+<td>Human voice recordings and asset rights</td>
+<td style="text-align: right;">৳10,000–25,000</td>
+</tr>
+<tr>
+<td>Pilot distribution, QA incidentals, materials</td>
+<td style="text-align: right;">৳5,000–15,000</td>
+</tr>
+<tr>
+<td>Contingency</td>
+<td style="text-align: right;">৳20,000–45,000</td>
+</tr>
+<tr>
+<td><strong>Total allowance</strong></td>
+<td style="text-align: right;"><strong>৳115,000–270,000</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Replace allowances with local quotations before funding commitments. The dataset plan is larger than a tiny reminder-only demonstration and therefore costs more. Model retraining, paid engineering, legal review, and widespread device support can materially increase the total.</p>
+<h3 id="152-benefits-and-tradeoffs">15.2 Benefits and tradeoffs</h3>
+<table>
+<thead>
+<tr>
+<th>Decision</th>
+<th>Benefit</th>
+<th>Cost or limitation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>One shared product</td>
+<td>Coherent pitch and reusable interaction</td>
+<td>Must test each audience; averages are insufficient</td>
+</tr>
+<tr>
+<td>Offline ASR</td>
+<td>Predictable local availability and fewer runtime API costs</td>
+<td>Larger app, local compute, model maintenance</td>
+</tr>
+<tr>
+<td>Three speech cohorts</td>
+<td>Focused adaptation and evaluation</td>
+<td>Limited geographic generalization</td>
+</tr>
+<tr>
+<td>Native Android</td>
+<td>Direct access to lifecycle and platform APIs</td>
+<td>No immediate cross-platform product</td>
+</tr>
+<tr>
+<td>Deterministic actions</td>
+<td>Predictable and auditable</td>
+<td>Cannot fulfill arbitrary requests</td>
+</tr>
+<tr>
+<td>Confirmed calls/reminders</td>
+<td>Reduces harmful mistakes</td>
+<td>Adds a conversational turn</td>
+</tr>
+<tr>
+<td>Optional accessibility</td>
+<td>Enables useful voice navigation</td>
+<td>Permission friction and external review/support risk</td>
+</tr>
+<tr>
+<td>No cloud accounts</td>
+<td>Simpler privacy and onboarding</td>
+<td>No remote family dashboard or cross-device sync</td>
+</tr>
+</tbody>
+</table>
+<h3 id="153-risk-register">15.3 Risk register</h3>
+<table>
+<thead>
+<tr>
+<th>Risk</th>
+<th>Impact</th>
+<th>Mitigation / decision trigger</th>
+<th>Owner</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Low accent accuracy</td>
+<td>Users abandon voice</td>
+<td>Early real-speaker baseline; targeted data; no support claim before cohort gates</td>
+<td>ML lead</td>
+</tr>
+<tr>
+<td>Training assets unavailable</td>
+<td>Adaptation milestone blocked</td>
+<td>Two-week checkpoint gate and benchmarked fallback; disclose incomplete training</td>
+<td>ML lead</td>
+</tr>
+<tr>
+<td>Alarm/OEM restrictions</td>
+<td>Missed tasks and lost trust</td>
+<td>Early multi-device endurance tests; supported-state diagnostics</td>
+<td>Android lead</td>
+</tr>
+<tr>
+<td>Excess memory/battery use</td>
+<td>Poor low-cost-phone experience</td>
+<td>No idle ASR; profile native allocations; bounded sessions</td>
+<td>Android lead</td>
+</tr>
+<tr>
+<td>Accessibility review/support fails</td>
+<td>Phone control cannot ship broadly</td>
+<td>Keep core independent; narrow module and claims</td>
+<td>Product/Android</td>
+</tr>
+<tr>
+<td>Incorrect recipient/time</td>
+<td>Consequential error</td>
+<td>Explicit readback, clarification, versioned confirmations, zero critical open defects</td>
+<td>QA/Android</td>
+</tr>
+<tr>
+<td>Dataset bias/leakage</td>
+<td>Misleading accuracy</td>
+<td>Speaker/household split, spontaneous speech, per-cohort reports</td>
+<td>ML/data</td>
+</tr>
+<tr>
+<td>Shared-phone privacy</td>
+<td>Unwanted exposure</td>
+<td>Hidden lock-screen detail, local consent, no family monitoring</td>
+<td>Product/Android</td>
+</tr>
+<tr>
+<td>Users do not return</td>
+<td>Weak product demand</td>
+<td>Four-week pilot; investigate actual repeated tasks before expansion</td>
+<td>Product</td>
+</tr>
+<tr>
+<td>Recruitment/compute delays</td>
+<td>Schedule slips</td>
+<td>Begin recruitment immediately; time-box experiments; revise milestones transparently</td>
+<td>Project owner</td>
+</tr>
+<tr>
+<td>Voice expectations exceed scope</td>
+<td>Pitch disappoints</td>
+<td>Show compatibility boundary and failure recovery in live demo</td>
+<td>Product</td>
+</tr>
+</tbody>
+</table>
+<p>Commercial feasibility remains unproven. The initial pitch should seek pilot access, device support, data-collection funding, or incubation—not claim established demand, medical efficacy, or a national addressable customer count from mobile subscriptions.</p>
+<h2 id="16-pitch-and-demonstration-package">16. Pitch and demonstration package</h2>
+<h3 id="161-five-minute-demo">16.1 Five-minute demo</h3>
+<ol>
+<li><strong>Problem, 30 seconds:</strong> explain the shared difficulty and three audiences without stereotypes.</li>
+<li><strong>Offline reminder, 60 seconds:</strong> mobile data off; ask an ambiguous reminder; clarify; confirm; show it scheduled.</li>
+<li><strong>Contact/app tasks, 60 seconds:</strong> resolve a saved alias; demonstrate confirmation/cancel; launch the calculator. Place a real call only to a consenting demo recipient.</li>
+<li><strong>Phone control, 60 seconds if enabled:</strong> while unlocked and in an active session, use Home/Back and numbered calculator controls. State supported devices/apps.</li>
+<li><strong>Speech evidence, 45 seconds:</strong> present consented examples and results from unseen speakers in all three cohorts; recordings are labelled as recordings.</li>
+<li><strong>Proof and request, 45 seconds:</strong> show measured device performance, one failure/recovery, known limitations, and the specific pilot/funding request.</li>
+</ol>
+<h3 id="162-required-pitch-artifacts">16.2 Required pitch artifacts</h3>
+<ul>
+<li>This SRS and a one-page product brief derived from it.</li>
+<li>Signed installable demo build with exact version/model hash.</li>
+<li>Short demonstration video, including activation and permission prerequisites.</li>
+<li>Per-cohort/per-audience results and device compatibility matrix.</li>
+<li>Data consent summary, asset licence inventory, and model card.</li>
+<li>Budget with actual quotations and a named milestone owner.</li>
+</ul>
+<p>Acceptable claim before evaluation: “Designed for offline Bangla interaction, with standard, Rajshahi-area, and Dhaka-area speech under evaluation.” After passing tests, replace that with the actual measured population and numbers. Never claim “understands all Bangla,” “controls any phone entirely by voice,” “zero battery cost,” or guaranteed medical adherence.</p>
+<h2 id="17-decisions-open-gates-and-change-control">17. Decisions, open gates, and change control</h2>
+<table>
+<thead>
+<tr>
+<th>Decision</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Serve all three user audiences through common workflows</td>
+<td>Adopted</td>
+</tr>
+<tr>
+<td>Android-only, local-first core</td>
+<td>Adopted</td>
+</tr>
+<tr>
+<td>Reminders, confirmed saved-contact calls, app launching</td>
+<td>Mandatory MVP</td>
+</tr>
+<tr>
+<td>Standard + Rajshahi-area + Dhaka-area speech</td>
+<td>Proposed collection scope; recruit and evaluate explicitly</td>
+</tr>
+<tr>
+<td>Native Kotlin/Compose instead of mandatory Rust rewrite</td>
+<td>Recommended architecture baseline</td>
+</tr>
+<tr>
+<td>User-started hands-free sessions</td>
+<td>Mandatory; not equivalent to always-on activation</td>
+</tr>
+<tr>
+<td>Cross-app navigation</td>
+<td>Conditional on Gate D, compatibility and distribution review</td>
+</tr>
+<tr>
+<td>Exact ASR training checkpoint/runtime versions</td>
+<td>Freeze after Gate A; unknown until audited</td>
+</tr>
+<tr>
+<td>Installed offline Bengali TTS</td>
+<td>Optional enhancement; required flows use owned/licensed clips and recorded labels</td>
+</tr>
+<tr>
+<td>Commercial demand and pricing</td>
+<td>Unvalidated; not a release correctness dependency</td>
+</tr>
+</tbody>
+</table>
+<p>Any scope change shall state user value, affected requirements/tests, device/performance implications, permission implications, cost, and schedule. A conditional feature cannot silently become mandatory halfway through development. Removing a mandatory feature requires a new SRS baseline and revised pitch.</p>
+<h2 id="18-sources-and-terminology">18. Sources and terminology</h2>
+<p>Sources checked on 5 November 2026; platform policy and implementation details must be rechecked at release. Official references establish API capabilities and constraints, not that Pulsar has implemented or passed them.</p>
+<ul>
+<li><strong>R1:</strong> <a href="https://developer.android.com/topic/architecture/recommendations">Android architecture recommendations</a> — native UI and lifecycle architecture.</li>
+<li><strong>R2:</strong> <a href="https://developer.android.com/training/data-storage/room">Room persistence documentation</a> — local structured storage and migrations.</li>
+<li><strong>R3:</strong> <a href="https://support.google.com/googleplay/android-developer/answer/10964491?hl=en-en">Google Play AccessibilityService policy</a> — deterministic automation, disclosures, designation restrictions, review.</li>
+<li><strong>R4:</strong> <a href="https://developer.android.com/reference/android/accessibilityservice/AccessibilityService">Android AccessibilityService API</a> — global actions and service capabilities.</li>
+<li><strong>R5:</strong> <a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionService">VoiceInteractionService API</a> — optional system assistant integration.</li>
+<li><strong>R6:</strong> <a href="https://huggingface.co/alphacep/vosk-model-small-streaming-bn">Bengali Vosk streaming model card</a> — model identity, licence, published benchmark context.</li>
+<li><strong>R7:</strong> <a href="https://github.com/k2-fsa/sherpa-onnx/blob/master/android/README.md">sherpa-onnx Android integration</a> — native Android deployment entry points.</li>
+<li><strong>R8:</strong> <a href="https://developer.android.com/guide/components/intents-common">Android common intents</a> — platform action handoffs, including phone actions.</li>
+<li><strong>R9:</strong> <a href="https://developer.android.com/develop/background-work/services/alarms">Android alarm scheduling</a> — exact scheduling and permissions.</li>
+<li><strong>R10:</strong> <a href="https://huggingface.co/facebook/mms-tts">Meta MMS-TTS model licence</a> — example of a non-commercial TTS restriction; not a selected runtime model.</li>
+<li><strong>R11:</strong> <a href="https://github.com/k2-fsa/icefall">icefall training framework</a> — model training recipes and tooling.</li>
+<li><strong>R12:</strong> <a href="https://github.com/openai/whisper">Whisper upstream repository</a> — fallback experiment, available models and licence.</li>
+<li><strong>R13:</strong> <a href="https://developer.android.com/develop/background-work/services/fgs/restrictions-bg-start">Android foreground-service start restrictions</a> — microphone/session lifecycle constraints.</li>
+<li><strong>R14:</strong> <a href="https://support.google.com/googleplay/android-developer/answer/13392821?hl=en-en">Google Play full-screen intent requirements</a> — optional full-screen alarm presentation.</li>
+<li><strong>R15:</strong> <a href="https://www.gsma.com/newsroom/press-release/high-spectrum-fees-risk-slowing-bangladeshs-digital-future-new-gsma-study-finds/">GSMA Bangladesh connectivity context, September 2025</a> — contextual motivation only, not a Pulsar market-demand study.</li>
+<li><strong>R16:</strong> <a href="https://developer.android.com/guide/components/activities/background-starts">Android background activity start restrictions</a> — separate eligibility for app/call UI handoffs from a background session.</li>
+</ul>
+<p><strong>ASR:</strong> automatic speech recognition. <strong>WER:</strong> word error rate. <strong>Critical slots:</strong> action parameters whose error changes the target or outcome, such as time, date, recurrence, or recipient. <strong>PSS:</strong> proportional set size including shared/native process memory. <strong>OEM:</strong> device manufacturer. <strong>MVP:</strong> minimum viable product. <strong>Gate:</strong> an evidence-based proceed/revise/stop decision. <strong>SRS:</strong> software requirements specification.</p>
+<hr />
+<p><strong>Document completion condition:</strong> The SRS is complete as a proposed specification. Implementation, trained-model availability, user validation, distribution approval, and performance acceptance remain the delivery work defined above.</p></main></div></body></html>

@@ -34,3 +34,13 @@ target/
 Thumbs.db
 .DS_Store
 .vscode/
+
+# Local Android alpha environment
+.buildenv/
+.gradle/
+**/build/
+local.properties
+app/libs/*.aar
+app/src/main/assets/asr/
+*.iml
+.idea/

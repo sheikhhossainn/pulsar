@@ -1,0 +1,15 @@
+Pulsar Android alpha
+
+Bengali streaming Zipformer model by Alpha Cephei
+https://huggingface.co/alphacep/vosk-model-small-streaming-bn
+Model export: sherpa-onnx-streaming-zipformer-bn-vosk-2026-02-09
+Licence: Apache License 2.0, included alongside this file.
+
+sherpa-onnx by the k2-fsa contributors
+https://github.com/k2-fsa/sherpa-onnx/tree/v2.0.1
+Android runtime version 2.0.1, Apache License 2.0.
+
+ONNX Runtime by Microsoft Corporation
+https://github.com/microsoft/onnxruntime
+MIT licence text included alongside this file.
+
